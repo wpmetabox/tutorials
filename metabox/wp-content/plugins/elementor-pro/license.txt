@@ -1,0 +1,52 @@
+Elementor Pro by Elementor.com
+=====================================
+
+> Copyright (C) Elementor LTD.
+> https://elementor.com
+> All rights reserved
+
+Elementor Pro is under this license:
+=====================================
+
+When receiving files from Elementor, you shall purchase a license in Elementor’s online store. These files shall be conveyed under the following license, where the number of websites, installations and users may be defined in each file, as well as the price.
+
+Each license grants you the nonexclusive, personal right to use and create derivative works of the applicable source code, as well as any other files conveyed to you (save for files licensed under other licenses), in the number of websites stated in the license (either one, three or unlimited) and for the use of one person (as well as his sublicensees), while providing proper credit in the source code.
+
+Where, for the purpose of this agreement, the term “one site” shall include one domain name, or one subdomain, but not both, and one WordPress installation.
+
+**Permitted Distribution**
+In the applicable licenses, you’ll be allowed to distribute a limited number of copies (as determined by Elementor from time to time) as a part of a larger work (meaning, with other software components) to your clients (the “Sublicensees”), as long as the third parties receive such applicable source code made by Elementor receive it under a this License, without to any support or distribution rights.
+
+**Prohibited Distribution**
+Save for the permitted sublincesees, You are prohibited from distributing the applicable source code, and you are prohibited from allowing any third party to make any use from it, save for viewing the said website.
+
+**Protecting The Source Code**
+The source code may be provided with an authentication key. For the avoidance of any doubt, this key allows Elementor to authenticate your license so that you can receive timely software updates and connect to the Elementor library.
+
+**No Warranty**
+The applicable source code is provided to you as-is, and without any warranty for its quality. Elementor shall never be liable for any damage or flaw in the applicable source code.
+
+**Support**
+The license granted to you is provided with limited support only to you and not your sublicensees, which shall be provided by Elementor’s support, as specified in the applicable purchase pages.
+
+**Updates**
+In any time which Elementor may update and/or upgrade the applicable source code’s version during the 12 months following your purchase, then you shall be provided with the updated source code.
+
+**Termination**
+In any case you shall breach any of your warranties under this article, then your license shall be terminated.
+
+**No Support for Third Party Components**
+The applicable source code is conveyed to you without any support for third party components which may be installed on your server, either if they were install with the applicable source code, or later.
+
+**Additional Components**
+Occasionally, during your first use of the applicable source code, you shall be presented the option to install additional third party components. For the installation of these components, you shall be required to accept additional terms. Please note that these components are not mandatory for your use of the services. The files may also include other files licensed to you under a third party license.
+
+**Limitation of Liability**
+Any distribution of the applicable source code shall require you to make sure that the receiving third party disclaims any liability from Elementor from any use of the applicable source code, its inadherence to any system, lack of updates, or any other claim relating to damages.
+
+**No Hosting or Resale**
+You may not provide access to an Elementor installation as a hosting service provider or a reseller, and you may not provide to others as part of a “Software As-a-Service”. You may not bundle it and resell it as a commercial, off the shelf, license or product. This means that you can use Elementor as a part of a commercial project where you design a theme for your client, but cannot use it in a theme or DIY website hosting solution
+
+=====================================
+
+For more details you can read this link: https://elementor.com/terms/

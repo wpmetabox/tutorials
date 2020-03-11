@@ -1,0 +1,42 @@
+.widget {
+	/* Make sure select elements fit in widgets. */
+	select {
+		width: 100%;
+		padding: .6875rem 1rem;
+	}
+	ul {
+		list-style: none;
+		padding-left: 0;
+
+	}
+	li {
+		margin-bottom: .5rem;
+		ul {
+			margin-top: .5rem;
+		}
+		li {
+			padding-left: 0.8rem;
+		}
+	}
+}
+.widget-title {
+	@include font-size(.875);
+	margin-bottom: 1.5rem;
+	border-bottom: 1px solid $color__line;
+	padding-bottom: .5rem;
+}
+.search-field {
+	width: 100%;
+}
+.widget_wpcom_social_media_icons_widget a {
+	color: inherit;
+	@include font-size(1.25);
+
+	&:hover {
+		color: $color__text-main;
+	}
+}
+/* Calendar widget */
+#next {
+	text-align: right;
+}

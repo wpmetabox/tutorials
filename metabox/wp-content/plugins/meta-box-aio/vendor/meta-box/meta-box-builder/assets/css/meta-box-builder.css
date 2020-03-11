@@ -1,0 +1,709 @@
+/**
+ * Elements
+ */
+
+/* Links: no underline */
+.builder-gui a {
+	text-decoration: none;
+}
+
+/* Delete button */
+.wp-core-ui .mbb-button-delete {
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: #ccc;
+	padding: 0;
+	visibility: hidden;
+}
+.wp-core-ui tr:hover > td > .mbb-button-delete {
+	visibility: visible;
+}
+.wp-core-ui .mbb-button-delete:hover {
+	color: #dc3232;
+	background: none;
+}
+.wp-core-ui .mbb-button-delete:focus {
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: #dc3232;
+}
+.wp-core-ui .mbb-button-delete .dashicons {
+	font-size: 16px;
+}
+
+/* Settings table: for custom attributes, conditional logic (fields and settings) */
+.mbb-settings-label {
+	margin-bottom: 10px;
+}
+.mbb-settings-header {
+	margin-bottom: 10px;
+}
+.mbb-settings-table {
+	border-collapse: collapse;
+}
+.mbb-settings-table td {
+	padding: 0 0 5px;
+}
+.mbb-settings-table td + td {
+	padding-left: 5px;
+}
+.mbb-settings-table input {
+	margin: 0;
+}
+
+/* Tooltip */
+.mbb-tooltip {
+	border: none;
+	background: no-repeat;
+	padding: 0;
+	color: #ccc;
+	width: 16px;
+	height: 16px;
+}
+.mbb-tooltip .dashicons {
+	font-size: 14px;
+	width: 16px;
+	height: 16px;
+	margin-top: 2px;
+}
+.tippy-tooltip {
+	text-align: left;
+}
+
+/* Grid */
+.mbb-two {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+}
+.mbb-three {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+.mbb-row + .mbb-row {
+	margin-top: 10px;
+}
+
+/* Description table */
+.mbb-desc-table {
+	border-collapse: collapse;
+}
+.mbb-desc-table td {
+	padding: 2px;
+}
+.mbb-desc-table td:first-child {
+	padding-left: 0;
+}
+
+/* Inline choices for radio */
+.mbb-inline-choices {
+	display: flex;
+}
+.mbb-inline-choices label + label {
+	margin-left: 10px;
+}
+.description .mbb-inline-choices label {
+	width: auto;
+	font-style: normal;
+	margin-bottom: 0;
+}
+
+.wp-list-table.posts .column-title p {
+	display: none;
+}
+#poststuff h2 {
+	padding: 0;
+}
+#poststuff h3.hndle {
+	padding: 12px;
+}
+
+/* Disable transition for the border bottom */
+.nav-tab {
+	transition-duration: 0s;
+}
+
+/* No outline */
+.nav-tab:focus, .nav-tab:hover {
+	box-shadow: none;
+}
+.ui-sortable {
+	padding-top: 1px;
+}
+.ui-sortable .menu-item,
+.ui-state-highlight {
+	min-height: 42px;
+	margin-top: 9px;
+}
+.ui-sortable .menu-item.active:after {
+	content: '';
+	background: #fff;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	z-index: 9;
+	width: 100%;
+	height: 1px;
+}
+#wpcontent {
+	background: #f1f1f1;
+}
+#adminmenuwrap {
+	height: 100%;
+}
+.postbox-container {
+	display: none !important;
+}
+#poststuff #post-body.columns-2 {
+	width: 100%;
+	margin-right: 0
+}
+.nav-menus-php #post-body {
+	padding: 0 10px 10px !important;
+}
+.nav-menus-php .major-publishing-actions {
+	overflow: hidden;
+}
+.builder-gui #post-body-content h3 {
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 0
+}
+.builder-gui .drag-drop .drag-drop-inside {
+	margin: 10px;
+}
+.field-actions .btn {
+	background: none;
+}
+.builder-gui section.builder-field {
+	margin-bottom: 5px;
+	border: 1px solid #efefef;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+}
+.builder-field hr {
+	margin: 10px 0;
+}
+.builder-gui .field-view, .builder-gui .field-edit {
+	padding: 5px 15px 5px 15px;
+}
+.builder-field.true .item-edit:before {
+	content: '\f142';
+}
+.mbb-fields-wrapper {
+	width: 600px;
+	display: block;
+}
+.menu-item-bar {
+	margin: 0;
+}
+.menu-item-bar .menu-item-handle {
+	width: 100%;
+	box-sizing: border-box;
+}
+.description {
+	width: 100%;
+	color: #666;
+}
+.description + .description {
+	margin-top: 10px;
+}
+.description label {
+	width: 100%;
+	display: block;
+	margin-bottom: 3px;
+}
+.description label i {
+	display: block;
+	width: 100%;
+}
+.menu-item-settings {
+	width: 100%;
+	overflow: hidden;
+	padding: 10px 10px 10px;
+	box-sizing: border-box;
+	transition: all .2s;
+	background: #fff;
+}
+.collapse {
+	display: none;
+}
+.collapse.in {
+	display: block;
+}
+.builder-gui .content-field td .button {
+	visibility: hidden;
+}
+.builder-gui .content-field tr:hover .button {
+	visibility: visible;
+}
+.builder-gui .ui-state-highlight {
+	width: 568px;
+	height: 40px;
+	border: 1px dashed #ccc;
+}
+.mbb-group-container {
+	width: 538px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	border: 1px dashed #ccc;
+	margin-top: 9px;
+}
+.builder-gui label, .builder-gui dt {
+	font-weight: normal;
+}
+.field-edit-content:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.field-edit-content .show-advanced,
+.field-edit-content .hide-advanced {
+	width: 100%;
+	float: left;
+	display: block;
+	margin-top: 10px;
+}
+.field-edit-content section {
+	width: 100%;
+	max-width: 526px;
+	padding: 0 10px 10px 0;
+}
+.field-edit-content h4 {
+	margin: 0;
+}
+.field-edit-content label {
+	font-style: italic;
+}
+.field-edit-content .required {
+	color: red;
+	font-weight: bold;
+}
+
+/* Item actions: delete, duplicate */
+.mbb-item-actions {
+	margin: 0 10px;
+}
+.mbb-item-actions a {
+	display: inline-block;
+	color: #999;
+	line-height: 42px;
+}
+.mbb-item-actions a:hover {
+	color: inherit;
+}
+.mbb-item-actions .mbb-delete:hover {
+	color: #dc3232;
+}
+.mbb-item-actions .dashicons {
+	font-size: 15px;
+	line-height: 42px;
+	height: 42px;
+}
+.item-type {
+	padding: 12px 0;
+}
+.mbb-collapse {
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+ul.builder-grid {
+	display: block;
+	margin: 0;
+	list-style: none;
+}
+.builder-col {
+	width: 160px;
+	float: left;
+	display: inline-block;
+}
+.builder-col:nth-of-type(4n+1) {
+	clear: both;
+}
+.builder-gui #post-body-content .postbox h3 {
+	font-size: 14px;
+	margin: 0;
+	padding: 5px 6px;
+	font-weight: normal;
+}
+.extensions .postbox {
+	width: 100%;
+	float: left;
+}
+dl.extension {
+	padding-left: 0%;
+}
+dl.extension .howto {
+	width: 0;
+}
+dl.extension dl {
+	width: 36%;
+	padding-left: 12%;
+	float: left;
+}
+dl.extension dt {
+	width: 27%;
+	margin-left: -28%;
+	float: left;
+}
+.builder-gui ul ul {
+	margin-left: 30px;
+}
+.menu-item-bar.tab dt {
+	background: #FFAB00;
+	color: #fff;
+}
+.tab dt, .tab dt:hover {
+	border: 1px solid #FF8F00 !important;
+}
+.menu-item-bar.tab span, .menu-item-bar.tab .item-edit:before {
+	color: #fff;
+}
+#menu-settings-column .inside {
+	margin: 0;
+}
+.icon-panel {
+	max-height: 290px;
+	overflow-y: scroll;
+}
+.icon-single .hidden {
+	display: none;
+}
+.icon-panel .icon-single {
+	display: inline-block;
+	margin: 0 5px 5px 0;
+	border: 1px solid #dadada;
+	border-radius: 3px;
+	text-align: center;
+	width: 36px;
+	padding: 8px 0;
+	box-sizing: border-box;
+	transition: background-color 200ms;
+}
+.icon-single.true,
+.icon-single:hover,
+.icon-single.active {
+	border-color: rgba(0, 0, 0, .1);
+	color: #fff;
+	background: #3c0;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+}
+.icon-single .dashicons, .icon-single .dashicons-before:before {
+	transition: none;
+}
+
+/* Settings Tab */
+#settings-gui {
+	padding: 10px 0;
+}
+#settings-gui h2 {
+	font-size: 20px;
+	margin: 1em 0;
+}
+#settings-gui td:first-child {
+	padding-left: 0;
+}
+#settings-gui .menu-settings {
+	border-top: none;
+	margin-top: 0;
+}
+
+/* Field tabs */
+.mbb-tab-nav {
+	margin: 0 0 18px;
+}
+.mbb-tab-nav > .button-link {
+	text-decoration: none;
+}
+.mbb-sep:last-child {
+	display: none;
+}
+.mbb-tab-nav > .button-link:focus {
+	box-shadow: none;
+}
+.mbb-tab-nav .mbb-active {
+	font-weight: 600;
+}
+.mbb-tab {
+	display: none;
+}
+.mbb-tab.mbb-active {
+	display: block;
+}
+.table td {
+	padding: 5px
+}
+.table th {
+	font-size: 16px;
+	text-align: left;
+}
+.table td:first-child {
+	width: 200px;
+}
+.key-value .table td:first-child {
+	padding-left: 0;
+}
+.table thead tr td, .table thead tr th {
+	/*padding-top: 30px;*/
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+.publishing-action button.components-button:hover {
+	background: none;
+}
+
+/* Custom Attributes */
+h4.custom-attributes__heading {
+	margin-bottom: 10px;
+}
+.custom-attributes__table td,
+.conditional-logic__table td {
+	padding: 0 0 5px;
+}
+.custom-attributes__table td:first-child,
+.conditional-logic__table td:first-child {
+	width: auto;
+	padding-right: 5px;
+}
+.custom-attributes__table input {
+	margin: 0;
+}
+
+
+/* Exported Code */
+.builder-code {
+	background: #222f35;
+	padding: 1em;
+	line-height: 1.6;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-moz-tab-size: 4;
+}
+.builder-code code {
+	background: none;
+}
+
+/* Search field type */
+.mbb-search-fields-input {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+/* Builder */
+.accordion-section-content {
+	padding: 10px;
+}
+
+/* Copy to clipboard */
+.render-html {
+	position: relative;
+	overflow: hidden;
+}
+.mbb-button--copy {
+	position: absolute;
+	top: 13px;
+	right: 0;
+	z-index: 9;
+	display: inline-block;
+	background: #2c3e50;
+	color: #fff;
+	text-decoration: none;
+	line-height: 1;
+	padding: 10px 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+	transition: opacity .2s;
+	cursor: pointer;
+	opacity: 0;
+}
+.mbb-button--copy:focus,
+.mbb-button--copy:active {
+	outline: none;
+	box-shadow: none;
+}
+.render-html:hover > .mbb-button--copy {
+	opacity: 1;
+	color: #fff;
+}
+.mbb-icon--copy {
+	color: inherit;
+	fill: currentColor;
+	height: 1em;
+	width: 1em;
+	vertical-align: middle;
+	position: relative;
+	top: -4px;
+}
+
+
+/* Save draft */
+.button-save-draft.button-save-draft {
+	text-decoration: none;
+}
+.button-save-draft.button-save-draft:focus {
+	background: none;
+	box-shadow: none;
+}
+.meta-box-documentation {
+	text-decoration: initial;
+}
+.meta-box-documentation span {
+	margin-left: 5px;
+}
+
+/* Icon */
+.ng-scope .button .dashicons:before {
+	line-height: 27px;
+}
+
+/* Clone setting*/
+section.builder-cloneable {
+	border-top: 1px solid #ddd;
+	border-bottom: 0;
+	padding-top: 15px;
+}
+.builder-cloneable div {
+	float: left;
+	margin-right: 15px;
+	line-height: 27px;
+}
+.builder-cloneable div.max-clone,
+.builder-cloneable div.add-button-text {
+	clear: both;
+	padding-top: 15px;
+	position: relative;
+}
+.builder-cloneable .clone-description {
+	margin-bottom: 0;
+	font-style: italic;
+}
+.builder-cloneable div.max-clone span.dashicons-editor-help {
+	line-height: 32px;
+}
+.address-field__select input {
+	width: 100%;
+}
+.field-edit-content section.builder-address-field {
+	border-bottom: 0;
+}
+#select-group-title {
+	width: 100%;
+	margin: 6px 0;
+}
+.meta-box-group-field .builder-grid {
+	margin: 0;
+}
+.meta-box-group-field .builder-grid li {
+	min-height: initial !important;
+	margin: 0 !important;
+}
+.switch-group {
+	clear: both;
+}
+.switch-group select,
+.switch-group input[type=text] {
+	width: 100%;
+	margin-top: 10px;
+}
+.field-inline {
+	position: relative;
+	top: 7px;
+}
+.field-inline-post {
+	position: relative;
+	top: 5px;
+}
+
+/* Field divider */
+.no-style {
+	margin: 0;
+	font-style: italic;
+}
+
+/* Responsive */
+.description.col-md-6 {
+	width: 47%;
+	float: left;
+}
+.pull-menu-slug,
+.pull-menu-name {
+	float: left;
+}
+.pull-menu-name {
+	margin-right: 20px;
+}
+#menu-name-slug {
+	margin-top: 3px;
+}
+.pull-menu-slug .menu-name-label {
+	margin-top: -3px;
+}
+.edit-slug.button {
+	margin-top: 4px;
+}
+.builder-code-tab {
+	display: none;
+}
+.builder-code-tab:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.builder-code-tab--fields.metabox-tab-show {
+	display: flex;
+	justify-content: space-between;
+}
+.builder-code-tab--setting.metabox-tab-show {
+	display: block;
+}
+#poststuff .builder-code-tab--setting h2 {
+	color: #23282d;
+	font-size: 1.3em;
+	margin: 1em 0;
+}
+#builder-gui #nav-menus-frame {
+	margin-left: 0;
+}
+#builder-gui #menu-settings-column {
+	width: 300px;
+	margin-right: 10px;
+	margin-left: 0;
+}
+#poststuff #post-body.columns-2 #side-sortables {
+	width: 100%;
+	box-sizing: border-box;
+}
+#builder-gui #menu-management-liquid {
+	flex: 1;
+	min-width: initial;
+}
+.form-wrapper input {
+	margin: 1px 0 0 5px;
+}
+
+/* Settings tab */
+#poststuff .form-table h2 {
+	padding-top: 0;
+}
+.mbb-settings-show-hide .mbb-settings-table td:first-child,
+.mbb-settings-include-exclude .mbb-settings-table td:first-child {
+	white-space: nowrap;
+}
+.mbb-settings-block label + label {
+	margin-left: 10px;
+}
+.mbb-settings-block .wp-picker-container {
+	position: relative;
+}
+.mbb-settings-block .wp-picker-holder {
+	position: absolute;
+	z-index: 99;
+	min-width: 255px;
+}

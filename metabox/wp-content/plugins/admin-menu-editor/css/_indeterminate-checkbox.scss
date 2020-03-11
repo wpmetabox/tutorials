@@ -1,0 +1,24 @@
+@mixin ame-indeterminate-checkbox {
+	&:indeterminate:before {
+		content: '\25a0'; //Unicode black square. Another option would be BLACK LARGE SQUARE (U+2B1B).
+		color: #1e8cbe;
+
+		//Large square.
+		//margin: -6px 0 0 -1px;
+		//font: 400 18px/1 dashicons;
+
+		//Smaller square.
+		margin: -3px 0 0 -1px;
+		font: 400 14px/1 dashicons;
+
+		//Even smaller square.
+		//margin: -2px 0 0 -1px;
+		//font: 400 13px/1 dashicons;
+
+		float: left;
+		display: inline-block;
+		vertical-align: middle;
+		width: 16px;
+		-webkit-font-smoothing: antialiased;
+	}
+}

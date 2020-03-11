@@ -1,0 +1,16 @@
+.wp-caption {
+	margin-bottom: 2rem;
+	max-width: 100%;
+
+	img[class*="wp-image-"] {
+		@include center-block;
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+	margin-top: .875rem;
+	font-size: .875rem;
+	font-family: $font__sans-serif;
+	color: $color__silver;
+}

@@ -1,0 +1,2148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Meta Box AIO\n"
+"POT-Creation-Date: 2019-01-22 09:04+0100\n"
+"PO-Revision-Date: 2019-01-22 09:49+0100\n"
+"Last-Translator: Hervé Bouzin\n"
+"Language-Team: Hervé Bouzin\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: meta-box-aio.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: class-mb-aio-dashboard-widget.php:21
+msgid "Meta Box News and Tutorials"
+msgstr "Nouvelles et tutoriels Meta Box"
+
+#: class-mb-aio-settings.php:48
+msgid "All-In-One"
+msgstr "Tout-en-un"
+
+#: class-mb-aio-settings.php:49
+msgid "Meta Box All-In-One"
+msgstr "Meta Box tout-en-un"
+
+#: class-mb-aio-settings.php:81
+msgid "Enable The Dashboard Widget?"
+msgstr "Activer le widget Dashboard?"
+
+#: class-mb-aio-settings.php:87
+msgid "Enabled Extensions"
+msgstr "Extensions activées"
+
+#: class-mb-aio-settings.php:88
+msgid "Check or uncheck extensions below to enable or disable them."
+msgstr ""
+"Cochez ou décochez les extensions ci-dessous pour les activer ou les "
+"désactiver."
+
+#: class-mb-aio-settings.php:139
+msgid "Filter the extensions by:"
+msgstr "Filtrer les extensions par:"
+
+#: class-mb-aio-settings.php:141
+#: extensions/meta-box-builder/inc/settings-gui.php:213
+msgid "All"
+msgstr "Tous"
+
+#: class-mb-aio-settings.php:142
+msgid "Premium"
+msgstr "Premium"
+
+#: class-mb-aio-settings.php:143
+msgid "Free"
+msgstr "Gratuit"
+
+#: class-mb-aio-settings.php:146
+msgid "Popular"
+msgstr "Populaire"
+
+#: class-mb-aio-settings.php:147
+msgid "Data"
+msgstr "Données"
+
+#: class-mb-aio-settings.php:148
+msgid "UI"
+msgstr "UI"
+
+#: class-mb-aio-settings.php:149
+msgid "Integration"
+msgstr "Intégration"
+
+#: class-mb-aio-settings.php:150
+msgid "Admin"
+msgstr "Admin"
+
+#: class-mb-aio-settings.php:151
+msgid "Frontend"
+msgstr "Front-end"
+
+#. translators: %s: Name of the custom post type in plural form.
+#. translators: %s: Name of the taxonomy in plural form.
+#: extensions/mb-admin-columns/inc/class-mb-admin-columns-post.php:215
+#: extensions/mb-custom-post-type/inc/post-type/register.php:145
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:137
+#, php-format
+msgid "All %s"
+msgstr "Tous %s"
+
+#: extensions/mb-custom-post-type/inc/about/about.php:26
+msgid "Post Types & Taxonomies"
+msgstr "Types d'articles & Taxonomies"
+
+#: extensions/mb-custom-post-type/inc/about/types-taxonomies.php:13
+msgid "Create Custom Post Types"
+msgstr "Créer des types de post personnalisés"
+
+#: extensions/mb-custom-post-type/inc/about/types-taxonomies.php:14
+msgid ""
+"Create your first custom post type to add more custom content (which is not "
+"post or page) to your WordPress website."
+msgstr ""
+"Créez votre premier type de post personnalisé pour ajouter du contenu "
+"personnalisé (qui n'est pas une publication ou une page) sur votre site Web "
+"WordPress."
+
+#: extensions/mb-custom-post-type/inc/about/types-taxonomies.php:15
+#: extensions/mb-custom-post-type/inc/about/types-taxonomies.php:18
+msgid "Start Now"
+msgstr "Commencer maintenant"
+
+#: extensions/mb-custom-post-type/inc/about/types-taxonomies.php:16
+msgid "Create Custom Taxonomies"
+msgstr "Créer des taxonomies personnalisées"
+
+#: extensions/mb-custom-post-type/inc/about/types-taxonomies.php:17
+msgid ""
+"Create your first custom taxonomy to organize your content into groups that "
+"you can query to show them in the frontend."
+msgstr ""
+"Créez votre première taxonomie personnalisée pour organiser votre contenu en "
+"groupes que vous pouvez interroger pour les afficher dans la frontend."
+
+#: extensions/mb-custom-post-type/inc/about/types-taxonomies.php:24
+#, php-format
+msgid ""
+"Confused when to use custom taxonomy vs. custom fields? <a href=\"%s\" "
+"target=\"_blank\">Read here</a>."
+msgstr ""
+"Confus quand utiliser la taxonomie personnalisée par rapport aux champs "
+"personnalisés? <a href=\"%s\" target=\"_blank\">lire ici</a>."
+
+#: extensions/mb-custom-post-type/inc/base/edit.php:85
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:544
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:505
+msgid "Copy"
+msgstr "Copier"
+
+#: extensions/mb-custom-post-type/inc/base/edit.php:86
+msgid "Copied"
+msgstr "Copié"
+
+#: extensions/mb-custom-post-type/inc/base/edit.php:87
+msgid "Press Ctrl-C to copy"
+msgstr "Appuyez sur Ctrl-C pour copier"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:55
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:52
+msgid "All %name%"
+msgstr "Tout %name%"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:56
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:120
+msgid "Add new"
+msgstr "Ajouter un nouveau"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:57
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:56
+msgid "Add new %singular_name%"
+msgstr "Ajouter nouveau %singular_name%"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:58
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:53
+msgid "Edit %singular_name%"
+msgstr "Modifier %singular_name%"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:59
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:57
+msgid "New %singular_name%"
+msgstr "Nouveau %singular_name%"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:60
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:54
+msgid "View %singular_name%"
+msgstr "Afficher %singular_name%"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:61
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:60
+msgid "Search %name%"
+msgstr "Rechercher% nom%"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:62
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:65
+msgid "No %name% found"
+msgstr "Pas % nom% trouvé"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:63
+msgid "No %name% found in Trash"
+msgstr "Aucun% nom% trouvé dans la corbeille"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:64
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:58
+msgid "Parent %singular_name%"
+msgstr "Parent %singular_name%"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:82
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:83
+msgid "Plural name"
+msgstr "Nom pluriel"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:85
+msgid "General name for the post type"
+msgstr "Nom général du type de poste"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:88
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:89
+msgid "Singular name"
+msgstr "Nom singulier"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:91
+msgid "Name for one object of this post type"
+msgstr "Nom pour un objet de ce type de poste"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:94
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:95
+msgid "Slug"
+msgstr "Identifiant"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:102
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:102
+msgid "Menu name"
+msgstr "Nom du menu"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:105
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:105
+msgid "The menu name text"
+msgstr "Le texte du nom du menu"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:108
+msgid "Name in admin bar"
+msgstr "Nom dans la barre d'administration"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:111
+msgid "Name given for the Add New dropdown on admin bar"
+msgstr ""
+"Nom donné pour la liste déroulante Ajouter un nouveau sur la barre "
+"d'administration"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:114
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:108
+msgid "All items"
+msgstr "Tous les articles"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:117
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:111
+msgid "The all items text used in the menu"
+msgstr "Le texte pour tous les éléments utilisés dans le menu"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:123
+msgid "The add new text"
+msgstr "Ajouter un nouveau texte"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:126
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:132
+msgid "Add new item"
+msgstr "Ajouter un nouvel enregistrement"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:129
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:135
+msgid "The add new item text"
+msgstr "Le nouveau texte de l'élément Ajouter"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:132
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:114
+msgid "Edit item"
+msgstr "Modifier élément"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:135
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:117
+msgid "The edit item text"
+msgstr "Le texte de l'article modifié"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:138
+msgid "New item"
+msgstr "Nouvel élément"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:141
+msgid "The new item text"
+msgstr "Le nouveau texte de l'article"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:144
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:120
+msgid "View item"
+msgstr "Voir"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:147
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:123
+msgid "The view item text"
+msgstr "Le texte de l'élément de vue"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:150
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:156
+msgid "Search items"
+msgstr "Rechercher un élément"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:153
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:159
+msgid "The search items text"
+msgstr "Le texte des éléments de recherche"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:156
+#: extensions/mb-custom-post-type/inc/post-type/register.php:33
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:186
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:33
+msgid "Not found"
+msgstr "Pas trouvé"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:159
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:189
+msgid "The not found text"
+msgstr "Le texte introuvable"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:162
+#: extensions/mb-custom-post-type/inc/post-type/register.php:34
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:34
+msgid "Not found in Trash"
+msgstr "Rien n’a pas été trouvé dans la corbeille"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:165
+msgid "The not found in trash text"
+msgstr "Le texte n’a pas été trouvé dans la corbeille"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:168
+msgid "Parent Items:"
+msgstr "Eléments parent :"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:171
+msgid "The parent text"
+msgstr "Le texte parent"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:177
+msgid "Description"
+msgstr "Description"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:180
+msgid "A short descriptive summary of what the post type is."
+msgstr "Un petit résumé pour décrire de quel type de post il s'agit."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:183
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:194
+msgid "Public?"
+msgstr "Public?"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:187
+msgid "Controls how the type is visible to authors and readers."
+msgstr ""
+"Contrôle la façon dont le type est visible pour les auteurs et les lecteurs."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:190
+msgid "Exclude from search?"
+msgstr "Exclure de la recherche?"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:193
+msgid ""
+"Whether to exclude posts with this post type from frontend search results."
+msgstr ""
+"S'il faut exclure les publications avec ce type de publication à partir des "
+"résultats de recherche frontend."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:196
+msgid "Publicly queryable?"
+msgstr "Publiquement consultable ?"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:200
+msgid "Whether queries can be performed on the frontend."
+msgstr "Si les requêtes peuvent être exécutées sur le frontend."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:203
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:201
+msgid "Show UI?"
+msgstr "Afficher l'interface utilisateur?"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:207
+msgid ""
+"Whether to generate a default UI for managing this post type in the admin."
+msgstr ""
+"S'il faut générer une interface par défaut pour gérer ce type de message "
+"dans l'admin."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:210
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:215
+msgid "Show in nav menus?"
+msgstr "Afficher dans les menus de navigation ?"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:214
+msgid "Whether post type is available for selection in navigation menus."
+msgstr ""
+"Si le type de message est disponible pour la sélection dans les menus de "
+"navigation."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:217
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:208
+msgid "Show in menu?"
+msgstr "Afficher dans le menu?"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:221
+msgid ""
+"Where to show the post type in the admin menu. <code>show_ui</code> must be "
+"<code>true</code>."
+msgstr ""
+"Où afficher le type de message dans le menu administrateur. <code>show_ui</"
+"code> doit être <code>true</code>."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:227
+msgid "Show in admin bar?"
+msgstr "Afficher dans la barre d'administration?"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:230
+msgid "Whether to make this post type available in the WordPress admin bar."
+msgstr ""
+"S'il faut rendre ce type de message disponible dans la barre "
+"d'administration de WordPress."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:233
+msgid "Show in REST API?"
+msgstr "Afficher dans l'API de REST ?"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:236
+msgid "Whether to add the post type in the REST API."
+msgstr "Si vous souhaitez ajouter le type de publication dans l'API REST."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:239
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:255
+msgid "REST API base slug"
+msgstr "REST API base plug"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:242
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:258
+msgid "Slug to use in REST API URLs"
+msgstr "Slug à utiliser dans les URL d'API REST"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:243
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:304
+msgid "Leave empty to use the post type slug."
+msgstr "Laisser vide pour utiliser le type de publication slug."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:246
+msgid "Menu position after"
+msgstr "Position du menu après"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:252
+msgid "Menu icon"
+msgstr "Icône du menu"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:258
+msgid "Capability type"
+msgstr "Type de capacité"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:263
+msgid "Post"
+msgstr "Message"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:264
+msgid "Page"
+msgstr "Page"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:267
+msgid "The post type to use for checking read, edit, and delete capabilities."
+msgstr ""
+"Le type de poste à utiliser pour la vérification de lecture, modification et "
+"suppression des capacités."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:270
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:262
+msgid "Hierarchical?"
+msgstr "Hiérachique ?"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:273
+msgid "Whether the post type is hierarchical."
+msgstr "Si le type de poste est hiérarchique."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:276
+msgid "Has archive?"
+msgstr "Comme archive?"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:280
+msgid ""
+"Enables post type archives. Will use the post type slug as the archive slug "
+"by default."
+msgstr ""
+"Active les Archives de type post. Utilisera le type de publication Slug "
+"comme l'archive Slug par défaut."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:283
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:268
+msgid "Query var"
+msgstr "Requête var"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:287
+msgid ""
+"Enables request the post via URL <code>example.com/?post_type=slug</code>"
+msgstr ""
+"Permet de demander la publication via l'URL <code> example.com/?"
+"post_type=slug </code>"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:290
+msgid "Can export?"
+msgstr "Peut exporter?"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:294
+msgid "Can this post type be exported?"
+msgstr "Ce type de poste peut-il être exporté?"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:297
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:281
+msgid "Rewrite"
+msgstr "Réécrire"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:301
+msgid "Custom rewrite slug"
+msgstr "Slug de réécriture personnalisée"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:307
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:291
+msgid "No prepended permalink structure?"
+msgstr "Aucune structure de Permalien ajoutée?"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:310
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:294
+msgid "Do not prepend the permalink structure with the front base."
+msgstr "Ne pas ajouter la structure du permalien avec la base avant."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:316
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:305
+msgid "Function name"
+msgstr "Nom de fonction"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:322
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:311
+msgid "Text domain"
+msgstr "Domaine texte"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:330
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:319
+#: extensions/meta-box-builder/inc/components/tabs.php:19
+msgid "Code"
+msgstr "Code"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:340
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:329
+msgid "Basic Settings"
+msgstr "Paramètres de base"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:348
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:337
+msgid "Advanced"
+msgstr "Avancé"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:366
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:355
+msgid "Plural name is required"
+msgstr "Nom pluriel est requis"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:369
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:358
+msgid "Singular name is required"
+msgstr "Le nom singulier est requis"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:372
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:361
+msgid "Slug is required"
+msgstr "Slug est nécessaire"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:381
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:370
+msgid "Labels Settings"
+msgstr "Paramètres des étiquettes"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:389
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:378
+msgid "Advanced Settings"
+msgstr "Paramètres avancés"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:397
+msgid "Supports"
+msgstr "Soutiens"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:406
+#: extensions/mb-frontend-submission/templates/post/title.php:10
+#: extensions/meta-box-builder/inc/fields-gui.php:58
+msgid "Title"
+msgstr "Titre"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:407
+msgid "Editor"
+msgstr "Éditeur"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:408
+msgid "Author"
+msgstr "Auteur"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:409
+#: extensions/mb-frontend-submission/inc/class-mb-frontend-post.php:149
+#: extensions/mb-frontend-submission/templates/post/thumbnail.php:11
+msgid "Thumbnail"
+msgstr "Vignette"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:410
+#: extensions/mb-frontend-submission/templates/post/excerpt.php:10
+msgid "Excerpt"
+msgstr "Extrait"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:411
+msgid "Trackbacks"
+msgstr "Rétroliens"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:412
+msgid "Custom fields"
+msgstr "Champs personnalisés"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:413
+#: extensions/meta-box-builder/inc/class-mbb-admin-columns.php:30
+#: extensions/meta-box-builder/inc/settings-gui.php:11
+msgid "Comments"
+msgstr "Commentaires"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:414
+msgid "Revisions"
+msgstr "Révisions"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:415
+msgid "Page Attributes"
+msgstr "Attributs de page"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:425
+msgid "Default Taxonomies"
+msgstr "Taxonomies par défaut"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:434
+msgid "Category"
+msgstr "Catégorie"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:435
+msgid "Tag"
+msgstr "Tag"
+
+#. translators: %s: Link to edit taxonomies page.
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:438
+#, php-format
+msgid ""
+"Add default taxonomies to post type. For custom taxonomies, please <a href="
+"\"%s\" target=\"_blank\">click here</a>."
+msgstr ""
+"Ajoutez des taxonomies par défaut au type de publication. Pour les "
+"taxonomies personnalisées, s'il vous plaît < a href = \" %s\" target = \"_ "
+"blank\" > cliquez ici </a>."
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:445
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:385
+msgid "Generate Code"
+msgstr "Générer un code"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:590
+msgid "Show as top-level menu"
+msgstr "Afficher comme menu de niveau supérieur"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:595
+#, php-format
+msgid "Show as sub-menu of %s"
+msgstr "Afficher comme sous-menu de %s"
+
+#: extensions/mb-custom-post-type/inc/post-type/edit.php:598
+msgid "Do not show in the admin menu"
+msgstr "Ne pas afficher dans le menu admin"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:20
+msgctxt "Post Type General Name"
+msgid "Post Types"
+msgstr "Types d’article"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:21
+msgctxt "Post Type Singular Name"
+msgid "Post Type"
+msgstr "Type d'article"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:22
+#: extensions/mb-custom-post-type/inc/post-type/register.php:25
+#: extensions/mb-custom-post-type/inc/post-type/register.php:37
+msgid "Post Types"
+msgstr "Types d’article"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:23
+msgid "Post Type"
+msgstr "Type d'article"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:24
+msgid "Parent Post Type:"
+msgstr "Type de poste parent:"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:26
+msgid "Add New Post Type"
+msgstr "Ajouter un nouveau type de contenu"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:27
+#: extensions/mb-custom-post-type/inc/post-type/register.php:28
+msgid "New Post Type"
+msgstr "Nouveau type de contenu"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:29
+msgid "Edit Post Type"
+msgstr "Modifier le Type de Publication"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:30
+msgid "Update Post Type"
+msgstr "Mettre à jour le type de message"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:31
+msgid "View Post Type"
+msgstr "Voir l’article"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:32
+msgid "Search Post Type"
+msgstr "Recherche Type d'article"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:133
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:27
+msgid "Add New"
+msgstr "Ajouter Nouvel"
+
+#. translators: %s: Name of the custom post type in singular form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:135
+#, php-format
+msgid "Add New %s"
+msgstr "Nouveau %s"
+
+#. translators: %s: Name of the custom post type in singular form.
+#. translators: %s: Name of the taxonomy in singular form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:137
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:147
+#, php-format
+msgid "New %s"
+msgstr "Nouveau %s"
+
+#. translators: %s: Name of the custom post type in singular form.
+#. translators: %s: Name of the taxonomy in singular form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:139
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:139
+#, php-format
+msgid "Edit %s"
+msgstr "Modifier %s"
+
+#. translators: %s: Name of the custom post type in singular form.
+#. translators: %s: Post link, %s: View post text, %s: Post type label.
+#. translators: %s: Name of the taxonomy in singular form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:141
+#: extensions/mb-custom-post-type/inc/post-type/register.php:239
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:141
+#, php-format
+msgid "View %s"
+msgstr "Voir %s"
+
+#. translators: %s: Name of the custom post type in singular form.
+#. translators: %s: Name of the taxonomy in singular form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:143
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:143
+#, php-format
+msgid "Update %s"
+msgstr "Mettre à jour %s"
+
+#. translators: %s: Name of the custom post type in plural form.
+#. translators: %s: Name of the taxonomy in plural form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:147
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:153
+#, php-format
+msgid "Search %s"
+msgstr "Rechercher %s"
+
+#. translators: %s: Name of the custom post type in singular form.
+#. translators: %s: Name of the taxonomy in singular form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:149
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:151
+#, php-format
+msgid "Parent %s:"
+msgstr "Parent %s :"
+
+#. translators: %s: Name of the custom post type in plural form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:151
+#, php-format
+msgid "No %s found."
+msgstr "aucun %s trouvé."
+
+#. translators: %s: Name of the custom post type in plural form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:153
+#, php-format
+msgid "No %s found in Trash."
+msgstr "Aucun %s  trouvé dans la poubelle."
+
+#. translators: %s: Name of the custom post type in singular form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:202
+#: extensions/mb-custom-post-type/inc/post-type/register.php:206
+#, php-format
+msgid "%s updated."
+msgstr "%s mis à jour."
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:203
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:211
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:132
+msgid "Custom field updated."
+msgstr "Champ personnalisé mis à jour."
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:204
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:212
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:133
+msgid "Custom field deleted."
+msgstr "Champ personnalisé supprimé."
+
+#. translators: %1$s: Name of the custom post type in singular form, %2$s: Revision title.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:208
+#, php-format
+msgid "%1$s restored to revision from %2$s."
+msgstr "%1$s restoré à la révision en provenance de %2$s."
+
+#. translators: %s: Name of the custom post type in singular form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:210
+#, php-format
+msgid "%s published."
+msgstr "%s publiés."
+
+#. translators: %s: Name of the custom post type in singular form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:212
+#, php-format
+msgid "%s saved."
+msgstr "%s enregistré."
+
+#. translators: %s: Name of the custom post type in singular form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:214
+#, php-format
+msgid "%s submitted."
+msgstr "%s soumis."
+
+#. translators: %1$s: Name of the custom post type in singular form, %2$s: Revision title.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:216
+#, php-format
+msgid "%1$s scheduled for: <strong>%2$s</strong>."
+msgstr "%1$s prévues pour : <strong>%2$s</strong>."
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:216
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:220
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
+
+#. translators: %s: Name of the custom post type in singular form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:218
+#, php-format
+msgid "%s draft updated."
+msgstr "%s des brouillons mis à jour."
+
+#. translators: %s: Post link, %s: Preview post text, %s: Post type label.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:246
+#, php-format
+msgid "Preview %s"
+msgstr "Aperçu : %s"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:268
+msgid "post type"
+msgstr "type d'Article"
+
+#: extensions/mb-custom-post-type/inc/post-type/register.php:269
+msgid "post types"
+msgstr "types de post"
+
+#. translators: %1$s: Number of items, %2$s: Name of the post type in singular or plural form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:297
+#, php-format
+msgid "%1$s %2$s updated."
+msgstr "%1$s %2$s mis à jour."
+
+#. translators: %1$s: Number of items, %2$s: Name of the post type in singular or plural form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:299
+#, php-format
+msgid "%1$s %2$s not updated, somebody is editing."
+msgstr "%1$s %2$s non mis à jour, quelqu'un est en cours d'édition."
+
+#. translators: %1$s: Number of items, %2$s: Name of the post type in singular or plural form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:301
+#, php-format
+msgid "%1$s %2$s permanently deleted."
+msgstr "%1$s %2$s supprimé définitivement."
+
+#. translators: %1$s: Number of items, %2$s: Name of the post type in singular or plural form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:303
+#, php-format
+msgid "%1$s %2$s moved to the Trash."
+msgstr "%1$s %2$s déplacé vers la corbeille."
+
+#. translators: %1$s: Number of items, %2$s: Name of the post type in singular or plural form.
+#: extensions/mb-custom-post-type/inc/post-type/register.php:305
+#, php-format
+msgid "%1$s %2$s restored from the Trash."
+msgstr "%1$s %2$s restauré à partir de la corbeille."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:55
+msgid "Update %singular_name%"
+msgstr "Mise à jour %singular_name%"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:59
+msgid "Parent %singular_name%:"
+msgstr "Parent %singular_name%:"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:61
+msgid "Popular %name%"
+msgstr "% Nom populaire%"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:62
+msgid "Separate %name% with commas"
+msgstr "Séparez% Name% par des virgules"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:63
+msgid "Add or remove %name%"
+msgstr "Ajouter ou supprimer% Name%"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:64
+msgid "Choose most used %name%"
+msgstr "Choisissez le% nom le plus utilisé%"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:86
+msgid "General name for the taxonomy"
+msgstr "Nom général de la taxonomie"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:92
+msgid "Name for one object of this taxonomy"
+msgstr "Nom d'un objet de cette taxonomie"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:126
+msgid "Update item"
+msgstr "Mettre à jour l'élément"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:129
+msgid "The update item text"
+msgstr "Le texte de l'élément de mise à jour"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:138
+msgid "New item name"
+msgstr "Nouveau nom d'article"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:141
+msgid "The new item name text"
+msgstr "Le nouveau nom d'élément texte"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:144
+msgid "Parent Item"
+msgstr "Élément parent"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:147
+msgid "The parent item text"
+msgstr "Le texte de l'élément parent"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:150
+msgid "Parent Item Colon"
+msgstr "Deux-points de l'élément parent"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:153
+msgid "The same as parent item, but with colon (:) in the end"
+msgstr "Le même que l'élément parent, mais avec deux-points (:) à la fin"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:162
+msgid "Popular items"
+msgstr "Articles populaires"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:165
+msgid "The popular items text"
+msgstr "Le texte des articles populaires"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:168
+msgid "Separate items with commas"
+msgstr "Séparer les éléments par des virgules"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:171
+msgid "The separate items with commas text"
+msgstr "Les éléments séparés avec le texte de virgules"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:174
+msgid "Add or remove items"
+msgstr "Ajouter ou supprimer des éléments"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:177
+msgid "The add or remove items text"
+msgstr "Le texte ajouter ou supprimer des éléments"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:180
+msgid "Choose from most used"
+msgstr "Choisisser parmi les plus utilisés"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:183
+msgid "The choose from most used text"
+msgstr "Le choix du texte le plus utilisé"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:198
+msgid "If the taxonomy should be publicly queryable."
+msgstr "Si la taxonomie doit être publiquement requêtable."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:205
+msgid "Whether to generate a default UI for managing this taxonomy."
+msgstr "S'il faut générer une interface par défaut pour gérer cette taxonomie."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:212
+msgid ""
+"Where to show the taxonomy in the admin menu. <code>show_ui</code> must be "
+"<code>true</code>."
+msgstr ""
+"Où afficher la taxonomie dans le menu admin. <code> show_ui </code> doit "
+"être <code> véritable </code>."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:219
+msgid "Whether taxonomy is available for selection in navigation menus."
+msgstr ""
+"Si la taxonomie est disponible pour la sélection dans les menus de "
+"navigation."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:222
+msgid "Show on edit page?"
+msgstr "Afficher sur la page d'édition?"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:226
+msgid "Whether to show the taxonomy on the edit page."
+msgstr "Indique s'il faut afficher la taxonomie sur la page d'édition."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:229
+msgid "Show tag cloud?"
+msgstr "Afficher le nuage de balises?"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:233
+msgid "Whether to allow the Tag Cloud widget to use this taxonomy."
+msgstr ""
+"S’il faut autoriser le widget nuage de Tags à utiliser cette taxonomie."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:236
+msgid "Show in quick edit?"
+msgstr "Afficher en édition rapide?"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:240
+msgid "Whether to show the taxonomy in the quick/bulk edit panel."
+msgstr ""
+"Indique s'il faut afficher la taxonomie dans le panneau d'édition rapide/en "
+"bloc."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:243
+msgid "Show admin column?"
+msgstr "Afficher la colonne admin?"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:246
+msgid ""
+"Whether to allow automatic creation of taxonomy columns on associated post-"
+"types table."
+msgstr ""
+"S'il faut autoriser la création automatique des colonnes de taxonomie sur "
+"associés types après."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:249
+msgid "Show in REST?"
+msgstr "Afficher en REST?"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:252
+msgid "Whether to include the taxonomy in the REST API."
+msgstr "Si vous souhaitez ajouter le type de publication dans l'API REST."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:259
+msgid "Leave empty to use the taxonomy slug."
+msgstr "Laissez vide pour utiliser le slug taxonomie."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:265
+msgid ""
+"Is this taxonomy hierarchical (have descendants) like categories or not "
+"hierarchical like tags."
+msgstr ""
+"Cette taxonomie est-elle hiérarchique (avoir des descendants) comme des "
+"catégories ou pas hiérarchique comme des balises."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:272
+msgid ""
+"Uncheck to disable the query var, check to use the taxonomy's \"name\" as "
+"query var."
+msgstr ""
+"Décochez cette case pour désactiver la var de la requête, vérifiez qu'elle "
+"utilise le «nom» de la taxonomie comme requête var."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:275
+msgid "Sort?"
+msgstr "Trier?"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:278
+msgid ""
+"Whether this taxonomy should remember the order in which terms are added to "
+"objects."
+msgstr ""
+"Si cette taxonomie doit se rappeler l'ordre dans lequel les termes sont "
+"ajoutés aux objets."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:285
+msgid "Rewrite slug"
+msgstr "Réécrire slug"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:288
+msgid "Leave empty to use post type as rewrite slug."
+msgstr ""
+"Laissez vide pour utiliser le type de message comme slug de réécriture."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:297
+msgid "Hierarchical URL"
+msgstr "URL hiérarchique"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:399
+msgid "Assign To Post Types"
+msgstr "Assigner aux types de publication"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:415
+msgid "Upgrade to Meta Box Premium"
+msgstr "Mise à niveau vers Meta Box Premium"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:525
+msgid ""
+"Create custom fields with drag-n-drop interface - no coding knowledge "
+"required!"
+msgstr ""
+"Créer des champs personnalisés avec l'interface glisser-n-drop-aucune "
+"connaissance de codage requise!"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:526
+msgid "Add custom fields to taxonomies or user profile."
+msgstr ""
+"Ajoutez des champs personnalisés aux taxonomies ou au profil utilisateur."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:527
+msgid "Create custom settings pages."
+msgstr "Créer des pages de paramètres personnalisés."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:528
+msgid "Create frontend submission forms."
+msgstr "Créer des formulaires de soumission frondent."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:529
+msgid "And much more!"
+msgstr "Et bien plus encore!"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/edit.php:531
+msgid "Get Meta Box Premium now"
+msgstr "Obtenez Meta Box Premium dès maintenant"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:20
+msgctxt "Taxonomy General Name"
+msgid "Taxonomies"
+msgstr "Taxonomies"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:21
+msgctxt "Taxonomy Singular Name"
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:22
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:25
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:37
+#: extensions/meta-box-builder/inc/settings-gui.php:79
+msgid "Taxonomies"
+msgstr "Taxonomies"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:23
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:24
+msgid "Parent Taxonomy:"
+msgstr "Taxonomie parente:"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:26
+msgid "Add New Taxonomy"
+msgstr "Ajout une  nouvelle taxinomie"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:28
+msgid "New Taxonomy"
+msgstr "Nouvelle taxonomie"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:29
+msgid "Edit Taxonomy"
+msgstr "Editer Taxonomie"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:30
+msgid "Update Taxonomy"
+msgstr "Mise à jour de la taxonomie"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:31
+msgid "View Taxonomy"
+msgstr "Afficher la taxonomie"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:32
+msgid "Search Taxonomy"
+msgstr "Recherche taxonomie"
+
+#. translators: %s: Name of the taxonomy in singular form.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:145
+#, php-format
+msgid "Add new %s"
+msgstr "Ajouter un nouveau %s"
+
+#. translators: %s: Name of the taxonomy in singular form.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:149
+#, php-format
+msgid "Parent %s"
+msgstr "Parent %s"
+
+#. translators: %s: Name of the taxonomy in plural form.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:155
+#, php-format
+msgid "Popular %s"
+msgstr "Populaire %s"
+
+#. translators: %s: Name of the taxonomy in plural form.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:157
+#, php-format
+msgid "Separate %s with commas"
+msgstr "Séparez les %s avec des virgules"
+
+#. translators: %s: Name of the taxonomy in plural form.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:159
+#, php-format
+msgid "Add or remove %s"
+msgstr "Ajouter ou supprimer %s"
+
+#. translators: %s: Name of the taxonomy in plural form.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:161
+#, php-format
+msgid "Choose most used %s"
+msgstr "Choisissez le plus utilisé %s"
+
+#. translators: %s: Name of the taxonomy in plural form.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:163
+#, php-format
+msgid "No %s found"
+msgstr "Aucun %s trouvé"
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:210
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:213
+msgid "Taxonomy updated."
+msgstr "Taxonomie mise à jour."
+
+#. translators: %s: Date and time of the revision.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:215
+#, php-format
+msgid "Taxonomy restored to revision from %s."
+msgstr "Taxonomie restaurée à la révision à partir de %s."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:216
+msgid "Taxonomy published."
+msgstr "Taxonomie publiée."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:217
+msgid "Taxonomy saved."
+msgstr "Taxonomie sauvée."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:218
+msgid "Taxonomy submitted."
+msgstr "Taxonomie soumise."
+
+#. translators: %s: Date and time of the revision.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:220
+#, php-format
+msgid "Taxonomy scheduled for: <strong>%s</strong>."
+msgstr "Taxonomie planifiée pour: <strong> %s </strong>."
+
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:221
+msgid "Taxonomy draft updated."
+msgstr "Projet de taxonomie mis à jour."
+
+#. translators: %s: Name of the taxonomy in singular and plural form.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:238
+#, php-format
+msgid "%s taxonomy updated."
+msgid_plural "%s taxonomies updated."
+msgstr[0] "%s taxonomie mise à jour."
+msgstr[1] "%s taxonomies mises à jour."
+
+#. translators: %s: Name of the taxonomy in singular and plural form.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:240
+#, php-format
+msgid "%s taxonomy not updated, somebody is editing."
+msgid_plural "%s taxonomies not updated, somebody is editing."
+msgstr[0] "%s taxonomie non mise à jour, quelqu'un est en cours d'édition."
+msgstr[1] "%s taxonomies non mises à jour, quelqu'un est en cours d'édition."
+
+#. translators: %s: Name of the taxonomy in singular and plural form.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:242
+#, php-format
+msgid "%s taxonomy permanently deleted."
+msgid_plural "%s taxonomies permanently deleted."
+msgstr[0] "%s taxonomie définitivement supprimée."
+msgstr[1] "%s taxonomies définitivement supprimées."
+
+#. translators: %s: Name of the taxonomy in singular and plural form.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:244
+#, php-format
+msgid "%s taxonomy moved to the Trash."
+msgid_plural "%s taxonomies moved to the Trash."
+msgstr[0] "%s de la taxonomie déplacée vers la corbeille."
+msgstr[1] "%s taxonomies déplacées vers la corbeille."
+
+#. translators: %s: Name of the taxonomy in singular and plural form.
+#: extensions/mb-custom-post-type/inc/taxonomy/register.php:246
+#, php-format
+msgid "%s taxonomy restored from the Trash."
+msgid_plural "%s taxonomies restored from the Trash."
+msgstr[0] "%s la taxonomie restaurée à partir de la corbeille."
+msgstr[1] "%s taxonomies restaurées à partir de la corbeille."
+
+#: extensions/mb-custom-post-type/mb-custom-post-type.php:82
+msgid "activate"
+msgstr "activer"
+
+#: extensions/mb-custom-post-type/mb-custom-post-type.php:82
+msgid "install"
+msgstr "installer"
+
+#: extensions/mb-custom-post-type/mb-custom-post-type.php:84
+msgid "MB Custom Post Type"
+msgstr "Type de poteau personnalisé MB"
+
+#: extensions/mb-custom-post-type/mb-custom-post-type.php:85
+msgid "Meta Box"
+msgstr "Meta Box"
+
+#: extensions/mb-custom-post-type/mb-custom-post-type.php:88
+#, php-format
+msgid "%1$s requires %2$s to function correctly. %3$s to %4$s %2$s."
+msgstr "%1$s nécessite%2$s pour fonctionner correctement. %3$s à%4$s %2$s."
+
+#: extensions/mb-custom-post-type/mb-custom-post-type.php:91
+msgid "Click here"
+msgstr "Cliquez ici"
+
+#: extensions/mb-elementor-integrator/tags/base.php:6
+#: extensions/meta-box-beaver-themer-integrator/class-mbbti-base.php:53
+#: extensions/meta-box-beaver-themer-integrator/class-mbbti-base.php:71
+msgid "Meta Box Field"
+msgstr "Champ Meta Box"
+
+#: extensions/mb-elementor-integrator/tags/base.php:23
+msgid "Field"
+msgstr "Champ"
+
+#: extensions/mb-elementor-integrator/tags/base.php:32
+msgid "---"
+msgstr "---"
+
+#: extensions/mb-frontend-submission/inc/class-mb-frontend-form-shortcode.php:108
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-info.php:41
+msgid "Submit"
+msgstr "Suggérer"
+
+#: extensions/mb-frontend-submission/inc/class-mb-frontend-form-shortcode.php:109
+msgid "Your post has been successfully submitted. Thank you."
+msgstr "Votre message a été soumis avec succès. Merci."
+
+#: extensions/mb-frontend-submission/inc/class-mb-frontend-form.php:156
+#: extensions/mb-user-profile/inc/forms/class-mb-user-profile-form.php:151
+msgid "Clear"
+msgstr "Effacer"
+
+#: extensions/mb-frontend-submission/inc/class-mb-frontend-form.php:157
+#: extensions/mb-user-profile/inc/forms/class-mb-user-profile-form.php:152
+msgid "Clear color"
+msgstr "Couleur claire"
+
+#: extensions/mb-frontend-submission/inc/class-mb-frontend-form.php:158
+#: extensions/mb-user-profile/inc/forms/class-mb-user-profile-form.php:153
+#: extensions/meta-box-builder/inc/settings-gui.php:128
+msgid "Default"
+msgstr "Par défaut"
+
+#: extensions/mb-frontend-submission/inc/class-mb-frontend-form.php:159
+#: extensions/mb-user-profile/inc/forms/class-mb-user-profile-form.php:154
+msgid "Select default color"
+msgstr "Couleur par défaut"
+
+#: extensions/mb-frontend-submission/inc/class-mb-frontend-form.php:160
+#: extensions/mb-user-profile/inc/forms/class-mb-user-profile-form.php:155
+msgid "Select Color"
+msgstr "Sélectionner une couleur"
+
+#: extensions/mb-frontend-submission/inc/class-mb-frontend-form.php:161
+#: extensions/mb-user-profile/inc/forms/class-mb-user-profile-form.php:156
+msgid "Color value"
+msgstr "Valeur de couleur"
+
+#: extensions/mb-frontend-submission/inc/class-mb-frontend-post.php:134
+msgid "(No title)"
+msgstr "(Aucun titre)"
+
+#: extensions/mb-frontend-submission/templates/post/content.php:10
+msgid "Content"
+msgstr "Contenu"
+
+#: extensions/mb-frontend-submission/templates/post/date.php:10
+msgid "Date"
+msgstr "Date"
+
+#: extensions/mb-relationships/inc/class-mb-relationships-relationship-factory.php:126
+msgid "Connects To"
+msgstr "Se connecte à"
+
+#: extensions/mb-relationships/inc/class-mb-relationships-relationship-factory.php:126
+msgid "Connected From"
+msgstr "Connecté à partir de"
+
+#: extensions/mb-relationships/inc/class-mb-relationships-relationship-factory.php:139
+msgid "No connections"
+msgstr "Aucune connexion"
+
+#: extensions/mb-settings-page/inc/class-mb-settings-page.php:71
+msgid "Save Settings"
+msgstr "Sauvegarder les paramètres"
+
+#: extensions/mb-settings-page/inc/class-mb-settings-page.php:72
+#: extensions/meta-box-updater/class-mb-updater-settings.php:110
+msgid "Settings saved."
+msgstr "Paramètres sauvegardés."
+
+#: extensions/mb-term-meta/inc/class-mb-term-meta-box.php:97
+msgid "Term added."
+msgstr "Terme ajouté."
+
+#: extensions/mb-user-profile/inc/class-mb-user-profile-user.php:76
+msgid "Invalid user ID."
+msgstr "ID d'utilisateur non valide."
+
+#: extensions/mb-user-profile/inc/class-mb-user-profile-user.php:86
+#: extensions/mb-user-profile/inc/class-mb-user-profile-user.php:114
+msgid "Passwords do not coincide."
+msgstr "Les mots de passe ne coïncident pas."
+
+#: extensions/mb-user-profile/inc/class-mb-user-profile-user.php:106
+msgid "Your username already exists."
+msgstr "Votre nom d'utilisateur existe déjà."
+
+#: extensions/mb-user-profile/inc/class-mb-user-profile-user.php:110
+msgid "Your email already exists."
+msgstr "Votre email existe déjà."
+
+#: extensions/mb-user-profile/inc/forms/class-mb-user-profile-form-info.php:20
+msgid "Please login to continue."
+msgstr "Veuillez vous connecter pour continuer."
+
+#: extensions/mb-user-profile/inc/forms/class-mb-user-profile-form-login.php:20
+msgid "You are already logged in."
+msgstr "Vous êtes déjà connecté."
+
+#: extensions/mb-user-profile/inc/forms/class-mb-user-profile-form.php:104
+msgid "Invalid form submit."
+msgstr "Formulaire non valide soumettre."
+
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-info.php:39
+#: extensions/mb-user-profile/mb-user-profile-fields.php:71
+msgid "New Password"
+msgstr "Nouveau mot de passe"
+
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-info.php:40
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-register.php:42
+#: extensions/mb-user-profile/mb-user-profile-fields.php:36
+#: extensions/mb-user-profile/mb-user-profile-fields.php:77
+msgid "Confirm Password"
+msgstr "Confirmer le mot de passe"
+
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-info.php:47
+msgid "Your information has been successfully submitted. Thank you."
+msgstr "Votre information a été soumise avec succès. Merci."
+
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-login.php:41
+#: extensions/mb-user-profile/mb-user-profile-fields.php:50
+msgid "Username or Email Address"
+msgstr "Identifiant ou adresse email"
+
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-login.php:42
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-register.php:41
+#: extensions/mb-user-profile/mb-user-profile-fields.php:30
+#: extensions/mb-user-profile/mb-user-profile-fields.php:56
+msgid "Password"
+msgstr "Mot de passe"
+
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-login.php:43
+msgid "Remember Me"
+msgstr "Se souvenir de moi"
+
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-login.php:44
+msgid "Lost Password?"
+msgstr "Mot de passe oublié ?"
+
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-login.php:45
+msgid "Log In"
+msgstr "Connexion"
+
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-login.php:57
+msgid "You are now logged in."
+msgstr "Vous êtes maintenant connecté."
+
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-register.php:39
+#: extensions/mb-user-profile/mb-user-profile-fields.php:18
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-register.php:40
+#: extensions/mb-user-profile/mb-user-profile-fields.php:24
+msgid "Email"
+msgstr "E-mail"
+
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-register.php:43
+msgid "Register"
+msgstr "S'inscrire"
+
+#: extensions/mb-user-profile/inc/shortcodes/class-mb-user-profile-shortcode-register.php:51
+msgid "Your account has been created successfully."
+msgstr "Votre compte a été créé avec succès."
+
+#: extensions/meta-box-beaver-themer-integrator/class-mbbti-base.php:87
+#: extensions/meta-box-beaver-themer-integrator/class-mbbti-base.php:107
+msgid "Field Name"
+msgstr "Nom du champ"
+
+#: extensions/meta-box-beaver-themer-integrator/class-mbbti-base.php:93
+msgid "Image Size"
+msgstr "Taille de l'image"
+
+#: extensions/meta-box-beaver-themer-integrator/class-mbbti-base.php:97
+msgid "Date Format"
+msgstr "Format de date"
+
+#: extensions/meta-box-beaver-themer-integrator/class-mbbti-base.php:98
+msgid ""
+"Enter a <a href=\"http://php.net/date\">PHP date format string</a>. Leave "
+"empty to use the default field format."
+msgstr ""
+"Entrez un < a href = \"http://php.net/date\" > Chaîne de format de date PHP "
+"</a>. Laissez vide pour utiliser le format de champ par défaut."
+
+#: extensions/meta-box-builder/inc/class-mbb-admin-columns.php:12
+msgid "Location"
+msgstr "Lieu"
+
+#: extensions/meta-box-builder/inc/class-mbb-admin-columns.php:27
+#: extensions/meta-box-builder/inc/settings-gui.php:10
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: extensions/meta-box-builder/inc/class-mbb-admin-columns.php:33
+#: extensions/meta-box-builder/inc/settings-gui.php:12
+msgid "Attachments"
+msgstr "Pièces jointes"
+
+#: extensions/meta-box-builder/inc/class-mbb-admin-columns.php:49
+#, php-format
+msgid "Settings Page: %s"
+msgid_plural "Settings Pages: %s"
+msgstr[0] "Page de Paramètres: %s"
+msgstr[1] "Pages de paramètres: %s"
+
+#: extensions/meta-box-builder/inc/class-mbb-admin-columns.php:57
+#, php-format
+msgid "Post Type: %s"
+msgid_plural "Post Types: %s"
+msgstr[0] "Type de message: %s"
+msgstr[1] "Types de messages: %s"
+
+#: extensions/meta-box-builder/inc/class-mbb-admin-columns.php:65
+#, php-format
+msgid "Taxonomy: %s"
+msgid_plural "Taxonomies: %s"
+msgstr[0] "Taxonomie: %s"
+msgstr[1] "Taxonomies: %s"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:131
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:134
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:137
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:138
+msgid "Field group updated."
+msgstr "Groupe de champs mis à jour."
+
+#. translators: %s: date and time of the revision
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:136
+#, php-format
+msgid "Field group restored to revision from %s"
+msgstr "Groupe de champs restauré depuis la révision du %s"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:139
+msgid "Field group submitted."
+msgstr "Groupe de champs soumis."
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:278
+msgctxt "post type general name"
+msgid "Field Groups"
+msgstr "Groupes de champs"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:279
+msgctxt "post type singular name"
+msgid "Field Group"
+msgstr "Champ groupe"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:280
+msgctxt "admin menu"
+msgid "Custom Fields"
+msgstr "Champs personnalisés"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:281
+msgctxt "add new on admin bar"
+msgid "Custom Fields"
+msgstr "Champs personnalisés"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:282
+msgctxt "meta-box-builder"
+msgid "Add New"
+msgstr "Ajouter Nouvel"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:283
+msgid "Add New Field Group"
+msgstr "Ajouter un nouveau groupe de champs"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:284
+msgid "New Field Group"
+msgstr "Nouveau groupe de champs"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:285
+msgid "Edit Field Group"
+msgstr "Modifier le groupe de champs"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:286
+msgid "View Field Group"
+msgstr "Afficher le groupe de champs"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:287
+msgid "Custom Fields"
+msgstr "Champs personnalisés"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:288
+msgid "Search Field Groups"
+msgstr "Rechercher groupe de champs"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:289
+msgid "Parent Field Groups:"
+msgstr "Groupes de champs parents:"
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:290
+msgid "No field groups found."
+msgstr "Aucun groupe de champs n'a été trouvé."
+
+#: extensions/meta-box-builder/inc/class-meta-box-builder.php:291
+msgid "No field groups found in Trash."
+msgstr "Aucun groupe de champs n'a été trouvé dans la corbeille."
+
+#: extensions/meta-box-builder/inc/class-meta-box-import.php:11
+msgid "Import"
+msgstr "Importer"
+
+#: extensions/meta-box-builder/inc/class-meta-box-import.php:41
+msgid "Import Field Groups"
+msgstr "Groupes Champ Importer"
+
+#: extensions/meta-box-builder/inc/class-meta-box-import.php:44
+msgid "Tigh tigh tigh! Field groups has imported successfully!"
+msgstr "Tigh Tigh Tigh! Les groupes de champs ont été importés avec succès!"
+
+#: extensions/meta-box-builder/inc/class-meta-box-import.php:47
+msgid ""
+"Choose a <code>.dat</code> file to upload, then click <strong>Upload file "
+"and import.</strong>"
+msgstr ""
+"Choisissez un fichier </code>. dat <code> à télécharger, puis cliquez sur "
+"<strong>Télécharger le fichier et importer.</strong>"
+
+#: extensions/meta-box-builder/inc/class-meta-box-import.php:51
+msgid "Choose a file from your computer:"
+msgstr "Choisir un fichier sur votre ordinateur :"
+
+#: extensions/meta-box-builder/inc/class-meta-box-import.php:56
+msgid "Upload file and import"
+msgstr "Envoyer le fichier et importer"
+
+#: extensions/meta-box-builder/inc/components/tabs.php:8
+#: extensions/meta-box-builder/inc/components/tabs.php:13
+#: extensions/meta-box-builder/inc/fields-gui.php:81
+msgid "Fields"
+msgstr "Champs"
+
+#: extensions/meta-box-builder/inc/components/tabs.php:9
+#: extensions/meta-box-builder/inc/components/tabs.php:14
+msgid "Settings"
+msgstr "Paramètres"
+
+#: extensions/meta-box-builder/inc/fields-gui.php:12
+msgid "Enter field type here"
+msgstr "Entrez le type de champ ici"
+
+#: extensions/meta-box-builder/inc/fields-gui.php:32
+msgid "Press return or enter to expand"
+msgstr "Appuyer sur entrée pour déployer"
+
+#: extensions/meta-box-builder/inc/fields-gui.php:59
+msgid "Enter name here"
+msgstr "Entrer le nom ici"
+
+#: extensions/meta-box-builder/inc/fields-gui.php:62
+msgid "ID"
+msgstr "ID"
+
+#: extensions/meta-box-builder/inc/fields-gui.php:68
+#: extensions/meta-box-builder/inc/fields-gui.php:139
+msgid "Switch to Draft"
+msgstr "Passer au brouillon"
+
+#: extensions/meta-box-builder/inc/fields-gui.php:69
+#: extensions/meta-box-builder/inc/fields-gui.php:140
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: extensions/meta-box-builder/inc/fields-gui.php:71
+#: extensions/meta-box-builder/inc/fields-gui.php:142
+msgid "Save Draft"
+msgstr "Enregistrer le brouillon"
+
+#: extensions/meta-box-builder/inc/fields-gui.php:72
+#: extensions/meta-box-builder/inc/fields-gui.php:143
+msgid "Publish"
+msgstr "Publier"
+
+#: extensions/meta-box-builder/inc/fields-gui.php:83
+msgid ""
+"No fields. Click the field buttons on the left true create your first field."
+msgstr ""
+"Pas de champs. Cliquez sur les boutons de champ sur la gauche true créer "
+"votre premier champ."
+
+#: extensions/meta-box-builder/inc/fields-gui.php:86
+msgid ""
+"Drag each item into the order you prefer. Click the arrow on the right of "
+"the item to reveal additional configuration options."
+msgstr ""
+"Faites glisser chaque élément dans l’ordre que vous préférez. Cliquez sur la "
+"flèche à droite de l’élément à révéler les options de configuration "
+"supplémentaires."
+
+#: extensions/meta-box-builder/inc/fields-gui.php:103
+msgid "Edit"
+msgstr "Modifier"
+
+#: extensions/meta-box-builder/inc/fields-gui.php:111
+#: extensions/meta-box-group/class-rwmb-group-field.php:147
+msgid "Remove"
+msgstr "Supprimer"
+
+#: extensions/meta-box-builder/inc/fields-gui.php:113
+msgid "Cancel"
+msgstr "Annuler"
+
+#: extensions/meta-box-builder/inc/fields-gui.php:114
+msgid "Duplicate"
+msgstr "Dupliquer"
+
+#: extensions/meta-box-builder/inc/fields-gui.php:120
+msgid "Drag and drop child fields here."
+msgstr "Glissez et déposez les champs enfants ici."
+
+#: extensions/meta-box-builder/inc/fields-gui.php:134
+msgid "Move to Trash"
+msgstr "Mettre à la corbeille"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:1
+msgid "General"
+msgstr "Général"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:4
+msgid "Show for"
+msgstr "Afficher les détails"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:7
+msgid "Posts"
+msgstr "Articles"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:8
+msgid "Terms"
+msgstr "Termes"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:9
+#: extensions/meta-box-builder/inc/settings-gui.php:88
+msgid "Setting Pages"
+msgstr "Paramétrage des pages"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:17
+msgid "Post types"
+msgstr "Modifier cet article"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:23
+msgid "Options"
+msgstr "Options"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:27
+msgid "Position"
+msgstr "Position"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:31
+msgid "Normal (after content)"
+msgstr "Normal (après le contenu)"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:32
+msgid "Advanced (after normal)"
+msgstr "Avancé (après la normale)"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:33
+msgid "Side"
+msgstr "Côté"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:34
+msgid "Before post title"
+msgstr "Avant de poster le titre"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:35
+msgid "After post title"
+msgstr "Après le titre du poste"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:36
+msgid "After the post content editor"
+msgstr "Après le titre du poste"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:37
+msgid "Before permalink"
+msgstr "Avant Permalink"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:42
+msgid "Priority"
+msgstr "Priorité"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:46
+msgid "High"
+msgstr "Élevé"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:49
+msgid "Low"
+msgstr "Basse"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:55
+msgid "Style"
+msgstr "Style"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:58
+msgid "Standard (WordPress meta box)"
+msgstr "Standard (WordPress Meta Box)"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:59
+msgid "Seamless (no meta box)"
+msgstr "Sans couture (pas de méta-boîte)"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:64
+msgid "Hidden by default."
+msgstr "Masqué par défaut."
+
+#: extensions/meta-box-builder/inc/settings-gui.php:68
+msgid ""
+"The meta box is hidden by default and requires users to select the "
+"corresponding checkbox in Screen Options to show it"
+msgstr ""
+"La boîte de métadonnées est masquée par défaut et nécessite que les "
+"utilisateurs sélectionnent la case correspondante dans les options d'écran "
+"pour le montrer"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:73
+msgid "Autosave"
+msgstr "Sauvegarde Automatique"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:83
+#: extensions/meta-box-builder/inc/settings-gui.php:92
+#: extensions/meta-box-builder/inc/settings-gui.php:100
+#: extensions/meta-box-builder/inc/settings-gui.php:108
+#: extensions/meta-box-builder/inc/settings-gui.php:145
+#: extensions/meta-box-builder/inc/settings-gui.php:194
+#, php-format
+msgid "Requires %s."
+msgstr "Nécessite %s."
+
+#: extensions/meta-box-builder/inc/settings-gui.php:114
+msgid "Show in media modal?"
+msgstr "Afficher dans Media modal?"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:121
+msgid "Tabs"
+msgstr "Onglets"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:124
+msgid "Tabs style"
+msgstr "Style des onglets"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:129
+msgid "Box"
+msgstr "Boîte"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:130
+msgid "Left"
+msgstr "Gauche"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:136
+msgid "Show meta box wrapper"
+msgstr "Afficher la bande de la méta-boîte"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:143
+msgid "Custom Table"
+msgstr "Tableau personnalisé"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:150
+msgid "Use custom table"
+msgstr "Utiliser une table personnalisée"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:156
+msgid "Table name"
+msgstr "Nom du tableau"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:164
+msgid "Custom Attributes"
+msgstr "Attributs personnalisés"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:165
+msgid "See documentation"
+msgstr "Voir la documentation"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:187
+msgid "+ Attribute"
+msgstr "+ Attribut"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:192
+msgid "Conditional Logic"
+msgstr "Logique conditionnelle"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:201
+msgid ""
+"This conditional logic applies to current Meta Box, for fields conditional "
+"logic, please go to each field and set."
+msgstr ""
+"Cette logique conditionnelle s'applique à la boîte de métadonnées actuelle, "
+"pour les champs de la logique conditionnelle, s'il vous plaît aller dans "
+"chaque champ les définir."
+
+#: extensions/meta-box-builder/inc/settings-gui.php:206
+msgid "Visible"
+msgstr "Visible"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:207
+msgid "Hidden"
+msgstr "Masqué"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:210
+msgid "when"
+msgstr "quand"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:214
+msgid "Any"
+msgstr "Tous"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:217
+msgid "of these conditions match"
+msgstr "de ces conditions correspondent"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:261
+msgid "+ Condition"
+msgstr "+ Condition"
+
+#: extensions/meta-box-builder/inc/settings-gui.php:272
+#: extensions/meta-box-template/inc/class-mb-template-settings.php:69
+#: extensions/meta-box-updater/class-mb-updater-settings.php:84
+msgid "Save Changes"
+msgstr "Enregistrer les modifications"
+
+#: extensions/meta-box-builder/meta-box-builder.php:33
+msgid ""
+"Meta Box Builder plugin requires PHP version 5.3+. Please contact your host "
+"and ask them to upgrade."
+msgstr ""
+"Meta Box Builder plugin nécessite PHP version 5.3 +. S'il vous plaît "
+"contacter votre hôte et leur demander de mettre à niveau."
+
+#: extensions/meta-box-facetwp-integrator/class-mb-facetwp-integrator.php:147
+msgid "Yes"
+msgstr "Oui"
+
+#: extensions/meta-box-facetwp-integrator/class-mb-facetwp-integrator.php:147
+msgid "No"
+msgstr "Non"
+
+#: extensions/meta-box-group/class-rwmb-group-field.php:63
+msgid "Are you sure you want to remove this group?"
+msgstr "Êtes-vous sûr de vouloir supprimer ce groupe?"
+
+#: extensions/meta-box-group/class-rwmb-group-field.php:345
+msgid "Entry {#}"
+msgstr "Entrée {#}"
+
+#: extensions/meta-box-group/class-rwmb-group-field.php:345
+msgid "Entry"
+msgstr "Entrée"
+
+#: extensions/meta-box-template/inc/class-mb-template-settings.php:34
+msgid "Enter template:"
+msgstr "Entrez le modèle:"
+
+#: extensions/meta-box-template/inc/class-mb-template-settings.php:35
+msgid "Or specify path to config file:"
+msgstr "Ou spécifiez le chemin d'accès au fichier de configuration:"
+
+#: extensions/meta-box-template/inc/class-mb-template-settings.php:42
+#: extensions/meta-box-template/inc/class-mb-template-settings.php:61
+msgid "Template"
+msgstr "Modèle"
+
+#: extensions/meta-box-template/inc/class-mb-template-settings.php:87
+#, php-format
+msgid ""
+"Supports YAML format. See <a href=\"%s\" target=\"_blank\">documentation</a>."
+msgstr ""
+"Prend en charge le format YAML. Voir < a href = \" %s\" target = \"_ blank\" "
+"> documentation </a>."
+
+#: extensions/meta-box-template/inc/class-mb-template-settings.php:104
+msgid ""
+"Please enter absolute path to <code>.yaml</code> file. Supports following "
+"variables (no trailing slash):"
+msgstr ""
+"Veuillez entrer le chemin d'accès absolu au fichier <code>. YAML </code>. "
+"Prend en charge les variables suivantes (pas de barre oblique):"
+
+#: extensions/meta-box-template/inc/class-mb-template-settings.php:109
+msgid "Path to <code>wp-content</code> directory"
+msgstr "Chemin d'accès à <code> wp-content </code> répertoire"
+
+#: extensions/meta-box-template/inc/class-mb-template-settings.php:113
+msgid "Path to <code>wp-content/plugins</code> directory"
+msgstr "Chemin d'accès à <code> wp-content/plugins </code> répertoire"
+
+#: extensions/meta-box-template/inc/class-mb-template-settings.php:117
+#, php-format
+msgid ""
+"Path to <code>wp-content/themes</code> directory. Same as <a href=\"%s"
+"\">get_theme_root()</a> function"
+msgstr ""
+"Chemin d'accès à <code> wp-content/themes </code> répertoire. Identique à < "
+"a href = \" %s\" > get_theme_root () </a> fonction"
+
+#: extensions/meta-box-template/inc/class-mb-template-settings.php:121
+#, php-format
+msgid ""
+"Path to current theme directory. Same as <a href=\"%s"
+"\">get_template_directory()</a> function"
+msgstr ""
+"Chemin d'accès au répertoire du thème actuel. Identique à < a href = \" %s\" "
+"> get_template_directory () </a> fonction"
+
+#: extensions/meta-box-template/inc/class-mb-template-settings.php:125
+#, php-format
+msgid ""
+"Path to current child theme directory. Same as <a href=\"%s"
+"\">get_stylesheet_directory()</a> function"
+msgstr ""
+"Chemin d'accès au répertoire de thème enfant actuel. Identique à < a href = "
+"\" %s\" > get_stylesheet_directory () </a> fonction"
+
+#: extensions/meta-box-text-limiter/text-limiter.php:63
+msgid "Word Count"
+msgstr "Nombre de mots"
+
+#: extensions/meta-box-text-limiter/text-limiter.php:63
+msgid "Character Count"
+msgstr "Nombre de caractères"
+
+#: extensions/meta-box-updater/class-mb-updater-settings.php:42
+msgid "Meta Box Updater"
+msgstr "Meta Box Updater"
+
+#: extensions/meta-box-updater/class-mb-updater-settings.php:42
+msgid "License"
+msgstr "Licence"
+
+#: extensions/meta-box-updater/class-mb-updater-settings.php:57
+msgid "Meta Box License"
+msgstr "Licence Meta Box"
+
+#: extensions/meta-box-updater/class-mb-updater-settings.php:58
+msgid ""
+"Please enter your license key to receive automatic updates for Meta Box "
+"extensions."
+msgstr ""
+"Veuillez entrer votre clé de licence pour recevoir des mises à jour "
+"automatiques pour les extensions Meta Box."
+
+#: extensions/meta-box-updater/class-mb-updater-settings.php:63
+#, php-format
+msgid ""
+"To get the license key, please visit your profile page at <a href=\"%s\" "
+"target=\"_blank\">metabox.io website</a>."
+msgstr ""
+"Pour obtenir la clé de licence, s'il vous plaît visitez votre page de profil "
+"à < a href = \" %s\" target = \"_ blank\" > METABOX. IO site Web </a>."
+
+#: extensions/meta-box-updater/class-mb-updater-settings.php:79
+msgid "License Key"
+msgstr "Clé de licence"
+
+#: extensions/meta-box-updater/class-mb-updater-settings.php:135
+#, php-format
+msgid ""
+"<b>Warning!</b> You have not set your Meta Box license key yet, which means "
+"you are missing out on automatic updates and support! <a href=\"%1$s\">Enter "
+"your license key</a> or <a href=\"%2$s\" target=\"_blank\">get one here</a>."
+msgstr ""
+"<b> Avertissement! </b> Vous n'avez pas encore défini votre clé de licence "
+"Meta Box, ce qui signifie que vous manquez de mises à jour automatiques et "
+"de support! < a href = \"%1$s\" > Entrez votre clé de licence </a> ou < a "
+"href = \"%2$s\" target = \"_ blank\" > obtenir un ici </a>."
+
+#: extensions/meta-box-updater/class-mb-updater-settings.php:137
+#, php-format
+msgid ""
+"<b>Warning!</b> Your license key for Meta Box is invalid or expired. Please "
+"<a href=\"%1$s\">fix it</a> or <a href=\"%2$s\" target=\"_blank\">renew</a> "
+"to receive automatic updates and premium support."
+msgstr ""
+"<b> Avertissement! </b> Votre clé de licence pour Meta Box n'est pas valide "
+"ou a expiré. S'il vous plaît < a href = \"%1$s\" > Fix il </a> ou < a href = "
+"\"%2$s\" target = \"_ blank\" > renouveler </a> pour recevoir les mises à "
+"jour automatiques et le support Premium."
+
+#. Plugin Name of the plugin/theme
+msgid "Meta Box AIO"
+msgstr "Meta Box AIO"
+
+#. Plugin URI of the plugin/theme
+msgid "https://metabox.io/plugins/developer-bundle/"
+msgstr "https://METABOX.IO/plugins/Developer-Bundle/"
+
+#. Description of the plugin/theme
+msgid "All Meta Box extensions in one package."
+msgstr "Toutes les extensions Meta Box dans un seul paquet."
+
+#. Author of the plugin/theme
+msgid "MetaBox.io"
+msgstr "MetaBox.io"
+
+#. Author URI of the plugin/theme
+msgid "https://metabox.io"
+msgstr "https://METABOX.IO"

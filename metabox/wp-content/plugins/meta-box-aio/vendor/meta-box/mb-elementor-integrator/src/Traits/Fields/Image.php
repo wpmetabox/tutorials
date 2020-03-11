@@ -1,0 +1,49 @@
+<?php
+namespace MBEI\Traits\Fields;
+
+use Elementor\Modules\DynamicTags\Module;
+
+trait Image {
+	public function get_categories() {
+		return [
+			Module::IMAGE_CATEGORY,
+			Module::GALLERY_CATEGORY,
+		];
+	}
+
+	public function get_value( array $options = [] ) {
+		$images = self::handle_get_value();
+
+		if ( empty( $images ) ) {
+			return;
+		}
+
+		// Single image.
+		if ( isset( $images['ID'] ) ) {
+			return [
+				'id'  => $images['ID'],
+				'url' => $images['full_url'],
+			];
+		}
+
+		// Multiple images.
+		$value = [];
+		foreach ( $images as $image ) {
+			$value[] = [
+				'id' => $image['ID'],
+			];
+		}
+
+		return $value;
+	}
+
+	private function get_supported_fields() {
+		return [
+			'image',
+			'single_image',
+			'image_advanced',
+			'image_upload',
+			'image_select',
+		];
+	}
+}

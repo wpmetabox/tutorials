@@ -1,0 +1,87 @@
+$amePostboxBorderColor: #ccd0d4; //Was #e5e5e5 before WP 5.3.
+
+@mixin ame-emulated-postbox($toggleWidth: 36px, $horizontalPadding: 12px) {
+	$borderColor: $amePostboxBorderColor;
+	$headerBackground: #fff;
+
+	position: relative;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	background: $headerBackground;
+
+	margin-bottom: 20px;
+
+	.ws-ame-postbox-header {
+		position: relative;
+		font-size: 14px;
+		margin: 0;
+		line-height: 1.4;
+
+		border: 1px solid $borderColor;
+
+		h3 {
+			padding: 10px $horizontalPadding;
+			margin: 0;
+			font-size: 1em;
+			line-height: 1;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+	}
+
+	.ws-ame-postbox-toggle {
+		color: #72777c;
+		background: $headerBackground;
+
+		display: block;
+		font: normal 20px/1 dashicons;
+		text-align: center;
+		cursor: pointer;
+		border: none;
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: $toggleWidth;
+		height: 100%;
+		padding: 0;
+
+		&:hover {
+			color: #23282d;
+		}
+
+		&:active, &:focus {
+			outline: none;
+			padding: 0;
+		}
+
+		&:before {
+			content: '\f142';
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		&:after {
+			display: inline-block;
+			content: "";
+			vertical-align: middle;
+			height: 100%;
+		}
+	}
+
+	.ws-ame-postbox-content {
+		border: 1px solid $borderColor;
+		border-top: none;
+
+		padding: $horizontalPadding;
+	}
+
+	&.ws-ame-closed-postbox .ws-ame-postbox-content {
+		display: none;
+	}
+
+	&.ws-ame-closed-postbox .ws-ame-postbox-toggle:before {
+		content: '\f140'; //downward triangle
+	}
+}

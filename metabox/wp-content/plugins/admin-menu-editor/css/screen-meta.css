@@ -1,0 +1,51 @@
+/************************************
+        Screen meta buttons
+            for WP 3.8+
+*************************************/
+
+/* All buttons */
+.custom-screen-meta-link-wrap {
+    float: right;
+    height: 28px;
+    margin: 0 0 0 6px;
+
+    border: 1px solid #ccd0d4;
+    border-top: none;
+	border-radius: 0 0 4px 4px;
+
+    background: #fff;
+    box-shadow: none;
+}
+
+#screen-meta .custom-screen-meta-link-wrap a.custom-screen-meta-link,
+#screen-meta-links .custom-screen-meta-link-wrap a.custom-screen-meta-link
+{
+    padding: 3px 16px 3px 16px;
+    text-decoration: none;
+    display: block;
+    min-height: 22px;
+	box-shadow: none;
+}
+
+#screen-meta-links a.custom-screen-meta-link::after {
+    display: none;
+}
+
+/* "Upgrade to Pro" */
+#ws-pro-version-notice {
+    background-color: #00C31F;
+    border-color: #0a0;
+}
+
+#screen-meta-links #ws-pro-version-notice a.show-settings {
+    font-weight: bold;
+    color: #DEFFD8;
+    text-shadow: none;
+	box-shadow: none;
+	border: none;
+	background-color: #00C31F;
+}
+
+#screen-meta-links  #ws-pro-version-notice a.show-settings:hover {
+    color: white;
+}

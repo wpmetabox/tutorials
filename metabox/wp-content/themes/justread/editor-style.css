@@ -1,0 +1,365 @@
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body {
+	color: #263238;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+	color: #0f161a;
+	line-height: 1.25;
+	clear: both;
+	margin: 1.5em 0 .5em;
+}
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 2.4em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h5 {
+	font-size: .8em;
+}
+
+h6 {
+	font-size: .7em;
+}
+
+p {
+	margin: 0 0 1.6em;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+blockquote {
+	font-size: 1.2em;
+	font-style: italic;
+	border-top: 4px solid currentColor;
+	padding: 1em 0 0 2.5em;
+	margin: 0 0 1.6em;
+	position: relative;
+}
+
+blockquote:before {
+	content: "\201C";
+	position: absolute;
+	left: 0;
+	top: .06em;
+	font-size: 3em;
+	font-style: normal;
+}
+
+blockquote cite {
+	display: block;
+	margin-top: .8em;
+	font-size: 14px;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+	font-style: normal;
+	color: #6f8590;
+}
+
+blockquote cite:before {
+	content: '\2014';
+	margin-right: .5rem;
+}
+
+address {
+	margin: 0 0 1.6em;
+}
+
+pre {
+	background: #263238;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: .8em;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	overflow: auto;
+	padding: 2em;
+	color: #e3e6e8;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 0.84090145em;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #f5f7f8;
+	/* Fallback for when there is no custom background color defined. */
+}
+
+hr {
+	background-color: rgba(38, 50, 56, 0.1);
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.6em;
+	clear: both;
+}
+
+ul, ol {
+	margin: 0 0 1.6em;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.6em;
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+figure {
+	margin: 0 0 1.6em;
+	/* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+	margin: 0 0 1.6em;
+	width: 100%;
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+th, td {
+	padding: .5rem .75rem;
+}
+
+th:first-child, td:first-child {
+	padding-left: 0;
+}
+
+th:last-child, td:last-child {
+	padding-right: 0;
+}
+
+tr {
+	border-bottom: 1px solid rgba(38, 50, 56, 0.1);
+}
+
+thead tr {
+	border-width: .25rem;
+}
+
+thead th {
+	text-transform: uppercase;
+	text-align: left;
+	font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+	font-size: 1rem;
+}
+
+.wp-block-pullquote.aligncenter, .wp-block-pullquote.alignwide, .wp-block-pullquote.alignfull, .wp-block-pullquote.alignleft, .wp-block-pullquote.alignright {
+	text-align: left;
+	padding: 1em 0 0 2.5em;
+	background-color: #fff p;
+	background-color-font-size: 24px;
+}
+
+.wp-block-pullquote.aligncenter cite, .wp-block-pullquote.alignwide cite, .wp-block-pullquote.alignfull cite, .wp-block-pullquote.alignleft cite, .wp-block-pullquote.alignright cite {
+	font-size: 14px;
+	text-align: left;
+	color: #6f8590;
+}
+
+figure.wp-block-image.alignleft {
+	padding: 1em 0 0 2.5em;
+	margin-right: 1.5em;
+}
+
+figure.wp-block-image.alignright {
+	padding: 1em 0 0 2.5em;
+	margin-left: 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 1em 1.5em .5em 0;
+}
+
+.alignleft.wp-caption {
+	margin-bottom: .5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: 1em 0 .5em 1.5em;
+}
+
+.alignright.wp-caption {
+	margin-bottom: .5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 2rem;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption-text {
+	text-align: center;
+	margin-top: .875rem;
+	font-size: .875rem;
+	font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+	color: #6f8590;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 50%;
+	padding: 0 5px;
+}
+
+@media (min-width: 576px) {
+	.gallery-columns-2 .gallery-item {
+		max-width: 50%;
+	}
+	.gallery-columns-3 .gallery-item {
+		max-width: 33.33%;
+	}
+	.gallery-columns-4 .gallery-item {
+		max-width: 25%;
+	}
+	.gallery-columns-5 .gallery-item {
+		max-width: 20%;
+	}
+	.gallery-columns-6 .gallery-item {
+		max-width: 16.66%;
+	}
+	.gallery-columns-7 .gallery-item {
+		max-width: 14.28%;
+	}
+	.gallery-columns-8 .gallery-item {
+		max-width: 12.5%;
+	}
+	.gallery-columns-9 .gallery-item {
+		max-width: 11.11%;
+	}
+}
+
+.gallery-caption {
+	display: block;
+}
+
+body {
+	background: #fff;
+}
+
+/*# sourceMappingURL=editor-style.css.map */

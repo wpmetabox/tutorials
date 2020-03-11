@@ -1,0 +1,46 @@
+[10-Mar-2020 02:37:19 UTC] PHP Fatal error:  Cannot redeclare feed_events_func() (previously declared in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\inc\front.php:9) in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\inc\ajax.php on line 53
+[10-Mar-2020 02:59:09 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'feed_events_func' not found or invalid function name in D:\T\wamp64\www\metabox\wp-includes\class-wp-hook.php on line 288
+[10-Mar-2020 02:59:35 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'feed_events_func' not found or invalid function name in D:\T\wamp64\www\metabox\wp-includes\class-wp-hook.php on line 288
+[10-Mar-2020 03:01:00 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'feed_events_func' not found or invalid function name in D:\T\wamp64\www\metabox\wp-includes\class-wp-hook.php on line 288
+[10-Mar-2020 03:01:32 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'feed_events_func' not found or invalid function name in D:\T\wamp64\www\metabox\wp-includes\class-wp-hook.php on line 288
+[10-Mar-2020 03:02:36 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'feed_events_func' not found or invalid function name in D:\T\wamp64\www\metabox\wp-includes\class-wp-hook.php on line 288
+[10-Mar-2020 03:03:34 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'feed_events_func' not found or invalid function name in D:\T\wamp64\www\metabox\wp-includes\class-wp-hook.php on line 288
+[10-Mar-2020 03:04:49 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\themes\justread\functions.php on line 438
+[10-Mar-2020 03:06:46 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'feed_events_func' not found or invalid function name in D:\T\wamp64\www\metabox\wp-includes\class-wp-hook.php on line 288
+[10-Mar-2020 03:07:59 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'feed_events_func' not found or invalid function name in D:\T\wamp64\www\metabox\wp-includes\class-wp-hook.php on line 288
+[10-Mar-2020 03:08:32 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'feed_events_func' not found or invalid function name in D:\T\wamp64\www\metabox\wp-includes\class-wp-hook.php on line 288
+[10-Mar-2020 03:09:14 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'feed_events_func' not found or invalid function name in D:\T\wamp64\www\metabox\wp-includes\class-wp-hook.php on line 288
+[10-Mar-2020 03:10:02 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'feed_events_func' not found or invalid function name in D:\T\wamp64\www\metabox\wp-includes\class-wp-hook.php on line 288
+[10-Mar-2020 03:10:36 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'feed_events_func' not found or invalid function name in D:\T\wamp64\www\metabox\wp-includes\class-wp-hook.php on line 288
+[10-Mar-2020 03:11:43 UTC] PHP Fatal error:  Cannot redeclare feed_events_func() (previously declared in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\inc\ajax.php:11) in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\inc\front.php on line 4
+[10-Mar-2020 03:14:43 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'feed_events_func' not found or invalid function name in D:\T\wamp64\www\metabox\wp-includes\class-wp-hook.php on line 288
+[10-Mar-2020 03:18:06 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 88
+[10-Mar-2020 03:19:45 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[10-Mar-2020 03:20:13 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[10-Mar-2020 03:21:17 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[10-Mar-2020 03:21:43 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[10-Mar-2020 03:22:09 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[10-Mar-2020 03:22:42 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[10-Mar-2020 03:23:35 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[10-Mar-2020 03:23:59 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[10-Mar-2020 03:25:39 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[10-Mar-2020 03:26:14 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[10-Mar-2020 03:26:46 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[10-Mar-2020 03:45:45 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[10-Mar-2020 04:09:08 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 01:00:47 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 01:00:50 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 01:01:43 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 01:02:46 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 02:16:21 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 09:19:38 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\tutorials\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 09:19:54 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\tutorials\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 09:23:35 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\tutorials\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 09:25:05 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\tutorials\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 09:26:02 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\tutorials\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 09:26:14 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\tutorials\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 09:26:57 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\tutorials\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 09:29:07 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\tutorials\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 09:29:24 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\tutorials\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 09:29:44 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\tutorials\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89
+[11-Mar-2020 09:30:54 UTC] PHP Notice:  Undefined index: check_out in D:\T\wamp64\www\tutorials\metabox\wp-content\plugins\mb-hotel-management\mb-hotel-management.php on line 89

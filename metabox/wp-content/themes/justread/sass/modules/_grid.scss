@@ -1,0 +1,36 @@
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 .5rem;
+
+	> * {
+		padding: .5rem;
+		width: 100%;
+	}
+}
+@media (min-width: 768px) {
+	.grid {
+		padding: 0 1.5rem;
+
+		> * {
+			padding: 1.5rem;
+		}
+	}
+	.grid--2 > *,
+	.grid--3 > *,
+	.grid--4 > * {
+		width: 50%;
+	}
+}
+@media (min-width: 1024px) {
+	.grid--4 > *,
+	.grid--3 > * {
+		width: 33.3333%;
+	}
+}
+
+@media (min-width: 1280px) {
+	.grid--4 > * {
+		width: 25%;
+	}
+}

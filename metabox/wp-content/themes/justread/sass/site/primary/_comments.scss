@@ -1,0 +1,103 @@
+.comments-area {
+	@include font-size(1);
+	width: 36em;
+	max-width: 100%;
+	padding: 2em;
+	margin: 4rem auto 0;
+}
+.comments-title {
+	@include font-size(1);
+	color: $color__silver;
+	margin: 0 0 2rem;
+	text-align: center;
+}
+.comment-list {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 4rem;
+
+	.comment-respond {
+		margin-bottom: 1.6rem;
+	}
+}
+.comment > .children {
+	padding-left: 1.6rem;
+	list-style: none;
+}
+.comment-body {
+	padding: (1.6 * 16px + 2px) 1.6rem 1.6rem;
+	border-radius: .25rem;
+	background: #fff;
+	margin-bottom: 1.6rem;
+}
+.comment-meta {
+	font-family: $font__sans-serif;
+	margin-bottom: 1.6em;
+}
+.comment-author {
+	font-size: 1rem;
+	line-height: 1.25;
+
+	.avatar {
+		border-radius: 100%;
+		margin-right: 8px;
+		float: left;
+		margin-top: -2px;
+	}
+}
+.says {
+	display: none;
+}
+.comment-metadata {
+	font-size: .75rem;
+	margin-left: 48px;
+
+	a {
+		color: $color__silver;
+	}
+	.edit-link {
+		margin-left: .25rem;
+	}
+}
+.reply {
+	display: inline-block;
+	margin-top: 1.6rem;
+	font-family: $font__sans-serif;
+	@include font-size(.75);
+
+	a {
+		color: $color__silver;
+	}
+}
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 768px) {
+		flex-direction: row;
+		align-items: center;
+
+		label {
+			order: 2;
+			margin-left: 1em;
+		}
+	}
+}
+.required {
+	color: #e7040f;
+}
+.no-comments {
+	text-align: center;
+	font-family: $font__sans-serif;
+	@include font-size(.875);
+	font-weight: bold;
+	color: $color__silver;
+}

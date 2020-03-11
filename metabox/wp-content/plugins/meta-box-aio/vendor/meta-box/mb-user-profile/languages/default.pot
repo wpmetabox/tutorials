@@ -1,0 +1,98 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MB User Profile\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-08-11 13:42:49+0000\n"
+"Last-Translator: none\n"
+"Language-Team: MetaBox.io <info@metabox.io>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;esc_html__;esc_html_e;esc_html_x;esc_attr__;esc_attr_e;esc_attr_x\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"Language: en_US\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: css\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+"X-Poedit-SearchPathExcluded-2: tests\n"
+
+#: inc/class-mb-user-profile-form-register.php:63
+msgid "Form is not validated. Please try again"
+msgstr ""
+
+#: inc/class-mb-user-profile-form.php:62
+msgid "Clear"
+msgstr ""
+
+#: inc/class-mb-user-profile-form.php:63
+msgid "Default"
+msgstr ""
+
+#: inc/class-mb-user-profile-form.php:64
+msgid "Select Color"
+msgstr ""
+
+#: inc/class-mb-user-profile-form.php:65
+msgid "Current Color"
+msgstr ""
+
+#: inc/class-mb-user-profile-form.php:104
+msgid "Your information has been successfully submitted. Thank you."
+msgstr ""
+
+#: inc/class-mb-user-profile-info.php:97
+#: inc/class-mb-user-profile-login.php:121
+#: inc/class-mb-user-profile-register.php:92
+msgid "Submit"
+msgstr ""
+
+#: inc/class-mb-user-profile-login.php:122
+msgid "Remember"
+msgstr ""
+
+#: inc/class-mb-user-profile-login.php:123
+msgid "Lost Password ?"
+msgstr ""
+
+#: inc/class-mb-user-profile-user.php:74 inc/class-mb-user-profile-user.php:106
+msgid "Passwords do not coincide"
+msgstr ""
+
+#: inc/class-mb-user-profile-user.php:100
+msgid "Your account is already there"
+msgstr ""
+
+#: inc/class-mb-user-profile-user.php:103
+msgid "Your email already exists"
+msgstr ""
+
+#: mb-user-profile-fields.php:11 mb-user-profile-fields.php:43
+msgid "Username"
+msgstr ""
+
+#: mb-user-profile-fields.php:17 mb-user-profile-fields.php:75
+msgid "Email"
+msgstr ""
+
+#: mb-user-profile-fields.php:23 mb-user-profile-fields.php:49
+#: mb-user-profile-fields.php:81
+msgid "Password"
+msgstr ""
+
+#: mb-user-profile-fields.php:29 mb-user-profile-fields.php:87
+msgid "Confirm Password"
+msgstr ""
+
+#: mb-user-profile-fields.php:63
+msgid "First Name"
+msgstr ""
+
+#: mb-user-profile-fields.php:69
+msgid "Last Name"
+msgstr ""

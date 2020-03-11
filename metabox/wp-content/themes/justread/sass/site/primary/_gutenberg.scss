@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+	.entry-content .alignfull {
+		margin-left: calc(50% - 49.5vw);
+		margin-right: calc(50% - 49.4vw);
+		width: auto;
+		max-width: 1000%;
+		background-color: #fff;
+		padding-bottom: 24px;
+		iframe {
+			width: 100%;
+		}
+	}
+}
+
+.entry-content {
+	.alignwide,
+	.is-large { 
+		margin-left: -8rem;
+		width: calc(100% + 16rem);
+		max-width: calc(100% + 16rem);
+	}
+}
+
+@media (max-width: 1023px) {
+	.entry-content .alignwide, .entry-content .alignfull {
+		margin-left: -2rem;
+		width: calc(100% + 4rem);
+		max-width: calc(100% + 4rem);
+	}
+}
+
+.wp-block-quote.is-large,
+.wp-block-quote.is-style-large {
+	padding: 1em 0 0 2.5em;
+}
+
+.wp-block-quote.is-large cite,
+.wp-block-quote.is-large footer,
+.wp-block-quote.is-style-large cite,
+.wp-block-quote.is-style-large footer {
+	font-size: 14px;
+	text-align: left;
+}
