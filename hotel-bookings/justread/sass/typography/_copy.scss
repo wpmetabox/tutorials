@@ -1,0 +1,74 @@
+p {
+	margin: 0 0 1.6em;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+blockquote {
+	font-size: 1.2em;
+	font-style: italic;
+	border-top: 4px solid currentColor;
+	padding: 1em 0 0 2.5em;
+	margin: 0 0 1.6em;
+	position: relative;
+
+	&:before {
+		content: "\201C";
+		position: absolute;
+		left: 0;
+		top: .06em;
+		font-size: 3em;
+		font-style: normal;
+	}
+
+	cite {
+		display: block;
+		margin-top: .8em;
+		@include font-size(.875);
+		text-transform: uppercase;
+		font-family: $font__sans-serif;
+		font-style: normal;
+		color: $color__silver;
+
+		&:before {
+			content: '\2014';
+			margin-right: .5rem;
+		}
+	}
+}
+
+address {
+	margin: 0 0 1.6em;
+}
+
+pre {
+	background: $color__background-pre;
+	font-family: $font__pre;
+	font-size: .8em;
+	line-height: $font__line-height-pre;
+	margin-bottom: 1.6em;
+	overflow: auto;
+	padding: 2em;
+	color: #e3e6e8;
+}
+
+code, kbd, tt, var {
+	font-family: $font__code;
+	font-size: 0.84090145em;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted $color__border-abbr;
+	cursor: help;
+}
+
+mark, ins {
+	background: $color__background-ins;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}

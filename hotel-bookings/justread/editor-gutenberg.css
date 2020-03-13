@@ -1,0 +1,106 @@
+.editor-styles-wrapper pre {
+	white-space: nowrap!important;
+}
+
+.editor-styles-wrapper th, .editor-styles-wrapper td {
+	border: none;
+}
+
+.wp-block-table__cell-content {
+	padding: 0;
+}
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+	max-width: 100%;
+	clear: both;
+}
+
+.block-editor-block-list__block-edit a {
+	color: #06c;
+	text-decoration: none;
+	transition: all .3s;
+}
+
+.block-editor-block-list__block-edit a:hover {
+	text-decoration: underline;
+}
+
+.block-editor .wp-block-categories ul {
+	text-align: left;
+}
+
+.editor-styles-wrapper blockquote,
+blockquote.wp-block-quote.is-large {
+	font-style: italic;
+	border-top: 4px solid currentColor;
+	padding: 1em 0 0 2.5em;
+	margin: 0 0 1.6em;
+	position: relative;
+	border-left: none;
+	font-size: 24px;
+	line-height: 1.6;
+}
+
+.wp-block-pullquote {
+	border: none;
+	padding: 0;
+	text-align: left;
+}
+
+.wp-block-quote__citation,
+.wp-block-pullquote__citation {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #6f8590;
+	margin-top: .8em;
+}
+
+.wp-block-quote__citation:before,
+.wp-block-pullquote__citation:before {
+	content: '\2014';
+	margin-right: .5rem;
+}
+
+.block-editor-block-list__layout .block-editor-block-list__block[data-align=left] .block-editor-block-list__block-edit,
+.block-editor-block-list__layout .block-editor-block-list__block[data-align=right]>.block-editor-block-list__block-edit {
+	width: 305px;
+}
+
+.block-editor-block-list__block[data-type="core/pullquote"][data-align=left] .block-editor-rich-text p,
+.block-editor-block-list__block[data-type="core/pullquote"][data-align=right] .block-editor-rich-text p {
+	font-size: 24px;
+}
+
+.block-editor-rich-text__editable.editor-rich-text__editable.wp-block-button__link {
+	display: inline-block;
+	border: 1px solid;
+	border-color: #06c;
+	border-radius: 3px;
+	background: #06c;
+	color: #fff;
+	font-size: 14px;
+	font-size: .875rem;
+	line-height: 1;
+	padding: .75rem 1.25rem;
+	transition: all .3s ease;
+	font-family: -apple-system,BlinkMacSystemFont,"avenir next",avenir,"helvetica neue",helvetica,ubuntu,roboto,noto,"segoe ui",arial,sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.block-editor-rich-text__editable.editor-rich-text__editable.wp-block-button__link:hover,
+.wp-block-button.is-style-outline .block-editor-rich-text__editable.editor-rich-text__editable.wp-block-button__link:hover {
+	opacity: .8;
+}
+
+.wp-block-button.is-style-outline .block-editor-rich-text__editable.editor-rich-text__editable.wp-block-button__link {
+	border: 2px solid #06c;
+	background: transparent;
+	color: #06c;
+	border-radius: 3px;
+	transition: all 0.3s;
+}
+
+.editor-styles-wrapper p:last-child {
+	margin: 0 0 1.6em;
+}
