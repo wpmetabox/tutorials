@@ -1,0 +1,41 @@
+.button,
+.wp-block-button__link,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	display: inline-block;
+	border: 1px solid;
+	border-color: $color__border-button;
+	border-radius: 3px;
+	background: $color__background-button;
+	color: #fff;
+	@include font-size(.875);
+	line-height: 1;
+	padding: .75rem 1.25rem;
+	transition: all .3s ease;
+	font-family: $font__sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	&:hover {
+		opacity: .8;
+		text-decoration: none;
+	}
+}
+.button:hover {
+	text-decoration: none;
+}
+
+.wp-block-button.is-style-outline a{
+	border: 2px solid #06c;
+	background: transparent;
+	color: #06c;
+	border-radius: 3px;
+	transition: all 0.3s;
+}
+
+.wp-block-button.is-style-outline a:hover {
+	opacity: .8;
+	text-decoration: unset;
+}

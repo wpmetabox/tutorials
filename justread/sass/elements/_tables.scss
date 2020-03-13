@@ -1,0 +1,26 @@
+table {
+	margin: 0 0 1.6em;
+	width: 100%;
+	@include font-size(1);
+}
+th, td {
+	padding: .5rem .75rem;
+	&:first-child {
+		padding-left: 0;
+	}
+	&:last-child {
+		padding-right: 0;
+	}
+}
+tr {
+	border-bottom: 1px solid rgba(38, 50, 56, .1);
+}
+thead tr {
+	border-width: .25rem;
+}
+thead th {
+	text-transform: uppercase;
+	text-align: left;
+	font-family: $font__sans-serif;
+	font-size: 1rem;
+}

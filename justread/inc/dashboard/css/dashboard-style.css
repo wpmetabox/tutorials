@@ -1,0 +1,159 @@
+.about-wrap .wp-badge {
+	background-image: url(../images/logo.png);
+	background-color: #fff;
+	color: #222;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.about-wrap .nav-tab {
+	transition: none;
+}
+
+.about-wrap [class$="-col"] {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.about-wrap .changelog.feature-section .col,
+.about-wrap .feature-section .col {
+	margin-top: 40px;
+}
+
+.about-wrap .two-col .col {
+	min-width: 47%;
+	max-width: 47%;
+}
+
+.about-wrap [class$="-col"] .col {
+	-webkit-box-flex: 1;
+	flex: 1;
+}
+
+@media (max-width: 500px) {
+	.about-wrap .three-col .col, .about-wrap .two-col .col {
+		min-width: 100%;
+	}
+}
+
+.about-wrap img {
+	margin-bottom: 10px;
+}
+
+.about-rating {
+	font-style: italic;
+}
+.about-rating a:first-child {
+	font-style: normal;
+}
+
+#poststuff .nav-tab-wrapper {
+	padding: 0;
+	margin-top: 60px;
+}
+
+.about-buttons .dashicons {
+	position: relative;
+	top: 5px;
+	width: 16px;
+	height: 16px;
+	font-size: 16px;
+}
+
+.product {
+	text-align: center;
+}
+
+.products .product img {
+	box-shadow: none;
+	margin: 0 auto;
+}
+
+.wp-badge:hover {
+	text-decoration: none;
+}
+
+.feature-section.two-col {
+	align-items: flex-start;
+}
+
+.about-wrap .feature-section.two-col h3 {
+	margin-top: 0;
+}
+
+.feature-section.two-col h3:not(:first-child) {
+	margin-top: 3em;
+}
+
+.feature-section img {
+	display: block;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.nav-tab-active:focus {
+	box-shadow: none;
+}
+
+.gt-tab-pane {
+	display: none;
+}
+
+.gt-is-active {
+	display: block;
+}
+
+.form-table tr {
+	border-bottom: 1px solid #ddd;
+}
+
+.form-table th {
+	padding-left: 10px;
+}
+
+.form-table th:not(:first-child),
+.form-table td:not(:first-child) {
+	width: 15%;
+	text-align: center;
+}
+
+.about-wrap td h3 {
+	margin-top: 0;
+}
+
+.form-table .dashicons {
+	font-size: 35px;
+	width: 35px;
+	height: 35px;
+}
+
+.form-table .dashicons-yes {
+	color: green;
+}
+
+.form-table .dashicons-no {
+	color: red;
+}
+
+/* Right column */
+#post-body.columns-2 #postbox-container-1 {
+	position: fixed;
+	right: 320px;
+	top: 40px;
+}
+
+@media (max-width: 1279px) {
+	#postbox-container-1 {
+		display: none;
+	}
+	#poststuff #post-body.columns-2 {
+		margin-right: 0;
+	}
+}

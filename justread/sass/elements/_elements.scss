@@ -1,0 +1,66 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.6em;
+	clear: both;
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 0 0 1.6em; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+@import "tables";
+
+.wp-block-pullquote {
+	&.aligncenter,
+	&.alignwide,
+	&.alignfull,
+	&.alignleft,
+	&.alignright {
+		text-align: left;
+		padding: 1em 0 0 2.5em;
+		background-color: #fff
+
+		p {
+			font-size: 24px;
+		}
+
+		cite {
+			font-size: 14px;
+			text-align: left;
+			color: #6f8590;
+		}
+	}
+}
+
+figure.wp-block-image.alignleft {
+	padding: 1em 0 0 2.5em;
+	margin-right: 1.5em;
+}
+
+figure.wp-block-image.alignright {
+	padding: 1em 0 0 2.5em;
+	margin-left: 1.5em;
+}
