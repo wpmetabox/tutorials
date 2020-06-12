@@ -1,0 +1,19 @@
+.infomation table, td{
+	border: 1px solid black;
+}
+
+img {
+	display: inline-block!important;
+    height: auto;
+    max-width: 200px!important;
+    margin-right: 15px!important;
+}
+
+.content {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.col-1 {
+	width: 30%;
+}
