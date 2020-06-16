@@ -95,7 +95,7 @@ add_filter( 'rwmb_meta_boxes', function ( $meta_boxes ) {
 // Creat post type project
 function frefix_register_post_type_project(){
 	$label = array(
-		'name' => 'Project',
+		'name'          => 'Projects',
 		'singular_name' => 'Project',
 	);
 

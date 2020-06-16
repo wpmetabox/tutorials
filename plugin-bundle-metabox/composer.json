@@ -3,26 +3,19 @@
 		{
 			"type": "composer",
 			"url": "https://wpackagist.org"
-		},
-		{
-			"type": "composer",
-			"url": "https://packages.metabox.io/d3868083e53c57b032d27c257404e200"
 		}
 	],
 	"require": {
-		"wpackagist-plugin/meta-box": "dev-trunk",
-		"meta-box/mb-settings-page": "dev-master"
+		"wpackagist-plugin/meta-box": "dev-trunk"
 	},
 	"extra": {
 		"installer-paths": {
-			"vendor/meta-box/meta-box": ["wpackagist-plugin/meta-box"],
-			"vendor/meta-box/{$name}/": ["type:wordpress-plugin"]
+			"vendor/meta-box/meta-box": ["wpackagist-plugin/meta-box"]
 		}
 	},
 	"autoload": {
 		"files": [
-			"vendor/meta-box/meta-box/meta-box.php",
-			"vendor/meta-box/mb-settings-page/mb-settings-page.php"
+			"vendor/meta-box/meta-box/meta-box.php"
 		]
 	}
 }
