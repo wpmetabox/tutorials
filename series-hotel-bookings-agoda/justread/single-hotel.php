@@ -13,12 +13,6 @@
  * @package Justread
 
  */
-$rooms = get_post_meta( get_the_ID(), 'group_room', true );
-$number = [];
-foreach ($rooms as $room) {
-	$number[] = (int)$room['so-nguoi'];
-}
-// var_dump($number,$rooms);
 get_header(); ?>
 
 	<aside id="secondary" class="widget-area">
