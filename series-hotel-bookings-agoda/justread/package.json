@@ -1,0 +1,15 @@
+{
+  "scripts": {
+     "css": "node-sass --output-style expanded --indent-type tab --indent-width 1 sass/style.scss -o .",
+     "postcss": "postcss style.css --no-map --use autoprefixer -o style.css --autoprefixer.browsers=\"last 2 versions, ie >= 9\"",
+     "editor": "node-sass --output-style expanded --indent-type tab --indent-width 1 sass/editor-style.scss -o .",
+     "posteditor": "postcss editor-style.css -u autoprefixer -o editor-style.css --autoprefixer.browsers=\"last 2 versions, ie >= 9\"",
+     "watch": "node-sass --output-style expanded --indent-type tab --indent-width 1 --source-map true -w sass -r -o .",
+     "browsersync": "browser-sync start --proxy \"test.dev\" --files \"**/*.php, js/*.js, style.css, rtl.css\"",
+     "browsersync-work": "browser-sync start --proxy \"demo.gretathemes.dev/justread/\" --files \"**/*.php, js/*.js, style.css, rtl.css\"",
+     "zip": "git archive -o justread.zip --prefix=justread/ HEAD",
+     "check": "phpcs --standard=WordPress --extensions=php . > check.txt",
+     "upload": "scp justread.zip root@gretathemes.com:/var/www/gretathemes.com/downloads/",
+     "release": "npm run zip && npm run upload"
+   }
+}

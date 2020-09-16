@@ -1,0 +1,16 @@
+ul, ol {
+	margin: 0 0 1.6em;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.6em;
+}

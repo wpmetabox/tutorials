@@ -1,0 +1,9 @@
+a {
+	color: $color__link;
+	text-decoration: none;
+	transition: all .3s;
+
+	&:hover{
+		text-decoration: underline;
+	}
+}

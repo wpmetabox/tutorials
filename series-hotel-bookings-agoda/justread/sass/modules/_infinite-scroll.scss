@@ -1,0 +1,60 @@
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .pagination, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/* Load more button */
+.infinite-loader,
+#infinite-handle {
+	flex-basis: 100%;
+	text-align: center;
+}
+#infinite-handle span {
+	background: none;
+	border-radius: 0;
+	padding: 0;
+	display: inline-block;
+	color: inherit;
+}
+.site-main #infinite-handle span button {
+	@extend button;
+	background: #e2e6e9;
+	border-color: #e2e6e9;
+	color: inherit;
+
+	&:hover {
+		background: $color__silver;
+		border-color: $color__silver;
+		opacity: 1;
+		color: #fff;
+	}
+}
+
+/* Spinner */
+.spinner {
+	left: 50% !important;
+	margin-left: -8px;
+}
+
+/* Infinite footer */
+#infinite-footer {
+	.container {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		font-family: $font__sans-serif;
+		border-color: $color__line;
+	}
+	.blog-info a {
+		color: $color__headings;
+	}
+	.blog-credits,
+	.blog-credits a {
+		color: $color__silver;
+	}
+}

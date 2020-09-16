@@ -1,0 +1,111 @@
+/*!
+Theme Name: Justread
+Theme URI: https://gretathemes.com/wordpress-themes/justread/
+Author: GretaThemes
+Author URI: https://gretathemes.com
+Description: Justread is a clean and modern WordPress theme that focuses on reading experience. Justread has a grid layout with single column content. The theme uses system fonts and SVG for fast loading. Enjoy reading long content with comfortability.
+Version: 1.2.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: justread
+Tags: blog, news, food-and-drink, grid-layout, one-column, three-columns, custom-background, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+JustRead is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Grids
+--------------------------------------------------------------*/
+@import "modules/grid";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";

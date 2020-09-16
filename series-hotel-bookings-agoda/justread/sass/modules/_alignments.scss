@@ -1,0 +1,24 @@
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 1em 1.5em .5em 0;
+
+	&.wp-caption {
+		margin-bottom: .5em;
+	}
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: 1em 0 .5em 1.5em;
+
+	&.wp-caption {
+		margin-bottom: .5em;
+	}
+}
+
+.aligncenter {
+	clear: both;
+	@include center-block;
+}
