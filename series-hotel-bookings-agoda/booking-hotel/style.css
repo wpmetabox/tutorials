@@ -176,7 +176,7 @@ template: justread
 	flex-flow: row wrap;
 }
 .single-hotel .hotel-amenities ul li {
-	width: 50%;
+	width: 100%;
 }
 
 .single-hotel .hotel-availability tr {

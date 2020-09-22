@@ -13,22 +13,22 @@ jQuery( function ( $ ) {
 
 
 		rate_list  = [];
-		loai_phong = [];
-		tien_nghi  = [];
-		tien_nghi_phong = [];
+		hotel_type = [];
+		facilities  = [];
+		room_facilities = [];
 
 		$( 'input.filter-checkbox__input' ).removeAttr( 'checked' );
-		$( '.filter-action, .filter-checkbox, .filter-loai-phong, .filter-tien-nghi, .filter-tien-nghi-phong, .filter-gia-phong' ).on( 'click', function() {
+		$( '.filter-action, .filter-checkbox, .filter-hotel-type, .filter-facilities, .filter-room-facilities, .filter-price' ).on( 'click', function() {
 			var location   = $( '#location' ).val(),
-			nguoi_lon  = $( '#adults' ).val(),
-			tre_em     = $( '#chidren' ).val(),
+			adults  = $( '#adults' ).val(),
+			chidren     = $( '#chidren' ).val(),
 			min_price  = $(this).attr( 'data-min-price' ),
 			max_price  = $(this).attr( 'data-max-price' );
 
 			rate_list.push( $(this).attr( 'data-rate-value' ) );
-			loai_phong.push( $(this).attr( 'data-loai-phong-value' ) );
-			tien_nghi.push( $(this).attr( 'data-tien-nghi-value' ) );
-			tien_nghi_phong.push( $(this).attr( 'data-tien-nghi-phong-value' ) );
+			hotel_type.push( $(this).attr( 'data-hotel-type-value' ) );
+			facilities.push( $(this).attr( 'data-facilities-value' ) );
+			room_facilities.push( $(this).attr( 'data-room-facilities-value' ) );
 
 			var input_check = $(this).find( 'input' ).attr( 'checked' );
 			
@@ -40,13 +40,13 @@ jQuery( function ( $ ) {
 					action: 'justread_filter_hotel',
 					rate: rate_list,
 					location: location,
-					loai_phong: loai_phong,
-					tien_nghi: tien_nghi,
-					tien_nghi_phong: tien_nghi_phong,
+					hotel_type: hotel_type,
+					facilities: facilities,
+					room_facilities: room_facilities,
 					min_price: min_price,
 					max_price: max_price,
-					nguoi_lon: nguoi_lon,
-					tre_em: tre_em,
+					adults: adults,
+					chidren: chidren,
 				},
 				success: function(response) {
 					$( '.site-main' ).html(response.post);
@@ -57,8 +57,8 @@ jQuery( function ( $ ) {
 
 		$( '.single-hotel .filter-action' ).on( 'click', () => {
 			let new_location = $( '#location' ).val(),
-				new_nguoi_lon  = $( '#adults' ).val(),
-				new_tre_em     = $( '#children' ).val();
+				new_adults  = $( '#adults' ).val(),
+				new_chidren = $( '#children' ).val();
 				
 			if ( new_location ) {
 				new_location = 'new_location=' + new_location;
@@ -66,19 +66,19 @@ jQuery( function ( $ ) {
 				new_location = '';
 			}
 
-			if ( new_nguoi_lon ) {
-				new_nguoi_lon = 'new_nguoi_lon=' + new_nguoi_lon;
+			if ( new_adults ) {
+				new_adults = 'new_adults=' + new_adults;
 			} else {
-				new_nguoi_lon = '';
+				new_adults = '';
 			}
 
-			if ( new_tre_em ) {
-				new_tre_em = 'new_tre_em=' + new_tre_em;
+			if ( new_chidren ) {
+				new_chidren = 'new_chidren=' + new_chidren;
 			} else {
-				new_tre_em = '';
+				new_chidren = '';
 			}
-			// console.log(new_nguoi_lon,new_tre_em);
-			window.location = 'http://demo1.elightup.com/test-metabox/hotel?' + new_location + '&' + new_nguoi_lon + '&' + new_tre_em;
+			// console.log(new_adults,new_chidren);
+			window.location = 'http://demo1.elightup.com/test-metabox/hotel?' + new_location + '&' + new_adults + '&' + new_chidren;
 			
 		} );
 	}

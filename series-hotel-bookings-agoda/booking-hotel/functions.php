@@ -19,7 +19,7 @@ function justread_child_scripts() {
 		array(),
 		$theme->parent()->get('Version')
 	);
-	wp_enqueue_style( 'justread-child-style', get_stylesheet_uri(), array(), '1.0.0' );
+	// wp_enqueue_style( 'justread-child-style', get_stylesheet_uri(), array(), '1.0.0' );
 
 	if ( is_singular( 'hotel' ) ) {
 		wp_enqueue_script( 'justread-slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', array(), '1.8.1', true );
@@ -63,13 +63,13 @@ add_action( 'wp_enqueue_scripts', 'justread_child_custom_scripts' );
 function justread_filter_hotel() {
 	$location   = $_POST['location'];
 	$rate       = $_POST['rate'];
-	$loai_phong = $_POST['loai_phong'];
-	$tien_nghi  = $_POST['tien_nghi'];
-	$tien_nghi_phong  = $_POST['tien_nghi_phong'];
+	$hotel_type = $_POST['hotel_type'];
+	$facilities  = $_POST['facilities'];
+	$room_facilities  = $_POST['room_facilities'];
 	$min_price  = $_POST['min_price'];
 	$max_price  = $_POST['max_price'];
-	$nguoi_lon  = $_POST['nguoi_lon'];
-	$tre_em     = $_POST['tre_em'];
+	$adults  = $_POST['adults'];
+	$chidren     = $_POST['chidren'];
 
 	$rate_array = array(
 		'taxonomy' => 'xep-hang',
@@ -87,26 +87,26 @@ function justread_filter_hotel() {
 	);
 	$location_array = $location ? $location_array : '';
 
-	$loai_phong_array = array(
-		'key'     => 'loai-cho-o',
-		'value'   => $loai_phong,
+	$hotel_type_array = array(
+		'key'     => 'hotel_type',
+		'value'   => $hotel_type,
 		'compare' => 'IN',
 	);
-	$loai_phong_array = $loai_phong ? $loai_phong_array : '';
+	$hotel_type_array = $hotel_type ? $hotel_type_array : '';
 
-	$tien_nghi_array = array(
-		'key'     => 'tien-nghi',
-		'value'   => $tien_nghi,
+	$facilities_array = array(
+		'key'     => 'facilities',
+		'value'   => $facilities,
 		'compare' => 'IN',
 	);
-	$tien_nghi_array = $tien_nghi ? $tien_nghi_array : '';
+	$facilities_array = $facilities ? $facilities_array : '';
 
-	$tien_nghi_phong_array = array(
-		'key'     => 'tien-nghi-phong',
-		'value'   => $tien_nghi_phong,
+	$room_facilities_array = array(
+		'key'     => 'room_facilities',
+		'value'   => $room_facilities,
 		'compare' => 'IN',
 	);
-	$tien_nghi_phong_array = $tien_nghi_phong ? $tien_nghi_phong_array : '';
+	$room_facilities_array = $room_facilities ? $room_facilities_array : '';
 
 
 	$price_array = array(
@@ -117,21 +117,21 @@ function justread_filter_hotel() {
 	);
 	$price_array = $max_price ? $price_array : '';
 
-	$nguoi_lon_array  = array(
-		'key'     => 'nguoi_lon',
-		'value'   => $nguoi_lon,
+	$adults_array  = array(
+		'key'     => 'adults',
+		'value'   => $adults,
 		'type'    => 'NUMERIC',
 		'compare' => '>=',
 	);
-	$nguoi_lon_array = $nguoi_lon ? $nguoi_lon_array : '';
+	$adults_array = $adults ? $adults_array : '';
 
-	$tre_em_array  = array(
-		'key'     => 'tre_em',
-		'value'   => $tre_em,
+	$chidren_array  = array(
+		'key'     => 'chidren',
+		'value'   => $chidren,
 		'type'    => 'NUMERIC',
 		'compare' => '>=',
 	);
-	$tre_em_array = $tre_em ? $tre_em_array : '';
+	$chidren_array = $chidren ? $chidren_array : '';
 
 	$query_arr = array(
 		'post_type' => 'hotel',
@@ -146,10 +146,10 @@ function justread_filter_hotel() {
 		),
 		'meta_query' => array(
 			'relation' => 'AND',
-			$nguoi_lon_array,
-			$loai_phong_array,
-			$tien_nghi_array,
-			$tien_nghi_phong_array,
+			$adults_array,
+			$hotel_type_array,
+			$facilities_array,
+			$room_facilities_array,
 			$price_array,
 		),
 	);
@@ -199,15 +199,15 @@ add_action( 'pre_get_posts', 'justread_filter_main_hotel' );
 function justread_add_field_group( $post_id ) {
 	$rooms = get_post_meta( $post_id, 'group_room', true );
 	delete_post_meta( $post_id, 'price_p' );
-	delete_post_meta( $post_id, 'nguoi_lon' );
-	delete_post_meta( $post_id, 'tre_em' );
-	delete_post_meta( $post_id, 'tien-nghi-phong' );
+	delete_post_meta( $post_id, 'adults' );
+	delete_post_meta( $post_id, 'chidren' );
+	delete_post_meta( $post_id, 'room_facilities' );
 	foreach ($rooms as $key => $room) {
 		add_post_meta( $post_id, 'price_p', (int)$room['price'] );
-		add_post_meta( $post_id, 'nguoi_lon', (int)$room['so-nguoi'] );
-		add_post_meta( $post_id, 'tre_em', (int)$room['so-tre-em'] );
-		foreach ( $room['tien-nghi_g4zooy6n28n'] as $key => $tien_nghi ) {
-			add_post_meta( $post_id, 'tien-nghi-phong', $tien_nghi );
+		add_post_meta( $post_id, 'adults', (int)$room['adults'] );
+		add_post_meta( $post_id, 'chidren', (int)$room['chidren'] );
+		foreach ( $room['room_facilities'] as $key => $facilities ) {
+			add_post_meta( $post_id, 'room_facilities', $facilities );
 		}
 	}
 }
@@ -259,96 +259,96 @@ add_shortcode( 'justread_shortcode_rate_hotel', 'justread_shortcode_rate_hotel' 
 
 
 
-function justread_shortcode_loai_hotel() {
+function justread_shortcode_hotel_type() {
 	ob_start();
 	?>
 
-	<a class="filter-sidebar filter-loai-phong" data-loai-phong-value="khach-san">
+	<a class="filter-sidebar filter-hotel-type" data-hotel-type-value="hotel">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Khách sạn</span>
+			<span class="filter_label">Hotel</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-loai-phong" data-loai-phong-value="can-ho">
+	<a class="filter-sidebar filter-hotel-type" data-hotel-type-value="apartment">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Căn hộ</span>
+			<span class="filter_label">Apartment</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-loai-phong" data-loai-phong-value="nha-dan">
+	<a class="filter-sidebar filter-hotel-type" data-hotel-type-value="homestay">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Chỗ nghỉ nhà dân</span>
+			<span class="filter_label">Homestay</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-loai-phong" data-loai-phong-value="biet-thu">
+	<a class="filter-sidebar filter-hotel-type" data-hotel-type-value="villa">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Biệt thự</span>
+			<span class="filter_label">Villa</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-loai-phong" data-loai-phong-value="resort">
+	<a class="filter-sidebar filter-hotel-type" data-hotel-type-value="resort">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
 			<span class="filter_label">Resort</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-loai-phong" data-loai-phong-value="nha-tro">
+	<a class="filter-sidebar filter-hotel-type" data-hotel-type-value="motel">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Nhà trọ</span>
+			<span class="filter_label">Motel</span>
 		</div>
 	</a>
 	<?php
 
 	return ob_get_clean();
 }
-add_shortcode( 'justread_shortcode_loai_hotel', 'justread_shortcode_loai_hotel' );
+add_shortcode( 'justread_shortcode_hotel_type', 'justread_shortcode_hotel_type' );
 
 function justread_shortcode_facilities() {
 	ob_start();
 	?>
 
-	<a class="filter-sidebar filter-tien-nghi" data-tien-nghi-value="do-xe">
+	<a class="filter-sidebar filter-facilities" data-facilities-value="parking">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Chỗ đỗ xe</span>
+			<span class="filter_label">Parking</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-tien-nghi" data-tien-nghi-value="nha-hang">
+	<a class="filter-sidebar filter-facilities" data-facilities-value="retaurant">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Nhà hàng</span>
+			<span class="filter_label">Restaurant</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-tien-nghi" data-tien-nghi-value="wi-fi">
+	<a class="filter-sidebar filter-facilities" data-facilities-value="wi-fi">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Wi-fi miễn phí</span>
+			<span class="filter_label">Free wifi</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-tien-nghi" data-tien-nghi-value="ho-boi">
+	<a class="filter-sidebar filter-facilities" data-facilities-value="swimming-pool">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Hồ bơi</span>
+			<span class="filter_label">Swimming pool</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-tien-nghi" data-tien-nghi-value="phong-gd">
+	<a class="filter-sidebar filter-facilities" data-facilities-value="family-room">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Phòng gia đình</span>
+			<span class="filter_label">Family room</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-tien-nghi" data-tien-nghi-value="xe-san-bay">
+	<a class="filter-sidebar filter-facilities" data-facilities-value="bus-from-airport">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Xe đưa đón sân bay</span>
+			<span class="filter_label">Bus from airport</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-tien-nghi" data-tien-nghi-value="thang-may">
+	<a class="filter-sidebar filter-facilities" data-facilities-value="elevator">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Thang máy</span>
+			<span class="filter_label">Elevator</span>
 		</div>
 	</a>
 
@@ -361,52 +361,52 @@ function justread_shortcode_room_facilities() {
 	ob_start();
 	?>
 
-	<a class="filter-sidebar filter-tien-nghi-phong" data-tien-nghi-phong-value="bep">
+	<a class="filter-sidebar filter-room-facilities" data-room-facilities-value="kitchen">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Khu vực bếp</span>
+			<span class="filter_label">Kitchen</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-tien-nghi-phong" data-tien-nghi-phong-value="phong-tam">
+	<a class="filter-sidebar filter-room-facilities" data-room-facilities-value="bathroom">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Phòng tắm riêng</span>
+			<span class="filter_label">Bathroom</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-tien-nghi-phong" data-tien-nghi-phong-value="dieu-hoa">
+	<a class="filter-sidebar filter-room-facilities" data-room-facilities-value="air-conditioning">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Điều hòa</span>
+			<span class="filter_label">Air conditioning</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-tien-nghi-phong" data-tien-nghi-phong-value="bon-tam">
+	<a class="filter-sidebar filter-room-facilities" data-room-facilities-value="toilet">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Bồn tắm</span>
+			<span class="filter_label">Toilet</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-tien-nghi-phong" data-tien-nghi-phong-value="ti-vi">
+	<a class="filter-sidebar filter-room-facilities" data-room-facilities-value="tv">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Ti vi</span>
+			<span class="filter_label">TV</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-tien-nghi-phong" data-tien-nghi-phong-value="ban-cong">
+	<a class="filter-sidebar filter-room-facilities" data-room-facilities-value="balcony">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Ban công</span>
+			<span class="filter_label">Balcony</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-tien-nghi-phong" data-tien-nghi-phong-value="may-giat">
+	<a class="filter-sidebar filter-room-facilities" data-room-facilities-value="washing-machine">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Máy giặt</span>
+			<span class="filter_label">Washing machine</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-tien-nghi-phong" data-tien-nghi-phong-value="view-bien">
+	<a class="filter-sidebar filter-room-facilities" data-room-facilities-value="sea-view">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">View biển</span>
+			<span class="filter_label">Sea view</span>
 		</div>
 	</a>
 
@@ -415,30 +415,30 @@ function justread_shortcode_room_facilities() {
 }
 add_shortcode( 'justread_shortcode_room_facilities', 'justread_shortcode_room_facilities' );
 
-function justread_shortcode_gia_hotel() {
+function justread_shortcode_hotel_price() {
 	ob_start();
 	?>
 
-	<a class="filter-sidebar filter-gia-phong" data-min-price="0" data-max-price="50">
+	<a class="filter-sidebar filter-price" data-min-price="0" data-max-price="50">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Nhỏ hơn 50$</span>
+			<span class="filter_label">Under 50$</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-gia-phong" data-min-price="50" data-max-price="100">
+	<a class="filter-sidebar filter-price" data-min-price="50" data-max-price="100">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Từ 50$ đến 100$</span>
+			<span class="filter_label">From 50$ to 100$</span>
 		</div>
 	</a>
-	<a class="filter-sidebar filter-gia-phong" data-min-price="100" data-max-price="200">
+	<a class="filter-sidebar filter-price" data-min-price="100" data-max-price="200">
 		<input class="filter-checkbox__input" type="checkbox">
 		<div class="filter-checkbox__label">
-			<span class="filter_label">Từ 100$ đến 200$</span>
+			<span class="filter_label">From 100$ to 200$</span>
 		</div>
 	</a>
 	<?php
 
 	return ob_get_clean();
 }
-add_shortcode( 'justread_shortcode_gia_hotel', 'justread_shortcode_gia_hotel' );
+add_shortcode( 'justread_shortcode_hotel_price', 'justread_shortcode_hotel_price' );

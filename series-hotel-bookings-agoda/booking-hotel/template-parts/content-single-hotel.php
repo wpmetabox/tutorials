@@ -13,8 +13,8 @@
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<span class="show_map_icon"></span>
-		<span class="entry_address"><?php echo rwmb_meta( 'dia-chi' ); ?></span> - 
-		<span class="entry_distance"><?php echo 'Cách trung tâm ' . rwmb_meta( 'khoang-cach' ); ?></span>
+		<span class="entry_address"><?php echo rwmb_meta( 'address' ); ?></span> - 
+		<span class="entry_distance"><?php echo 'Distance to center ' . rwmb_meta( 'distance' ); ?></span>
 	</header><!-- .entry-header -->
 
 	<div class="entry-body">
@@ -55,14 +55,14 @@
 		</div>
 
 		<div class="hotel-amenities">
-			<h2>Các tiện nghi được ưa chuộng nhất</h2>
+			<h2>The most popular facilities</h2>
 			<?php
-			rwmb_the_value( 'tien-nghi' );
+			rwmb_the_value( 'facilities' );
 			?>
 		</div>
 
 		<div class="hotel-availability">
-			<h2>Phòng trống</h2>
+			<h2>Check availability</h2>
 			<?php
 			$value_checkin  = isset( $_POST['check-in-date'] ) ? $_POST['check-in-date'] : '';
 			$value_checkout = isset( $_POST['check-out-date'] ) ? $_POST['check-out-date'] : '';
@@ -76,11 +76,11 @@
 			</form>
 			<table>
 				<thead>
-					<th>Ảnh</th>
-					<th>Tên phòng</th>
-					<th>Phù hợp với</th>
-					<th>Giá phòng/đêm</th>
-					<th>Đặt trước</th>
+					<th>Images</th>
+					<th>Room name</th>
+					<th>Suitable</th>
+					<th>Price per night</th>
+					<th>Book</th>
 				</thead>
 				<tbody>
 					<?php
@@ -112,16 +112,16 @@
 							<td class="thong-tin-phong">
 								<span><a class="ten-phong" href="#<?php echo $key ?>"><?php echo $value['room_name']; ?></a></span>
 								<br>
-								<b>Kích thước phòng:</b>
+								<b>Total area:</b>
 								<?php
-								echo $value['dien-tich'];
+								echo $value['room-area'];
 								?>
 								<div class="hotel-amenities">
-									<b>Các tiện nghi trong phòng</b>
+									<b>Facilities</b>
 									<ul>
 									<?php
-									foreach ( $value['tien-nghi_g4zooy6n28n'] as $tien_nghi_phong ) {
-										echo '<li>' . $tien_nghi_phong . '</li>';
+									foreach ( $value['room_facilities'] as $room_facilities ) {
+										echo '<li>' . $room_facilities . '</li>';
 									}
 									?>
 									</ul>
@@ -129,12 +129,12 @@
 							</td>
 							<td class="so-luong">
 							<?php
-							echo 'Người lớn: ' . $value['so-nguoi'] . '<br>
-									Trẻ em: ' . $value['so-tre-em'];
+							echo 'Adults: ' . $value['adults'] . '<br>
+									Chidren: ' . $value['chidren'];
 							?>
 							</td>
 							<td class="gia"><?php echo $value['price'] . ' $'; ?></td>
-							<td class="dat-truoc"><button class="btn btn-main">Đặt ngay</button></td>
+							<td class="dat-truoc"><button class="btn btn-main">Book</button></td>
 						</tr>
 						<?php endif; ?>
 					<?php endforeach; ?>
