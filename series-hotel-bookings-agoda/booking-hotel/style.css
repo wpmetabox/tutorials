@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/*
+Theme Name: Justread Child Theme
+Theme URI: https://gretathemes.com/wordpress-themes/justread/
+Version: 1.0
+Description: An example child theme that can be used as a starting point for custom development.
+Author: GretaThemes
+Author URI: https://gretathemes.com
+template: justread
+*/
+/* Add your custom styles here */
+
+
+
+/* Archive hotel */
+.ui-datepicker.ui-widget {
+	z-index: 99 !important;
+}
+.filter-hotel {
+	background: #06c;
+	padding: 16px;
+	color: #fff;
+	border-radius: 3px;
+	font-family: sans-serif;
+}
+.filter-hotel p {
+	margin-bottom: 10px;
+}
+.filter-hotel .filter-input {
+	padding: 7px 10px;
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: rgb(117, 117, 117);
+}
+.filter-hotel .filter-action {
+	background: #fff;
+	color: #06c;
+	width: 100%;
+}
+.filter-custom-taxonomy a, .filter-custom-field a {
+	margin-right: 30px;
+}
+
+.ui-autocomplete {
+	background: rgb(255, 255, 255);
+	width: 267px !important;
+	list-style: none;
+	padding: 10px 20px;
+}
+
+
+
+.widget-area .widget {
+	margin-bottom: 30px;
+}
+.post-type-archive-hotel .footer-widgets {
+	display: none;	
+}
+.post-type-archive-hotel .site-content,
+.single-hotel .site-content {
+	display: flex;
+}
+.post-type-archive-hotel #primary,
+.single-hotel #primary {
+	width: 75%;
+}
+.post-type-archive-hotel #secondary,
+.single-hotel #secondary {
+	width: 25%;
+	padding-right: 3em;
+}
+.post-type-archive-hotel .widget-title,
+.single-hotel .widget-title {
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+
+.filter-sidebar {
+	display: block;
+	font-family: sans-serif;
+	cursor: pointer;
+	font-weight: normal;
+	line-height: 1;
+	position: relative;
+	color: #000;
+	padding: 5px 0;
+}
+.filter-sidebar:hover {
+	text-decoration: none;
+}
+
+.filter-checkbox {
+	position: relative;
+	display: block;
+}
+.filter-checkbox__input {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+}
+.filter-checkbox__label {
+	cursor: pointer;
+	padding-left: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.filter_count {
+	color: #6b6b6b;
+	font-size: 16px;
+}
+
+
+.post-type-archive-hotel article.hentry {
+	margin-bottom: 20px;
+}
+.post-type-archive-hotel article.hentry .card {
+	display: flex;
+	padding: 15px;
+}
+.post-type-archive-hotel article.hentry .card__body {
+	padding: 0 30px;
+	flex: 1;
+}
+.post-type-archive-hotel .card__media {
+	width: 300px;
+}
+.post-type-archive-hotel .card__footer {
+	display: block;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+/* Single hotel */
+.single-hotel img {
+	width: 100%;
+}
+.single-hotel {
+	font-family: sans-serif;
+}
+.single-hotel .site-content {
+	max-width: 1170px;
+	width: auto;
+}
+.single-hotel .entry-content {
+	margin-bottom: 20px;
+}
+.single-hotel .entry-body {
+	padding: 4rem;
+}
+.show_map_icon {
+	display: inline-block;
+	width: 15px;
+	height: 23px;
+	margin-right: 0;
+	background: url(https://cf.bstatic.com/static/img/map/cta_material/map_cta_pin_small_sprite/282fe351577daee951a83d531ff1a065e74a5d04.png) no-repeat;
+	margin-top: -2px;
+	background-size: 15px 46px;
+	background-position: 0 0;
+	vertical-align: middle;
+}
+.entry_distance {
+	color: #06c;
+	font-weight: 700;
+}
+.single-hotel .slick-next:before, .slick-prev:before {
+	color: #333333;
+}
+.single-hotel .hotel-amenities ul {
+	list-style-image: url('https://i.imgur.com/C8mMQhJ.png');
+	padding-left: 30px;
+	display: flex;
+	flex-flow: row wrap;
+}
+.single-hotel .hotel-amenities ul li {
+	width: 50%;
+}
+
+.single-hotel .hotel-availability tr {
+	display: flex;
+}
+.single-hotel .hotel-availability th,
+.single-hotel .hotel-availability td {
+	width: 25%;
+}
+.single-hotel .hotel-availability th:nth-child(3),
+.single-hotel .hotel-availability td:nth-child(3),.single-hotel .hotel-availability th:last-child,
+.single-hotel .hotel-availability td:last-child {
+	width: 15%;
+}
+.single-hotel .hotel-availability th:nth-child(2),
+.single-hotel .hotel-availability td:nth-child(2) {
+	width: 45%;
+}
+.single-hotel .hotel-availability thead tr {
+	border: none;
+}
+.single-hotel .hotel-availability thead th {
+	background: #4c76b2;
+	color: #fff;
+	padding: 6px 8px;
+	border-left: 1px solid #5bbaff;
+	font-size: 14px;
+}
+.single-hotel .hotel-availability tbody td {
+	border-bottom: 1px solid #5bbaff;
+	border-right: 1px solid #5bbaff;
+	border-left: 0 none;
+	padding: 6px;
+}
+.single-hotel .hotel-availability .ten-phong {
+	color: #0071c2;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.single-hotel .gallery-side-popup {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -5px;
+}
+.single-hotel .gallery-side-popup a {
+	width: 50%;
+	padding: 0 5px;
+}
+.single-hotel .gallery-side-popup img {
+	width: 200px;
+	height: 70px;
+	object-fit: cover;
+}
+.single-hotel .hotel-availability .dat-truoc .btn {
+	font-size: 12px;
+	width: 100%;
+}
+
+#hotel-availform .date-check {
+	padding: 7px 10px;
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: rgb(117, 117, 117);
+}
