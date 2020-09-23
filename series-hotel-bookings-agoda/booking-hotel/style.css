@@ -55,7 +55,7 @@ template: justread
 	margin-bottom: 30px;
 }
 .post-type-archive-hotel .footer-widgets {
-	display: none;	
+	display: none;
 }
 .post-type-archive-hotel .site-content,
 .single-hotel .site-content {
@@ -210,6 +210,7 @@ template: justread
 	border-right: 1px solid #5bbaff;
 	border-left: 0 none;
 	padding: 6px;
+	font-size: 14px;
 }
 .single-hotel .hotel-availability .ten-phong {
 	color: #0071c2;

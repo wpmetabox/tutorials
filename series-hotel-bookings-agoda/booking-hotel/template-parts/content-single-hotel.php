@@ -13,7 +13,7 @@
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<span class="show_map_icon"></span>
-		<span class="entry_address"><?php echo rwmb_meta( 'address' ); ?></span> - 
+		<span class="entry_address"><?php echo rwmb_meta( 'address' ); ?></span> -
 		<span class="entry_distance"><?php echo 'Distance to center ' . rwmb_meta( 'distance' ); ?></span>
 	</header><!-- .entry-header -->
 
@@ -91,7 +91,7 @@
 						// var_dump($value);
 						$room_date_check_in  = $value['date_check_in'];
 						$room_date_check_out = $value['date_check_out'];
-						if ( ( strtotime( $room_date_check_in ) > strtotime( $search_check_in ) && strtotime( $room_date_check_in ) >= strtotime( $search_check_out ) ) || 
+						if ( ( strtotime( $room_date_check_in ) > strtotime( $search_check_in ) && strtotime( $room_date_check_in ) >= strtotime( $search_check_out ) ) ||
 							( strtotime( $room_date_check_out ) <= strtotime( $search_check_in ) && strtotime( $room_date_check_out ) < strtotime( $search_check_out ) ) ) :
 
 						?>
@@ -134,7 +134,10 @@
 							?>
 							</td>
 							<td class="gia"><?php echo $value['price'] . ' $'; ?></td>
-							<td class="dat-truoc"><button class="btn btn-main">Book</button></td>
+							<td class="dat-truoc">
+								<button class="btn btn-main">Book</button>
+								<p style="line-height: 1.4; margin-top: 20px; color: #ff3131;"><?php echo 'Our last ' . $value['our_last_room'] . ' rooms'; ?></p>
+							</td>
 						</tr>
 						<?php endif; ?>
 					<?php endforeach; ?>
