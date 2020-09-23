@@ -15,7 +15,7 @@
 function justread_child_scripts() {
 	$parenthandle = 'justread-style';
 	$theme = wp_get_theme();
-	wp_enqueue_style( $parenthandle, get_template_directory_uri() . '/style.css', 
+	wp_enqueue_style( $parenthandle, get_template_directory_uri() . '/style.css',
 		array(),
 		$theme->parent()->get('Version')
 	);
@@ -72,7 +72,7 @@ function justread_filter_hotel() {
 	$chidren     = $_POST['chidren'];
 
 	$rate_array = array(
-		'taxonomy' => 'xep-hang',
+		'taxonomy' => 'rate',
 		'field'    => 'name',
 		'terms'    => $rate,
 		'operator' => 'IN',
@@ -240,7 +240,7 @@ add_shortcode( 'justread_shortcode_main_filter', 'justread_shortcode_main_filter
 function justread_shortcode_rate_hotel() {
 	ob_start();
 	$terms = get_terms( array(
-		'taxonomy'   => 'xep-hang',
+		'taxonomy'   => 'rate',
 		'hide_empty' => false,
 	) );
 	foreach ( $terms as $term ) {
