@@ -21,7 +21,7 @@ jQuery( function ( $ ) {
 		$( '.filter-action, .filter-checkbox, .filter-hotel-type, .filter-facilities, .filter-room-facilities, .filter-price' ).on( 'click', function() {
 			var location   = $( '#location' ).val(),
 			adults  = $( '#adults' ).val(),
-			chidren     = $( '#chidren' ).val(),
+			children     = $( '#children' ).val(),
 			min_price  = $(this).attr( 'data-min-price' ),
 			max_price  = $(this).attr( 'data-max-price' );
 
@@ -31,7 +31,7 @@ jQuery( function ( $ ) {
 			room_facilities.push( $(this).attr( 'data-room-facilities-value' ) );
 
 			var input_check = $(this).find( 'input' ).attr( 'checked' );
-			
+
 			$(this).find( 'input' ).attr( 'checked', 'checked' );
 			jQuery.ajax({
 				url: ajax_object.ajax_url,
@@ -46,7 +46,7 @@ jQuery( function ( $ ) {
 					min_price: min_price,
 					max_price: max_price,
 					adults: adults,
-					chidren: chidren,
+					children: children,
 				},
 				success: function(response) {
 					$( '.site-main' ).html(response.post);
@@ -58,8 +58,8 @@ jQuery( function ( $ ) {
 		$( '.single-hotel .filter-action' ).on( 'click', () => {
 			let new_location = $( '#location' ).val(),
 				new_adults  = $( '#adults' ).val(),
-				new_chidren = $( '#children' ).val();
-				
+				new_children = $( '#children' ).val();
+
 			if ( new_location ) {
 				new_location = 'new_location=' + new_location;
 			} else {
@@ -72,17 +72,17 @@ jQuery( function ( $ ) {
 				new_adults = '';
 			}
 
-			if ( new_chidren ) {
-				new_chidren = 'new_chidren=' + new_chidren;
+			if ( new_children ) {
+				new_children = 'new_children=' + new_children;
 			} else {
-				new_chidren = '';
+				new_children = '';
 			}
-			// console.log(new_adults,new_chidren);
-			window.location = 'http://demo1.elightup.com/test-metabox/hotel?' + new_location + '&' + new_adults + '&' + new_chidren;
-			
+			// console.log(new_adults,new_children);
+			window.location = 'http://demo1.elightup.com/test-metabox/hotel?' + new_location + '&' + new_adults + '&' + new_children;
+
 		} );
 	}
-	
+
 
 	function slideGallerySingleHotel() {
 		$( '.gallery-side-reviews-wrapper' ).slick( {
