@@ -130,7 +130,7 @@
 							<td class="so-luong">
 							<?php
 							echo 'Adults: ' . $value['adults'] . '<br>
-									Chidren: ' . $value['chidren'];
+									Children: ' . $value['children'];
 							?>
 							</td>
 							<td class="gia"><?php echo $value['price'] . ' $'; ?></td>

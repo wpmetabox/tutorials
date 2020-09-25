@@ -61,15 +61,15 @@ function justread_child_custom_scripts() {
 add_action( 'wp_enqueue_scripts', 'justread_child_custom_scripts' );
 
 function justread_filter_hotel() {
-	$location   = $_POST['location'];
-	$rate       = $_POST['rate'];
-	$hotel_type = $_POST['hotel_type'];
-	$facilities  = $_POST['facilities'];
-	$room_facilities  = $_POST['room_facilities'];
-	$min_price  = $_POST['min_price'];
-	$max_price  = $_POST['max_price'];
-	$adults  = $_POST['adults'];
-	$chidren     = $_POST['chidren'];
+	$location        = isset( $_POST['location'] ) ? $_POST['location'] : '';
+	$rate            = isset( $_POST['rate'] ) ? $_POST['rate'] : '';
+	$hotel_type      = isset( $_POST['hotel_type'] ) ? $_POST['hotel_type']: '';
+	$facilities      = isset( $_POST['facilities'] ) ? $_POST['facilities']: '';
+	$room_facilities = isset( $_POST['room_facilities'] ) ? $_POST['room_facilities'];
+	$min_price       = isset( $_POST['min_price'] ) ? $_POST['min_price'];
+	$max_price       = isset( $_POST['max_price'] ) ? $_POST['max_price'];
+	$adults          = isset( $_POST['adults'] ) ? $_POST['adults'];
+	$children        = isset( $_POST['children'] ) ? $_POST['children'];
 
 	$rate_array = array(
 		'taxonomy' => 'rate',
@@ -125,13 +125,13 @@ function justread_filter_hotel() {
 	);
 	$adults_array = $adults ? $adults_array : '';
 
-	$chidren_array  = array(
-		'key'     => 'chidren',
-		'value'   => $chidren,
+	$children_array  = array(
+		'key'     => 'children',
+		'value'   => $children,
 		'type'    => 'NUMERIC',
 		'compare' => '>=',
 	);
-	$chidren_array = $chidren ? $chidren_array : '';
+	$children_array = $children ? $children_array : '';
 
 	$query_arr = array(
 		'post_type' => 'hotel',
@@ -200,12 +200,12 @@ function justread_add_field_group( $post_id ) {
 	$rooms = get_post_meta( $post_id, 'group_room', true );
 	delete_post_meta( $post_id, 'price_p' );
 	delete_post_meta( $post_id, 'adults' );
-	delete_post_meta( $post_id, 'chidren' );
+	delete_post_meta( $post_id, 'children' );
 	delete_post_meta( $post_id, 'room_facilities' );
 	foreach ($rooms as $key => $room) {
 		add_post_meta( $post_id, 'price_p', (int)$room['price'] );
 		add_post_meta( $post_id, 'adults', (int)$room['adults'] );
-		add_post_meta( $post_id, 'chidren', (int)$room['chidren'] );
+		add_post_meta( $post_id, 'children', (int)$room['children'] );
 		foreach ( $room['room_facilities'] as $key => $facilities ) {
 			add_post_meta( $post_id, 'room_facilities', $facilities );
 		}
