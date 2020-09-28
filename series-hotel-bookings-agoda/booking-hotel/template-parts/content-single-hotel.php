@@ -42,15 +42,10 @@
 		<div class="hotel-address">
 		<?php
 		$args = array(
-			'width'        => '640px',
-			'height'       => '480px',
-			'zoom'         => 14,
-			'marker'       => true,
-			'marker_icon'  => 'https://url_to_icon.png',
-			'marker_title' => 'Click me',
-			'info_window'  => '<h3>Title</h3><p>Content</p>.',
+			'zoom'   => 14,
+			'marker' => true,
 		);
-		echo rwmb_meta( 'osm_dia-chi', $args );
+		echo rwmb_meta( 'osm_address', $args );
 		?>
 		</div>
 
@@ -85,8 +80,8 @@
 				<tbody>
 					<?php
 					$room             = rwmb_meta( 'group_room' );
-					$search_check_in  = $_POST['check-in-date'];
-					$search_check_out = $_POST['check-out-date'];
+					$search_check_in  = isset( $_POST['check-in-date'] ) ? $_POST['check-in-date'] : '';
+					$search_check_out = isset( $_POST['check-out-date'] ) ? $_POST['check-out-date'] : '';
 					foreach ( $room as $key => $value ) :
 						// var_dump($value);
 						$room_date_check_in  = $value['date_check_in'];
