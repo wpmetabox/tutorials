@@ -169,6 +169,9 @@ template: justread
 .single-hotel .slick-next:before, .slick-prev:before {
 	color: #333333;
 }
+.single-hotel .hotel-address {
+	margin-bottom: 20px;
+}
 .single-hotel .hotel-amenities ul {
 	list-style-image: url('https://i.imgur.com/C8mMQhJ.png');
 	padding-left: 30px;

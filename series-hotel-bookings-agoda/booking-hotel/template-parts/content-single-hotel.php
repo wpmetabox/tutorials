@@ -40,6 +40,7 @@
 		</div><!-- .entry-content -->
 
 		<div class="hotel-address">
+			<h2>See map</h2>
 		<?php
 		$args = array(
 			'zoom'   => 14,
