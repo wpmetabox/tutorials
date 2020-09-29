@@ -63,13 +63,13 @@ add_action( 'wp_enqueue_scripts', 'justread_child_custom_scripts' );
 function justread_filter_hotel() {
 	$location        = isset( $_POST['location'] ) ? $_POST['location'] : '';
 	$rate            = isset( $_POST['rate'] ) ? $_POST['rate'] : '';
-	$hotel_type      = isset( $_POST['hotel_type'] ) ? $_POST['hotel_type']: '';
-	$facilities      = isset( $_POST['facilities'] ) ? $_POST['facilities']: '';
-	$room_facilities = isset( $_POST['room_facilities'] ) ? $_POST['room_facilities'];
-	$min_price       = isset( $_POST['min_price'] ) ? $_POST['min_price'];
-	$max_price       = isset( $_POST['max_price'] ) ? $_POST['max_price'];
-	$adults          = isset( $_POST['adults'] ) ? $_POST['adults'];
-	$children        = isset( $_POST['children'] ) ? $_POST['children'];
+	$hotel_type      = isset( $_POST['hotel_type'] ) ? $_POST['hotel_type'] : '';
+	$facilities      = isset( $_POST['facilities'] ) ? $_POST['facilities'] : '';
+	$room_facilities = isset( $_POST['room_facilities'] ) ? $_POST['room_facilities'] : '';
+	$min_price       = isset( $_POST['min_price'] ) ? $_POST['min_price'] : '';
+	$max_price       = isset( $_POST['max_price'] ) ? $_POST['max_price'] : '';
+	$adults          = isset( $_POST['adults'] ) ? $_POST['adults'] : '';
+	$children        = isset( $_POST['children'] ) ? $_POST['children'] : '';
 
 	$rate_array = array(
 		'taxonomy' => 'rate',
