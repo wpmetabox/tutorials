@@ -2,42 +2,42 @@
 	{
 		"hotel_id": 2178,
 		"room_type": 1,
-		"number": 1,
+		"room_number": 1,
 		"check_in": "09/30/2020",
 		"check_out": "10/01/2020"
 	},
 	{
 		"hotel_id": 2178,
 		"room_type": 1,
-		"number": 1,
+		"room_number": 1,
 		"check_in": "10/03/2020",
 		"check_out": "10/04/2020"
 	},
 	{
 		"hotel_id": 2178,
 		"room_type": 1,
-		"number": 2,
+		"room_number": 2,
 		"check_in": "09/30/2020",
 		"check_out": "10/02/2020"
 	},
 	{
 		"hotel_id": 2178,
 		"room_type": 2,
-		"number": 1,
+		"room_number": 1,
 		"check_in": "10/03/2020",
 		"check_out": "10/04/2020"
 	},
 	{
 		"hotel_id": 2178,
 		"room_type": 2,
-		"number": 2,
+		"room_number": 2,
 		"check_in": "10/05/2020",
 		"check_out": "10/07/2020"
 	},
 	{
 		"hotel_id": 2178,
 		"room_type": 2,
-		"number": 3,
+		"room_number": 3,
 		"check_in": "10/07/2020",
 		"check_out": "10/08/2020"
 	},
@@ -46,7 +46,7 @@
 	{
 		"hotel_id": 2164,
 		"room_type": 2,
-		"number": 2,
+		"room_number": 2,
 		"check_in": "10/05/2020",
 		"check_out": "10/07/2020"
 	}

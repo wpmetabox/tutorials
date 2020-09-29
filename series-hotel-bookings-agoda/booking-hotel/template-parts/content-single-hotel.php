@@ -126,8 +126,8 @@
 								<button class="btn btn-main">Book</button>
 								<?php
 								$get_hotel_id = get_the_ID();
-								$array        = justread_get_room_unavailability( $get_hotel_id, $room_key );
-								$number_room_unavailability = $room['total_room'] - count( array_unique( $array, SORT_REGULAR ) );
+								$array_room   = justread_get_room_unavailability( $get_hotel_id, $room_key );
+								$number_room_unavailability = $room['total_room'] - count( array_unique( $array_room, SORT_REGULAR ) );
 								?>
 								<p style="line-height: 1.4; margin-top: 20px; color: #ff3131;"><?php echo 'Our last ' . $number_room_unavailability . ' rooms'; ?></p>
 							</td>

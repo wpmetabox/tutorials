@@ -467,7 +467,7 @@ function justread_get_room_unavailability( $get_hotel_id, $room_key ) {
 		if ( ( strtotime( $room_check_in ) <= strtotime( $search_check_in ) && strtotime( $room_check_out ) >= strtotime( $search_check_in ) ) || ( strtotime( $room_check_in ) <= strtotime( $search_check_out ) && strtotime( $room_check_out ) >= strtotime( $search_check_out ) ) ) {
 			$array[] = [
 				'room_type' => $room_type,
-				'number'    => $data->number,
+				'number'    => $data->room_number,
 			];
 		}
 	}
