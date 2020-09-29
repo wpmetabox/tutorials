@@ -442,3 +442,34 @@ function justread_shortcode_hotel_price() {
 	return ob_get_clean();
 }
 add_shortcode( 'justread_shortcode_hotel_price', 'justread_shortcode_hotel_price' );
+
+
+/**
+ * Lấy danh sách phòng đã book theo ngày search trong file json.
+ */
+function justread_get_room_unavailability( $get_hotel_id, $room_key ) {
+	$booking_data = json_decode( file_get_contents( get_stylesheet_directory_uri() . '/js/booking-data.json' ) );
+	$search_check_in  = $_POST['check-in-date'];
+	$search_check_out = $_POST['check-out-date'];
+	$array = [];
+	foreach ( $booking_data as $key => $data ) {
+		$hotel_id       = $data->hotel_id;
+		$room_type      = $data->room_type;
+		$room_check_in  = $data->check_in;
+		$room_check_out = $data->check_out;
+
+		if ( $hotel_id !== $get_hotel_id ) {
+			continue;
+		}
+		if ( $room_type !== $room_key + 1 ) {
+			continue;
+		}
+		if ( ( strtotime( $room_check_in ) <= strtotime( $search_check_in ) && strtotime( $room_check_out ) >= strtotime( $search_check_in ) ) || ( strtotime( $room_check_in ) <= strtotime( $search_check_out ) && strtotime( $room_check_out ) >= strtotime( $search_check_out ) ) ) {
+			$array[] = [
+				'room_type' => $room_type,
+				'number'    => $data->number,
+			];
+		}
+	}
+	return $array;
+}

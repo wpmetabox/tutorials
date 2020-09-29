@@ -80,22 +80,14 @@
 				</thead>
 				<tbody>
 					<?php
-					$room             = rwmb_meta( 'group_room' );
-					$search_check_in  = isset( $_POST['check-in-date'] ) ? $_POST['check-in-date'] : '';
-					$search_check_out = isset( $_POST['check-out-date'] ) ? $_POST['check-out-date'] : '';
-					foreach ( $room as $key => $value ) :
-						// var_dump($value);
-						$room_date_check_in  = $value['date_check_in'];
-						$room_date_check_out = $value['date_check_out'];
-						if ( ( strtotime( $room_date_check_in ) > strtotime( $search_check_in ) && strtotime( $room_date_check_in ) >= strtotime( $search_check_out ) ) ||
-							( strtotime( $room_date_check_out ) <= strtotime( $search_check_in ) && strtotime( $room_date_check_out ) < strtotime( $search_check_out ) ) ) :
-
+					$rooms = rwmb_meta( 'group_room' );
+					foreach ( $rooms as $room_key => $room ) :
 						?>
 						<tr>
 							<td class="image-room">
 								<div class="gallery-side-popup">
 								<?php
-								foreach ( $value['gallery-images-room'] as $image ) {
+								foreach ( $room['gallery-images-room'] as $image ) {
 									$img_url_full = wp_get_attachment_image_src( $image, 'full', false );
 									$img_url_small = wp_get_attachment_image_src( $image, 'thumbnail', false );
 									?>
@@ -106,17 +98,17 @@
 								</div>
 							</td>
 							<td class="thong-tin-phong">
-								<span><a class="ten-phong" href="#<?php echo $key ?>"><?php echo $value['room_name']; ?></a></span>
+								<span><a class="ten-phong" href="#<?php echo $key ?>"><?php echo $room['room_name']; ?></a></span>
 								<br>
 								<b>Total area:</b>
 								<?php
-								echo $value['room-area'];
+								echo $room['room-area'];
 								?>
 								<div class="hotel-amenities">
 									<b>Facilities</b>
 									<ul>
 									<?php
-									foreach ( $value['room_facilities'] as $room_facilities ) {
+									foreach ( $room['room_facilities'] as $room_facilities ) {
 										echo '<li>' . $room_facilities . '</li>';
 									}
 									?>
@@ -125,17 +117,21 @@
 							</td>
 							<td class="so-luong">
 							<?php
-							echo 'Adults: ' . $value['adults'] . '<br>
-									Children: ' . $value['children'];
+							echo 'Adults: ' . $room['adults'] . '<br>
+									Chidren: ' . $room['chidren'];
 							?>
 							</td>
-							<td class="gia"><?php echo $value['price'] . ' $'; ?></td>
+							<td class="gia"><?php echo $room['price'] . ' $'; ?></td>
 							<td class="dat-truoc">
 								<button class="btn btn-main">Book</button>
-								<p style="line-height: 1.4; margin-top: 20px; color: #ff3131;"><?php echo 'Our last ' . $value['our_last_room'] . ' rooms'; ?></p>
+								<?php
+								$get_hotel_id = get_the_ID();
+								$array        = justread_get_room_unavailability( $get_hotel_id, $room_key );
+								$number_room_unavailability = $room['total_room'] - count( array_unique( $array, SORT_REGULAR ) );
+								?>
+								<p style="line-height: 1.4; margin-top: 20px; color: #ff3131;"><?php echo 'Our last ' . $number_room_unavailability . ' rooms'; ?></p>
 							</td>
 						</tr>
-						<?php endif; ?>
 					<?php endforeach; ?>
 				</tbody>
 			</table>
