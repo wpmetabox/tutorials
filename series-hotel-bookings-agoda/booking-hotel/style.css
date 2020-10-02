@@ -215,7 +215,7 @@ template: justread
 	padding: 6px;
 	font-size: 14px;
 }
-.single-hotel .hotel-availability .ten-phong {
+.single-hotel .hotel-availability .room-name {
 	color: #0071c2;
 	font-weight: 600;
 	cursor: pointer;

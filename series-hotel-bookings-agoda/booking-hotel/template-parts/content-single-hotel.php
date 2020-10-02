@@ -97,8 +97,8 @@
 								?>
 								</div>
 							</td>
-							<td class="thong-tin-phong">
-								<span><a class="ten-phong" href="#<?php echo $key ?>"><?php echo $room['room_name']; ?></a></span>
+							<td class="room-information">
+								<span><a class="room-name" href="#<?php echo $key ?>"><?php echo $room['room_name']; ?></a></span>
 								<br>
 								<b>Total area:</b>
 								<?php
@@ -115,14 +115,14 @@
 									</ul>
 								</div>
 							</td>
-							<td class="so-luong">
+							<td class="amount">
 							<?php
 							echo 'Adults: ' . $room['adults'] . '<br>
 									Chidren: ' . $room['chidren'];
 							?>
 							</td>
-							<td class="gia"><?php echo $room['price'] . ' $'; ?></td>
-							<td class="dat-truoc">
+							<td class="price"><?php echo $room['price'] . ' $'; ?></td>
+							<td class="pre-order">
 								<button class="btn btn-main">Book</button>
 								<?php
 								$get_hotel_id = get_the_ID();
