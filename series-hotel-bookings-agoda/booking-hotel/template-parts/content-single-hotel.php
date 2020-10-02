@@ -118,7 +118,7 @@
 							<td class="amount">
 							<?php
 							echo 'Adults: ' . $room['adults'] . '<br>
-									Chidren: ' . $room['chidren'];
+									Children: ' . $room['children'];
 							?>
 							</td>
 							<td class="price"><?php echo $room['price'] . ' $'; ?></td>
