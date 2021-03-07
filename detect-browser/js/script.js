@@ -29,7 +29,18 @@ jQuery( function ($) {
 	
 	globalHooks.addFilter( 'detect_browser', 'myApp', filterGetBrowser );
 	function filterGetBrowser() {
-		return navigator.appVersion;
+		let version = '';
+		const { userAgent } = navigator;
+		if ( userAgent.includes( 'Firefox/' ) ) {
+			version = `Firefox v${userAgent.split( 'Firefox/' )[1]}`;
+		} else if ( userAgent.includes( 'MSIE/' ) ) {
+			version = `IE v${userAgent.split( 'MSIE/' )[1]}`;
+		} else if ( userAgent.includes( 'Chrome/' ) ) {
+			version = `Chrome v${userAgent.split( 'Chrome/' )[1]}`;
+		} else if ( userAgent.includes( 'Safari/' ) ) {
+			version = `Safari v${userAgent.split( 'Safari/' )[1]}`;
+		}
+		return version;
 	}
 
 
