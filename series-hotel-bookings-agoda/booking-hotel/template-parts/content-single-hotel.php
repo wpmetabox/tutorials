@@ -81,6 +81,8 @@
 				<tbody>
 					<?php
 					$rooms = rwmb_meta( 'group_room' );
+					$rooms_settings = rwmb_get_field_settings( 'group_room' );
+					$select_settings = $rooms_settings['fields'][8]['options']; // 8 là stt của field room_facilities trong room.
 					foreach ( $rooms as $room_key => $room ) :
 						?>
 						<tr>
@@ -109,7 +111,8 @@
 									<ul>
 									<?php
 									foreach ( $room['room_facilities'] as $room_facilities ) {
-										echo '<li>' . $room_facilities . '</li>';
+										$room_facilities_label = $select_settings[$room_facilities];
+										echo '<li>' . $room_facilities_label . '</li>';
 									}
 									?>
 									</ul>
