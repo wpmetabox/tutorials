@@ -1,0 +1,172 @@
+.contain-restaurant, a.name-res {
+    color: #000;
+  }
+  
+  .contain-restaurant {
+    position: relative;
+  }
+  
+  .contain-restaurant a {
+    color: #333;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Lato';
+  }
+  
+  .contain-restaurant .voucher-res a {
+    color: #fff !important;
+    pointer-events: none;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  .contain-restaurant:hover .href-res {
+    display: block;
+    opacity: 1;
+    color: #fe5252;
+    border: 3px double #fe5252;
+    text-decoration: none;
+  }
+  
+  .contain-restaurant .href-res {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    z-index: 99;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: 3px double #333;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  .contain-restaurant a:hover {
+    color: #fe5252;
+  }
+  
+  .contain-restaurant img.wp-post-image {
+    transition: transform 1s;
+    position: absolute;
+    top: 0;
+  }
+  
+  .contain-restaurant:hover img.wp-post-image {
+    transform: scale(1.5);
+  }
+  
+  .cover-image-res {
+    overflow: hidden;
+    width: 100%;
+    padding-top: calc(100% * 243/385);
+    position: relative;
+    transition: all .35s ease-in-out;
+  }
+  
+  .contain-restaurant:hover .cover-image-res {
+    opacity: 0.3;
+    background: #fff;
+  }
+  
+  .list-restaurant {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  
+  .contain-restaurant:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  .list-restaurant .slick-arrow {
+  font-size: 0;
+  border: 0;
+  background: transparent;
+  position: absolute;
+  top: 40%;
+  }
+  
+  .list-restaurant .slick-arrow:before {
+  content: "";
+  font-size: 15px;
+  color: #f12e2e;
+  background: #eee;
+  position: relative;
+  font-family: "FontAwesome";
+  padding: 17.5px 20.5px;
+  cursor: pointer;
+  }
+  
+  .list-restaurant .slick-arrow.prev-btn:before {
+  content: "\f053";
+  left: -25px;
+  }
+  
+  .list-restaurant .slick-arrow.next-btn:before {
+  content: "\f054";
+  right: -5px;
+  }
+  
+  .list-restaurant .slick-arrow.slick-disabled:before {
+  color: #555;
+  }
+  
+  .list-restaurant .slick-arrow.prev-btn {
+    left: -65px;
+  }
+  
+  .list-restaurant .slick-arrow.next-btn {
+    right: -70px;
+  }
+  .status-res {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+  }
+  .status-res.online {
+    background: #4bc731;
+  
+  }
+  .status-res.offline {
+    background: #555;
+  
+  }
+  
+  .voucher-res {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 15% 100%, 0% 50%, 15% 0%);
+    background: rgba(231,57,72,.85);
+    padding: 5px 20px 5px 30px;
+  }
+  
+  .brand-res {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .brand-res img {
+    width: 100%;
+  }
+  
+  .slider-res {
+    padding: 40px 0;
+  }
+  
+  .voucher-res span {
+      color: #fff;
+  }
