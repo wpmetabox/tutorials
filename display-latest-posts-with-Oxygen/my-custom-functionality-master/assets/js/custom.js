@@ -22,7 +22,7 @@ jQuery(document).ready(function ($) {
         prevArrow: '<button class="prev-btn">Previous</button>'
     });
     jQuery('.status-res span').each(function () {
-        if (jQuery(this).html() == 'online') {
+        if (jQuery(this).html() == 'Open') {
             jQuery(this).parent().addClass('online');
         } else {
             jQuery(this).parent().addClass('offline');
