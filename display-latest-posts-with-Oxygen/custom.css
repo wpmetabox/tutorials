@@ -2,10 +2,6 @@
     position: relative;
 }
 
-.contain-restaurant .name-res {
-    display: none;
-}
-
 .contain-restaurant a {
     color: #333;
     text-decoration: underline;
@@ -79,7 +75,6 @@
     width: 100%;
     margin: 0 auto;
     align-items: center;
-    /* justify-content: space-between; */
 }
 
 .contain-restaurant:not(:last-child) {
@@ -141,7 +136,6 @@
 }
 .status-res.offline {
     background: #555;
-
 }
 
 .voucher-res {
@@ -153,7 +147,7 @@
     padding: 5px 20px 5px 30px;
 }
 
-.brand-res {
+.logo {
     position: absolute;
     right: 5px;
     top: 5px;
@@ -161,7 +155,7 @@
     height: 60px;
 }
 
-.brand-res img {
+.logo img {
     width: 100%;
 }
 
