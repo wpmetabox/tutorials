@@ -23,9 +23,9 @@ jQuery(document).ready(function ($) {
     });
     jQuery('.status-res span').each(function () {
         if (jQuery(this).html() == 'Open') {
-            jQuery(this).parent().addClass('online');
+            jQuery(this).parent().addClass('open');
         } else {
-            jQuery(this).parent().addClass('offline');
+            jQuery(this).parent().addClass('close');
         }
     });
 })
