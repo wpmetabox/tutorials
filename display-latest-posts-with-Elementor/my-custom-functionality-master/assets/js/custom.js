@@ -1,7 +1,6 @@
 jQuery(document).ready(function ($) {
-    $(".list-restaurant .ecs-posts").slick({
+    jQuery(".list-restaurant .ecs-posts").slick({
         infinite: false,
-        // arrows: false,
         dots: false,
         autoplay: false,
         speed: 800,
@@ -12,10 +11,10 @@ jQuery(document).ready(function ($) {
         prevArrow: '<button class="prev-btn">Previous</button>'
     });
     jQuery('.status-res span').each(function () {
-        if (jQuery(this).html() == 'Online') {
-            jQuery(this).parents('.status-res').addClass('online');
+        if (jQuery(this).html() == 'Open') {
+            jQuery(this).parents('.status-res').addClass('open');
         } else {
-            jQuery(this).parents('.status-res').addClass('offline');
+            jQuery(this).parents('.status-res').addClass('close');
         }
     });
 })
