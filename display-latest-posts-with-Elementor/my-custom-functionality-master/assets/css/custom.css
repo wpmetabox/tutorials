@@ -52,11 +52,11 @@
     font-family: 'Lato';
 }
 
-.contain-restaurant .elementor-column-wrap .elementor-widget-wrap .status-res.online {
+.contain-restaurant .elementor-column-wrap .elementor-widget-wrap .status-res.open {
   background: #4bc731;
 
 }
-.contain-restaurant .elementor-column-wrap .elementor-widget-wrap .status-res.offline {
+.contain-restaurant .elementor-column-wrap .elementor-widget-wrap .status-res.close {
   background: #555;
 
 }
