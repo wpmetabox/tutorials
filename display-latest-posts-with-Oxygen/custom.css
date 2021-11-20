@@ -130,11 +130,11 @@
     height: 20px;
     border-radius: 50px;
 }
-.status-res.online {
+.status-res.open {
     background: #4bc731;
 
 }
-.status-res.offline {
+.status-res.close {
     background: #555;
 }
 
