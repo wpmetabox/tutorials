@@ -34,7 +34,6 @@ add_action( 'wp_enqueue_scripts', 'custom_enqueue_files' );
 function custom_enqueue_files() {
 	wp_enqueue_style('slick', plugin_dir_url( __FILE__ ).'/assets/css/slick.css');
 	wp_enqueue_style('slick-theme', plugin_dir_url( __FILE__ ).'/assets/css/slick-theme.css');
-	wp_enqueue_style('custom-css', plugin_dir_url( __FILE__ ).'/assets/css/custom.css');
 
 	wp_enqueue_script('custom', plugin_dir_url( __FILE__ ).'/assets/js/custom.js', ['jquery']);
 	wp_enqueue_script('slick-min', plugin_dir_url( __FILE__ ).'/assets/js/slick.min.js', ['jquery']);
