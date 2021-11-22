@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
         nextArrow: '<button class="next-btn">Next</button>',
         prevArrow: '<button class="prev-btn">Previous</button>'
     });
-    jQuery('.status-res span').each(function () {
+    jQuery('.status-res div').each(function () {
         if (jQuery(this).html() == 'Open') {
             jQuery(this).parents('.status-res').addClass('open');
         } else {
