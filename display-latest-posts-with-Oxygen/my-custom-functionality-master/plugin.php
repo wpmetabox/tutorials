@@ -38,33 +38,3 @@ function custom_enqueue_files() {
 	wp_enqueue_script('custom', plugin_dir_url( __FILE__ ).'/assets/js/custom.js', ['jquery']);
 	wp_enqueue_script('slick-min', plugin_dir_url( __FILE__ ).'/assets/js/slick.min.js', ['jquery']);
 }
-
-add_shortcode( 'new-arrival-product', 'new_arrival_shortcode1' );
-function new_arrival_shortcode1( $atts ) {
-    ob_start();
-    $query = new WP_Query( array(
-        'post_type'   => 'restaurant',
-		'post_status' => 'publish',
-		'order'          => 'DESC',
-    ) );
-    if ( $query->have_posts() ) { ?>
-	<div class="product-show-homepage">
-         <ul class="slider-product">
-            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-			<?php 
-			   $contacts = rwmb_meta( 'info_menu' );
-				if ( ! empty( $contacts ) ) {
-					foreach ( $contacts as $contact ) {
-						echo '<p>', $contact['heading_meal'], '</p>';
-					}
-				}
-			  ?>
-	  
-            <?php endwhile;
-            wp_reset_postdata(); ?>
-        </ul>
-		</div>
-    <?php $myvariable1 = ob_get_clean();
-    return $myvariable1;
-    }
-}
