@@ -121,6 +121,9 @@
 .list-restaurant .slick-arrow.next-btn {
     right: -55px;
 }
+.list-restaurant .slick-slide:not(:last-child) {
+    margin-right: 15px;
+}
 .status-res {
     position: absolute;
     top: 5px;
