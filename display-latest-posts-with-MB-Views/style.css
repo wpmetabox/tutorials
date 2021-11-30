@@ -1,7 +1,7 @@
 .contain-restaurant, a.name-res {
     color: #000;
   }
-  
+
   .contain-restaurant {
     position: relative;
   }
@@ -169,3 +169,12 @@
   .voucher-res span {
       color: #fff;
   }
+
+.voucher-res span ul {
+    list-style: none;
+    margin: 0;
+}
+
+.list-restaurant .slider-res .slick-track .slick-slide:not(:last-child) {
+    margin-right: 15px;
+}
