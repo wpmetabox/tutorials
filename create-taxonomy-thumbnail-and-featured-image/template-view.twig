@@ -1,0 +1,32 @@
+{% set args = {taxonomy: 'portfolio-type',hide_empty: false} %}
+{% set portfolios = mb.get_terms( args ) %}
+<div class="portfolio container">
+	<h1 class="heading-title">Portfolio</h1>
+	<div class="thumbnail-images">
+	{% for portfolio in portfolios %}
+		<div class="item">
+			<div class="overlay-thumbnail-categories">
+				{% set image_upload = mb.get_term_meta( portfolio.term_id, 'upload_portfolio_thumbnail', true ) %}
+				{% set image_url = mb.get_term_meta( portfolio.term_id, 'url_portfolio_thumbnail', true ) %}
+				{% if image_upload %}
+					{% set image_upload_link = mb.wp_get_attachment_image_src( image_upload, large) %}
+					<div class="thumbnail" style="background-image:url({{ image_upload_link [0] }})"></div>
+					<img src="{{ image_upload_link[0] }}">
+				{% elseif image_url %}
+					<div class="thumbnail" style="background-image:url({{ image_url }})"></div>
+					<img src="{{ image_url }}">
+				{% else %}
+					<img src="http://demo1.elightup.com/test-metabox/wp-content/uploads/2020/11/oriental-tiles.png">
+				{% endif %}
+			</div>
+			<div class="portfolio-title">
+				<div class="portfolio-name">{{ portfolio.name }}</div> 
+				<p class="description">
+					{{ portfolio.description }}
+				</p>
+				<a href="{{ mb.get_category_link( portfolio.term_id ) }}" target="_blank" rel="noopener">View More</a>
+			</div>
+		</div>
+	{% endfor %}
+	</div>
+</div>
