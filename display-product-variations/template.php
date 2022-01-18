@@ -14,7 +14,7 @@
 								<div class="slider slider-nav">
 									{% for item in post.simple_product.product_images %}
 									 <div class="gallery-slide">
-											<img src="{{ item.thumbnail.url }}" width="{{ item.thumbnail.width }}" height="{{ item.thumbnail.height }}" alt="{{ item.thumbnail.alt }}">
+											<img src="{{ item.thumbnail.url }}" width="{{ item.thumbnail.width }}" height="{{ item.thumbnail.height }}" alt="{{ item.thumbnail.alt }}"/>
 									</div>
 									{% endfor %}
 								</div>
@@ -59,14 +59,14 @@
 						<div class="slider slider-single">
 							{% for item in clone.product_images %}
 							<div class="img-slider">
-								<img src="{{ item.large.url }}" width="{{ item.large.width }}" height="{{ item.large.height }}" alt="{{ item.large.alt }}">
+								<img src="{{ item.large.url }}" width="{{ item.large.width }}" height="{{ item.large.height }}" alt="{{ item.large.alt }}"/>
 							</div>
 							{% endfor %}
 						</div>
 						<div class="slider slider-nav">
 							{% for item in clone.product_images %}
 							<div class="gallery-slide">
-								<img src="{{ item.thumbnail.url }}" width="{{ item.thumbnail.width }}" height="{{ item.thumbnail.height }}" alt="{{ item.thumbnail.alt }}">
+								<img src="{{ item.thumbnail.url }}" width="{{ item.thumbnail.width }}" height="{{ item.thumbnail.height }}" alt="{{ item.thumbnail.alt }}"/>
 							</div>
 							{% endfor %}
 						</div>
