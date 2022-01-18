@@ -7,7 +7,7 @@
 								<div class="slider slider-single">
 									{% for item in post.simple_product.product_images %}
 										<div class="img-slider">
-											<img src="{{ item.large.url }}" width="{{ item.large.width }}" height="{{ item.large.height }}" alt="{{ item.large.alt }}">
+											<img src="{{ item.large.url }}" width="{{ item.large.width }}" height="{{ item.large.height }}" alt="{{ item.large.alt }}"/>
 										</div>
 									{% endfor %}
 								</div>
