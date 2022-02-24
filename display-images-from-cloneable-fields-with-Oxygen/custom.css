@@ -1,0 +1,69 @@
+.brand-group {
+    padding-left: calc(30px/2);
+    padding-right: calc(30px/2);
+    max-width: 1140px;
+    margin: 0 auto 10px;
+    width: 100%;
+}
+
+ .brand-group .slick-arrow:before {
+  content: "";
+  font-size: 15px;
+  color: #f12e2e;
+  background: #eee;
+  position: relative;
+  font-family: "FontAwesome";
+  padding: 17.5px 20.5px;
+  cursor: pointer;
+  }
+  
+.brand-group .slick-arrow.prev-btn:before {
+  content: "\f053";
+  left: -25px;
+  }
+  
+.brand-group .slick-arrow.next-btn:before {
+  content: "\f054";
+  right: -25px;
+  }
+  
+.brand-group .slick-arrow.slick-disabled:before {
+  color: #555;
+  }
+  
+.brand-group .slick-arrow.prev-btn {
+    left: -25px;
+ }
+  
+.brand-group .slick-arrow.next-btn {
+    right: 50px;
+  }
+
+.brand-group .slick-track .slick-slide:not(:last-child) {
+    margin-right: 15px;
+}
+
+.brand-group .slick-arrow {
+    font-size: 0;
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    width: 0;
+}
+
+.brand-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.brand-img .name {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
