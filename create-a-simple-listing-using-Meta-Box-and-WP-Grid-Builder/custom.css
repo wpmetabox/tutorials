@@ -1,0 +1,30 @@
+.wpgb-card-media-content-top .wpgb-block-5 {
+	right: 0;
+}
+main .wp-grid-builder .wpgb-card .wpgb-card-media-content>div {
+	position: static;
+}
+main .wp-grid-builder .wpgb-card .wpgb-card-media-content>div .wpgb-block-5 {
+	position: absolute;
+	right: 0;
+}
+main .wp-grid-builder .wpgb-card .wpgb-card-media-content>div .wpgb-block-5 img {
+	max-width: 75px;
+	object-fit: cover;
+}
+
+main .wp-grid-builder .wpgb-card .wpgb-card-media-content>div .wpgb-block-4.status {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 50px;
+}
+main .wp-grid-builder .wpgb-card .wpgb-card-media-content>div .wpgb-block-4.status.open {
+	background: #4bc731;
+}
+main .wp-grid-builder .wpgb-card .wpgb-card-media-content>div .wpgb-block-4.status.close {
+	background: #555;
+}
