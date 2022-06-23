@@ -1,0 +1,26 @@
+.oxy-stock-content-styles p {display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.author-infor {display: flex;flex-direction: row;align-items: flex-start !important ;padding: 10px 0;}
+
+.author-infor img {border-radius: 50%;}
+
+.author-infor a {color: #000;font-weight: 700;text-align: left !important;}
+.author-name {
+    display: inline-block;
+    width: 100%;
+}
+.date {
+    display: block;
+    width: 100%;
+}
+.video-infor {
+    padding: 0 10px;
+}
+.video-box:hover {transition: all 1s ease-out;transform: scale(1.1);position: relative;z-index: 1;}
+.video-box {
+    margin-bottom: 16px !important;
+}
