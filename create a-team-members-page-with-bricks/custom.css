@@ -1,0 +1,51 @@
+.brxe-related-posts .repeater-item {
+    flex-direction: row;
+    padding: 10px;
+    border: 1px solid #fe5252;
+    border-radius: 12px;
+  }
+  .post-content {
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .brxe-related-posts .repeater-item .post-thumbnail-wrapper.css-filter .post-thumbnail-inner {
+      border: 2px solid #fe5252;
+      border-radius: 50%;
+  }
+  
+  .brxe-related-posts .repeater-item .post-thumbnail-wrapper.css-filter {
+  background-color: transparent;
+  }
+  
+  root .repeater-item div.dynamic a:before {
+   content: '\f09a';
+   font-family: 'FontAwesome';
+  color: #3b5998;
+  font-size: 25px;
+  }
+  
+  root .repeater-item div.dynamic a {font-size: 0;}
+  
+  root .repeater-item div.dynamic ~ div.dynamic a:before {
+    content: '\f16d';
+    font-family: 'FontAwesome';
+    color: #C13584;
+    font-size: 25px;
+  }
+  root .repeater-item div.dynamic ~ div.dynamic ~ div.dynamic a:before {
+    content: '\f0e0';
+    font-family: 'FontAwesome';
+    color: #FCAF45;
+    font-size: 25px;
+  }
+  
+  root .repeater-item div.dynamic {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .brxe-related-posts .repeater-item .post-content .dynamic {
+  margin-top: 0 !important;
+  }
+  
