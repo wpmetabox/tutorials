@@ -1,0 +1,86 @@
+h1 {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.team-member-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.team-member-container .team-member-box {
+    width: 49.5%;
+    margin-bottom: 10px;
+    display: flex;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #FE5252;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.team-member-container .team-member-box .content-right {
+    width: 70%;
+    text-align: center;
+}
+
+.team-member-container .team-member-box .content-right .name {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.team-member-container .team-member-box .content-right .position {
+    font-size: 20px;
+}
+
+.team-member-container .team-member-box .content-right .description {
+    max-width: 350px;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.team-member-container .team-member-box .content-left {
+    width: 30%;
+}
+
+.team-member-container .team-member-box .content-left img {
+    border-style: groove;
+    border-color: #FE5252;
+    border-radius: 50% 50% 50% 50%;
+    border-width: 3px;
+}
+
+.team-member-container .team-member-box .content-left .icon-group {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.team-member-container .team-member-box .content-left .icon-group .icon {margin-right: 15px;}
+
+.team-member-container .team-member-box .content-left .icon-group .icon i {
+    font-size: 25px;
+}
+
+.team-member-container .team-member-box .content-left .icon-group .icon i.fab.fa-facebook {
+    color: #4267B2;
+}
+
+.team-member-container .team-member-box .content-left .icon-group .icon i.fab.fa-instagram {
+    color: #C13584;
+}
+
+.team-member-container .team-member-box .content-left .icon-group .icon i.fas.fa-envelope {
+    color: #F4B400;
+}
+
+.team-member-container .team-member-box .content-left .icon-group .icon:last-child {
+    margin-right: 0;
+}
