@@ -1,0 +1,154 @@
+.featured-restaurants .wpgb-card,.contain-restaurant,a.name-res {
+	color: #000;
+}
+.featured-restaurants .wpgb-card,.contain-restaurant {
+	position: relative;
+}
+.featured-restaurants .wpgb-card a,.contain-restaurant a {
+	color: #333;
+	text-decoration: underline;
+	font-weight: 700;
+	font-size: 18px;
+	font-family: 'Lato';
+}
+.featured-restaurants .wpgb-card .voucher-res a,.contain-restaurant .voucher-res a {
+	color: #fff!important;
+	pointer-events: none;
+	text-decoration: none;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.featured-restaurants .wpgb-card:hover .href-res,.contain-restaurant:hover .href-res {
+	display: block;
+	opacity: 1;
+	color: #fe5252;
+	border: 3px double #fe5252;
+	text-decoration: none;
+}
+.featured-restaurants .wpgb-card .href-res,.contain-restaurant .href-res {
+	display: none;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 1;
+	z-index: 99;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	border: 3px double #333;
+	padding: 5px;
+	text-decoration: none;
+}
+.featured-restaurants .wpgb-card .voucher-res a:hover,.contain-restaurant a:hover {
+	color: #fe5252;
+}
+.contain-restaurant img.wp-post-image {
+	transition: transform 1s;
+	position: absolute;
+	top: 0;
+	height: 252px;
+}
+.contain-restaurant:hover img.wp-post-image {
+	transform: scale(1.5);
+}
+.cover-image-res {
+	overflow: hidden;
+	width: 100%;
+	padding-top: calc(100% * 243/385);
+	position: relative;
+	transition: all .35s ease-in-out;
+}
+.featured-restaurants .wpgb-card:hover .cover-image-res,.contain-restaurant:hover .cover-image-res {
+	opacity: .3;
+	background: #fff;
+}
+.wpgb-prev-button,.wpgb-next-button,.slick-arrow {
+	font-size: 0;
+	border: 0;
+	background: transparent;
+	position: absolute;
+	top: 40%;
+}
+.wpgb-prev-button:before,.wpgb-next-button:before,.slick-arrow:before {
+	content: "";
+	font-size: 15px;
+	color: #f12e2e;
+	background: #eee;
+	position: relative;
+	font-family: "FontAwesome";
+	padding: 17.5px 20.5px;
+	cursor: pointer;
+}
+.wpgb-prev-button:before,.slick-arrow.prev-btn:before {
+	content: "\f053";
+	left: -25px;
+}
+.wpgb-next-button:before,.slick-arrow.next-btn:before {
+	content: "\f054";
+	right: -5px;
+}
+.wpgb-prev-button,.slick-arrow.prev-btn {
+	left: -65px;
+}
+.wpgb-next-button,.slick-arrow.next-btn {
+	right: -70px;
+}
+.voucher-res {
+	position: absolute!important;
+	bottom: 10px;
+	left: 0;
+	background: rgba(231,57,72,.85);
+	padding: 5px 20px 5px 30px!important;
+}
+.logo {
+	position: absolute!important;
+	right: 5px;
+	top: 5px;
+	width: 60px;
+	height: 60px;
+}
+.logo img {
+	width: 100%;
+}
+.slider-res {
+	padding: 40px 0;
+}
+.voucher-res span {
+	color: #fff;
+}
+.voucher-res span ul {
+	list-style: none;
+	margin: 0;
+}
+.wp-grid-builder .wpgb-area button svg {
+	display: none;
+}
+.wp-grid-builder .wpgb-card .wpgb-card-media {
+	height: 252px;
+}
+.featured {
+	font-size: 0!important;
+	position: relative;
+}
+.featured:before {
+	content: '\f02e';
+	font-family: 'FontAwesome';
+	position: absolute;
+	top: 0;
+	left: 5px;
+	font-size: 34px;
+	font-weight: 400;
+	color: rgb(255 0 0);
+}
+.contain-restaurant.viewed:before {
+	content: '\f06e';
+	position: absolute;
+	top: 5px;
+	font-family: 'FontAwesome';
+	font-size: 20px;
+	left: 5px;
+	z-index: 1;
+	border: 1px solid #ff3e00;
+	padding: 0 10px;
+	color: #ff0000c2;
+}
