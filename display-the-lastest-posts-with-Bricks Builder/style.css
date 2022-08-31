@@ -1,0 +1,33 @@
+.restaurant-container ul {margin: 0 !important;}
+
+.restaurant-container.bricks-element-posts {overflow: visible;}
+
+.restaurant-container ul .content-wrapper .dynamic {margin: 0 !important;}
+
+.restaurant-container ul .content-wrapper p.dynamic:first-child {
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 15% 100%, 0% 50%, 15% 0%);
+    background: rgba(231,57,72,.85);
+    padding: 5px 20px 5px 30px;
+    color: #fff;
+    margin-top: 10px !important;
+}
+
+.restaurant-container ul .content-wrapper .dynamic .attachment-thumbnail {
+position: absolute;
+top: 5px;
+width: 50px;
+right: 5px;
+}
+
+.restaurant-container ul .content-wrapper {
+    position: static;
+}
+.restaurant-container ul .content-wrapper div.dynamic {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
