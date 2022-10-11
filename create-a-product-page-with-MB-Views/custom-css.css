@@ -1,0 +1,97 @@
+.car-rental {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.car-rental .col-left {
+    width: 55%;
+}
+
+.car-rental .col-left .mySlides.fade img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.car-rental .col-right {
+    width: 45%;
+    padding-left: 50px;
+}
+
+.post-content {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.rental-price {
+    font-size: 45px;
+    font-weight: 700;
+    color: #fe5252;
+}
+
+.car-rental .col-right ul {
+    margin: 0;
+    list-style: none;
+}
+
+.car-rental .col-right ul .details {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-rental .col-right ul .details h5 {
+    font-weight: 700;
+}
+
+.car-rental .col-right ul .details span {
+    font-style: italic;
+}
+
+.mySlides {display: none}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
