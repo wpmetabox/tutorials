@@ -1,0 +1,44 @@
+.bricks-layout-item .bricks-layout-inner .content-wrapper 
+{
+  position: static;
+}
+
+.bricks-layout-item .bricks-layout-inner .content-wrapper .attachment-thumbnail.size-thumbnail 
+{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 65px;
+}
+
+.bricks-layout-item .bricks-layout-inner .content-wrapper div.dynamic 
+{
+  margin: 0 !important;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+}
+
+.bricks-layout-item .bricks-layout-inner .image-wrapper
+{
+  padding-top: 300px;
+}
+
+.bricks-layout-item .bricks-layout-inner .content-wrapper .dynamic {
+   margin: 10px 0 0 !important;
+}
+
+.dynamic.open {background: #4bc731;}
+
+.dynamic.close {background: #555;}
+
+.content-wrapper p.dynamic a {
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 15% 100%, 0% 50%, 15% 0%);
+    background: rgba(231,57,72,.85);
+    padding: 5px 20px 5px 30px;
+    color:#fff;
+}
