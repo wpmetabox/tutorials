@@ -19,7 +19,6 @@
 						{{ clone.description }}
 					</p>
 					<p><a class="btn btn-lg btn-primary" href="{{ clone.button_link }}">{{ clone.button_text }}</a></p>
-				</div>
 			</div>
 		</div>
 		{% endfor %}
