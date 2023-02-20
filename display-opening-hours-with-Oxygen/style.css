@@ -1,0 +1,82 @@
+.single .page-header {
+    display: none;
+}
+
+ .container.detail-restaurant {
+    padding: 50px 0;
+}
+
+.container.detail-restaurant .featured-image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+ .container.detail-restaurant .voucher {
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 15% 100%, 0% 50%, 15% 0%);
+    background: rgba(231,57,72,.85);
+    padding: 5px 20px 5px 30px;
+    width: max-content;
+    margin: 20px 0 10px;
+    color: #fff;
+}
+ .container.detail-restaurant .name-restaurant {
+    margin: 0;
+}
+
+.container.detail-restaurant p {
+    margin: 0;
+}
+
+.group-layout {
+    display: flex;
+}
+
+.group-layout .infor-restaurant {
+    width: 45%;
+}
+
+.container.detail-restaurant .opening-hours {
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+ .container.detail-restaurant .opening-hours h2 {
+    margin: 0 0 10px;
+	text-align: center;
+	border: 4px solid rgba(231,57,72,.85);
+    border-right: 0;
+    border-left: 0;
+}
+
+ .container.detail-restaurant .detail-schedule .date-time {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	align-items: baseline;
+}
+
+.container.detail-restaurant .detail-schedule .date-time .hour .starting-hour:after{
+    content: '-';
+    margin: 0 5px;
+}
+
+.container.detail-restaurant .detail-schedule .date-time .hour .time-slot {
+    display: flex;
+}
+
+.container.detail-restaurant .detail-schedule .date-time .date {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.container.detail-restaurant .detail-schedule {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	border-bottom: 4px solid rgba(231,57,72,.85);
+    padding-bottom: 10px;
+}
+1
