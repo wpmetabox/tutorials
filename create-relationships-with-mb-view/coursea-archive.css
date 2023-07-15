@@ -1,0 +1,27 @@
+.course-archive.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.course-archive .course-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.course-item {
+    width: 32%;
+    text-align: left;
+}
+.course-item p{
+    margin-bottom: 6px;
+}
+.course-item img {
+    max-height: 250px;
+}
+
+.course-item h5 {
+    margin-top: 10px;
+}
