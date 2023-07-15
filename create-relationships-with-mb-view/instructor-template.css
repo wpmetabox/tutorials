@@ -1,0 +1,25 @@
+.items {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.item {
+    flex: 1;
+    text-align: left;
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.item h5 {
+    margin-top: 10px;
+}
+
+.instructor-template {
+    text-align: center;
+    margin: 20px 0;
+}
