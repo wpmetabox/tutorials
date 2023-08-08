@@ -1,7 +1,7 @@
-<?php 
-<div class="e-book-wrap">
- 	<div class="e-book-list">
-		{% set args = { post_type: 'e-book', posts_per_page: -1 } %}
+<div class="e-book-container">
+	<div class="e-book-wrap">
+	 	<div class="e-book-list">
+			{% set args = { post_type: 'e-book', posts_per_page: -1 } %}
 			{% set posts = mb.get_posts( args ) %}
 				{% for post in posts %}
 					<div class="e-book-item">
@@ -16,6 +16,6 @@
 						{% endfor %}
 					</div>
 				{% endfor %}
+		</div>
 	</div>
 </div>	
-
