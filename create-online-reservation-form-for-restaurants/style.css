@@ -1,0 +1,107 @@
+page-template-reservation-page .site-main {
+  margin: 40px 0;
+  width: 100%;
+  display: grid; }
+
+.no-sidebar .main {
+  margin: 0; }
+
+.rwmb-label, .rwmb-input {
+  width: 100% !important;
+  padding-bottom: 10px; }
+
+.rwmb-input input {
+  width: 100%; }
+
+.rwmb-input select {
+  width: 100%;
+    padding: 10px 0
+
+}
+.page-template-reservation-page .rwmb-input input{
+	height:45px !important;
+}
+.page-template-reservation-page .rwmb-input::before{
+	height:45px !important;
+}
+.page-template-reservation-page .site-main {
+  width: 100%;
+  display: grid; }
+.page-template-reservation-page .rwmb-meta-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+}
+.page-template-reservation-page .rwmb-field{
+	flex-direction:column;
+}
+@media all and (min-width: 768px) {
+  .page-template-reservation-page .site-main {
+    grid-template-columns: 1fr 30%;
+    grid-gap: 30px; } }
+
+.eci-info {
+  font-size: 16px; }
+  .eci-info svg {
+    width: 20px !important;
+    min-width: 20px !important;
+    max-width: 20px !important;
+    height: 20px !important; }
+
+.rwmb-input-group-text {
+  border: 0 !important; }
+
+.rwmb-button {
+  padding: 10px 25px;
+  background: #ea0808;
+  text-transform: uppercase;
+  color: #fff;
+	width: auto !important;
+  }
+
+.calendar .rwmb-input, .adults .rwmb-input, .children .rwmb-input, .full-name .rwmb-input, .email .rwmb-input, .phone .rwmb-input, .book .rwmb-input, .black-tie .rwmb-input {
+  position: relative;
+  padding-bottom: 0; }
+  .calendar .rwmb-input input, .calendar .rwmb-input select, .adults .rwmb-input input, .adults .rwmb-input select, .children .rwmb-input input, .children .rwmb-input select, .full-name .rwmb-input input, .full-name .rwmb-input select, .email .rwmb-input input, .email .rwmb-input select, .phone .rwmb-input input, .phone .rwmb-input select, .book .rwmb-input input, .book .rwmb-input select, .black-tie .rwmb-input input, .black-tie .rwmb-input select {
+    padding-left: 40px; }
+  .calendar .rwmb-input::before, .adults .rwmb-input::before, .children .rwmb-input::before, .full-name .rwmb-input::before, .email .rwmb-input::before, .phone .rwmb-input::before, .book .rwmb-input::before, .black-tie .rwmb-input::before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px; }
+
+.calendar .rwmb-input::before {
+  content: "\f073"; }
+
+.adults .rwmb-input::before, .children .rwmb-input::before, .full-name .rwmb-input::before {
+  content: "\f007"; }
+
+.email .rwmb-input::before {
+  content: "\f003"; }
+
+.phone .rwmb-input::before {
+  content: "\f095"; }
+
+.book .rwmb-input::before {
+  content: "\f02d"; }
+
+.black-tie .rwmb-input::before {
+  content: "\f27e"; }
+
+.col-left, .col-right {
+  background: #efefef; }
+
+.col-left {
+  padding: 10px; }
