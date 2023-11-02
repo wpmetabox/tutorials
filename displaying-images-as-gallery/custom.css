@@ -1,1 +1,40 @@
+.mb-slider .slick-next,
+.mb-slider .slick-prev {
+    width: 30px;
+    height: 30px;
+}
+.mb-slider .slick-next {
+    right: -30px;
+}
+.mb-slider .slick-next:before,
+.mb-slider .slick-prev:before {
+    font-family: slick;
+    font-size: 30px;
+    color:#000;
+    opacity: 0.5;
+}
+.mb-slider .slick-prev {
+    left: -30px;
+}
+.mb-slider .slick-dots li button:before {
+    font-size: 15px;
+}
+.mb-slider .slick-dots {
+    position: relative !important;
+    bottom: 0 !important;
+}
+.wrapper.mb-slider {
+    width: 100%;
+}
+.carousel {
+    width: 90%;
+    margin: 0px auto;
+}
+.slick-slide {
+    margin: 10px;
+}
+.slick-slide img {
+    width: 100%;
+    border: 1px solid #ffffff87;
+}
 
