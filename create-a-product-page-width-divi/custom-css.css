@@ -1,0 +1,43 @@
+.car-gallery .slick-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 360px!important;
+}
+.slick-dots li button:before {
+    font-size: 12px!important;
+}
+.slick-dots{
+    bottom: -40px;
+    margin:0!important;
+    text-align: center !important;
+}
+.car-gallery .slick-prev:before,
+.car-gallery .slick-next:before {
+    display: none;
+}
+.car-gallery .slick-arrow.slick-next,
+.car-gallery .slick-arrow.slick-prev {
+    top: 50%;
+    position: absolute;
+    font-size: 0;
+    cursor: pointer;
+    border: none;
+    background-image: url(https://tarkikromanski.github.io/files/arrow-slider.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    background-size: 12px;
+    background-position: center;
+    margin-top: -15px;
+    z-index: 1;
+    transform: none;
+}
+.car-gallery .slick-arrow.slick-next {
+    right: 10px;
+}
+.car-gallery .slick-arrow.slick-prev {
+    left: 10px;
+    transform: rotate(180deg);
+}
