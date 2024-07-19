@@ -1,0 +1,52 @@
+.timeline {
+    display: flex;
+}
+
+.timeline .timeline-date {
+    width: 200px;
+    flex-shrink: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.timeline .timeline-content {
+    border-left: 1px solid #dddedf;
+    padding-left: 50px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.timeline .dot {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background-color: #000;
+    border-radius: 50%;
+    min-width: 14px;
+    min-height: 14px;
+    left: -7px;
+    top: 7px;
+    box-shadow: 0 0 12px 0 rgba(8, 35, 43, 0.65);
+}
+
+.timeline-readmore {
+    font-weight: 600;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.timeline-readmore:hover {
+    opacity: 0.9;
+}
+
+.timeline-content .timeline-post {
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.timeline-content .timeline-post.show-full-content {
+    max-height: unset !important;
+    overflow: auto !important;
+
+}
