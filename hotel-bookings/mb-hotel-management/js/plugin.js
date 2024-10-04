@@ -6,9 +6,9 @@ $.ajax({
   error: function(err){
     console.log(err);
   },
-  success: function (data)
+  success: function (response)
   {
-    init_calendar(data);
+    init_calendar(response.data);
   }
 })
 
