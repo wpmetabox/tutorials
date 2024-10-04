@@ -3,7 +3,7 @@
  * Plugin Name: Hotel Management
  * Plugin URI: 
  * Description: Manage hotel bookings.
- * Version: 1.0 
+ * Version: 1.1 
  * Author: Dev WordPress
  * Author URI:  
  * License: GPLv2 or later
@@ -18,7 +18,7 @@ class managerBooking {
 	}
    
 	public function create_menu_admin_panel() {
-		add_menu_page( 'Manager booking', 'Manager booking', 'edit_posts', 'manager-booking', array($this, 'manager_booking' ) );
+		add_menu_page( 'Manager booking', 'Manager booking', 'edit_posts', 'manager-booking', array($this, 'booking_management' ) );
 	}   
 	
 	/**
@@ -30,15 +30,15 @@ class managerBooking {
 		}
 		
 		wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' );
-		wp_enqueue_style( 'fullcalendar-core', plugins_url( 'lib/fullcalendar/packages/core/main.css', __FILE__ ) );
-		wp_enqueue_style( 'fullcalendar-daygrid', plugins_url( 'lib/fullcalendar/packages/daygrid/main.css', __FILE__ ) );
+		wp_enqueue_style( 'fullcalendar-core', plugins_url( 'lib/fullcalendar/packages/core/main.min.css', __FILE__ ) );
+		wp_enqueue_style( 'fullcalendar-daygrid', plugins_url( 'lib/fullcalendar/packages/daygrid/main.min.css', __FILE__ ) );
 		wp_enqueue_style( 'css-custom', plugins_url( 'css/plugin.css', __FILE__ ) );
 
 		wp_enqueue_script('ct-jquery', 'https://code.jquery.com/jquery-3.3.1.js');
 		wp_enqueue_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'  );
 		wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'  );
-		wp_enqueue_script( 'fullcalendar-core', plugins_url( 'lib/fullcalendar/packages/core/main.js', __FILE__ ) );
-		wp_enqueue_script( 'fullcalendar-daygrid', plugins_url( 'lib/fullcalendar/packages/daygrid/main.js', __FILE__ ) );
+		wp_enqueue_script( 'fullcalendar-core', plugins_url( 'lib/fullcalendar/packages/core/main.min.js', __FILE__ ) );
+		wp_enqueue_script( 'fullcalendar-daygrid', plugins_url( 'lib/fullcalendar/packages/daygrid/main.min.js', __FILE__ ) );
 		wp_enqueue_script( 'js-custom', plugins_url( 'js/plugin.js', __FILE__ ) );
 		wp_localize_script( 'js-custom', 'ajaxurl', admin_url('admin-ajax.php') );
 		
@@ -58,7 +58,7 @@ class managerBooking {
 		}
 		$events = array();
 		while( $query->have_posts() ) {  $query->the_post();
-			$bookings = get_post_meta( get_the_ID(), 'group_booking', true );
+			$bookings = get_post_meta( get_the_ID(), 'group_booking', false );
 			if ( empty( $bookings ) ) {
 				continue;
 			}
@@ -78,8 +78,9 @@ class managerBooking {
 			}
 		}
 
-		echo json_encode($events);
-		wp_die();
+		wp_reset_postdata(); // Clear data WP_Query
+
+        wp_send_json_success($events); // Send data JSON
 	}
 }
 
