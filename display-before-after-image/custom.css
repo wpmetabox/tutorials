@@ -1,0 +1,94 @@
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 8px solid #fff;
+    border-bottom: 8px solid transparent;
+}
+
+#triangle-left {
+    margin-right: 5px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #fff;
+    border-bottom: 8px solid transparent;
+}
+
+.mb-icon {
+    cursor: pointer;
+    background: linear-gradient(62deg, #c93072 5%, #3365c0);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    margin: 0 0 0 -18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.text-before {
+    width: max-content;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    background: #0c0202;
+    padding: 3px 7px;
+}
+
+.text-after {
+    width: max-content;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #fff;
+    background: #0c0202;
+    padding: 3px 5px;
+}
+
+.mb-container img {
+    max-width: none;
+    width: 100%;
+    display: block;
+}
+
+#before-after-slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid white;
+}
+
+#after-image {
+    display: block
+}
+
+#before-image {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#resizer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 4px;
+    background: white;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
