@@ -1,0 +1,32 @@
+.mb-container {
+    background: #e7e7e7;
+    text-align: center;
+}
+.mb-content {
+    padding: 20px 50px;
+}
+.mb-your-sale {
+    font-weight: bold;
+    font-size: 30px;
+}
+.mb-title-sale{
+    font-weight: bold;
+    font-size: 25px;
+    color: #bb2c2c;
+    margin-bottom:15px;
+}
+.mb-container img {
+    width: 100%;
+}
+.mb-phone {
+	padding-top:20px;
+}
+.mb-language,
+.mb-email,
+.mb-experience,
+.mb-phone,
+.mb-motto {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: left;
+}
