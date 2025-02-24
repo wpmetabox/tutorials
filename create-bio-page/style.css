@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.mb-profile {
+    width: 100%;
+    padding: 64px 0 48px;
+    background-color: #c4acac;
+}
+
+.mb-profile a{
+    color: #1d4fc4;
+}
+.mb-bio,
+.mb-account,
+.mb-link {
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 40px;
+    position: relative;
+    margin: 0 auto 24px;
+    max-width: 560px;
+}
+
+.mb-avatar {
+    margin-bottom: 20px;
+}
+.icon-accounts{
+    height: 24px;
+        width: 24px;
+}
+.mb-avatar img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.bio-description {
+    font-size: 16px;
+    line-height: 1.4;
+}
+.bio-address{
+    font-style: italic;
+}
+
+.bio-description{
+        margin-top: 15px;
+}
+.bio-name {
+    font-family: sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+}
+.title-link,
+.title-accounts {
+    font-size: 18px;
+    font-weight: bold;
+}
+.icon-link,
+.icon-accounts{
+    margin-right: 15px;
+    height: 24px;
+    width: 24px;
+    float: left;
+    margin-top: 5px;
+}
+.mb-url a:hover {
+    text-decoration: underline;
+}
+
+.mb-url a {
+    font-size: 20px;
+    text-decoration: none;
+}
+.item-accounts,
+.item-link {
+    align-items: flex-start;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 16px 0;
+}
+
+/* style button */
+.modal {
+    opacity: 0;
+    position: fixed;
+    z-index: 0;
+    width: 555px;
+    height: 150px;
+    overflow: auto;
+    background-color: #fff;
+    transition: all .15s linear;
+    -webkit-transform: translate3d(0, 200px, 0);
+    transform: translate3d(0, 200px, 0);
+}
+
+.show-popup .modal {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 45%;
+    z-index: 10000;
+}
+
+.show-popup .modal {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    padding: 38px;
+}
+.modal-content .link-mail {
+    text-decoration: none;
+    color: #1d4fc4;
+    font-size: 20px;
+}
+.modal-content .link-mail:hover{
+    text-decoration: underline;
+}
+.mb-email{
+    font-size: 18px;
+    font-weight: bold;
+}
+.modal-content .fa.fa-at{
+    margin-top: 5px;
+    font-size: 19px;
+}
+.close {
+    z-index: 9;
+    color: #999;
+    position: absolute;
+    right: 25px;
+    font-size: 35px;
+}
+
+.close:hover,
+.close:focus {
+    color: #302a2a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cursor {
+    cursor: pointer;
+}
+.show-popup .mb-overlay {
+    opacity: 1;
+    display: block;
+}
+
+.mb-overlay {
+    z-index: 99;
+    width: 100%;
+    display: none;
+    background-color: rgba(16, 21, 23, .4);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.mb-overlay {
+    transition: all .15s linear;
+}
+button.cursor:hover{    
+    color: #50bbd9;
+    border: 1px solid #50bbd9;
+    transition: all .15s linear;
+}
+button.cursor{
+    border-radius: 5px;
+    border: 1px solid #6c7cb1;
+    color: #6c7cb1;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+/*style readmore*/
+.bio-description {
+    letter-spacing: -.32px;
+    line-height: 140%;
+    white-space: pre-line;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    overflow: hidden;
+}
+
+.button-readmore:hover{
+    text-decoration: underline;
+}
+.button-readmore {
+    font-size: 18px;
+    color: #6c7cb1;
+    font-weight: 600;
+    text-decoration: none;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.button-readmore:hover {
+    opacity: 0.9;
+}
+
+.mb-bio .bio-description {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    height: var(--truncate-height, auto);
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+   
+.mb-bio .bio-description.show-full-content {
+    -webkit-line-clamp: unset;
+    height: var(--truncate-height-expanded, auto);
+}
