@@ -1,0 +1,21 @@
+.fc-event,
+.fc-event-dot {
+    background-color: #d8613c !important;
+}
+
+.fc-event {
+    border: 1px solid #d8613c !important;
+}
+
+.fc-day-grid-event {
+    padding: 3px 1px;
+}
+
+.fc-toolbar button,
+.fc-button-group button {
+    text-transform: capitalize;
+}
+
+.fc-scroller.fc-day-grid-container {
+    height: auto !important;
+}
