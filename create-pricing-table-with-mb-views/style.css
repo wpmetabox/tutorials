@@ -1,0 +1,72 @@
+.mb-pricing-container .mb-item:nth-child(2) {
+    border: 5px solid #ef7a37;
+    transform: scale(1.1);
+}
+
+
+.mb-content {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.mb-item {
+    width: 30%;
+    margin: 18px;
+    text-align: center;
+    border: 3px solid #78787885;
+    border-radius: 15px;
+
+}
+
+.mb-title {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.mb-price {
+    font-size: 50px;
+    font-weight: 800;
+    color: #262626;
+}
+
+.mb-description {
+    padding: 15px 0;
+    background: #f7b793;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.mb-features {
+    padding-left: 2.5em;
+    text-align: left;
+}
+
+.item-feature {
+    font-weight: 500;
+    color: #262626;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.item-feature i.fa.fa-check-circle {
+    color: #ef7a37;
+}
+
+.mb-button {
+    margin: 20px;
+}
+
+.mb-button a:hover {
+    text-decoration: underline;
+}
+
+.mb-button a {
+    background: #ef7a37;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: #fff;
+}
