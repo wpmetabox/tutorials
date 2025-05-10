@@ -1,0 +1,75 @@
+.mb-container h3 {
+	margin-bottom: 15px;
+}
+
+.mb-container h3 a {
+	color: #b94444;
+}
+
+.mb-container {
+	margin-top: 25px;
+}
+
+.mb-item {
+	border-radius: 5px;
+	background: #f7f7f78a;
+	height: 285px;
+	font-size: 16px;
+	position: relative;
+	float: left;
+	width: 24%;
+	margin: 5px 5px 10px;
+	padding: 10px 15px;
+	border: 1px solid #48474733;
+	color: #262524;
+}
+
+.button:active,
+.button.is-checked {
+	background-color: #28F;
+}
+
+.button:hover {
+	background-color: #8CF;
+	text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+	color: #222;
+}
+
+#filter-search {
+	margin: 20px 0;
+}
+
+#quicksearch {
+	width: 300px;
+	border: 1px solid #747474;
+}
+
+#experience-level-filter,
+#job-type-filters,
+#filter-search,
+#technical-skills-filter {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+#technical-skills-filter label {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+#technical-skills-filter {
+	margin: 20px 0;
+}
+
+#technical-skills-filter h4 {
+	margin-bottom: 0;
+}
+
+#experience-level-filter h4,
+#job-type-filters h4,
+#filter-search h4 {
+	margin-bottom: 0;
+	padding-top: 10px;
+}
