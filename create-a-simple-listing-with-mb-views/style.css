@@ -1,0 +1,137 @@
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.grid-item {
+	width: calc(33.333% - 13.4px);
+}
+
+.restaurant-card {
+	background: #fff;
+	border: 1px solid #eee;
+	padding: 10px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+	position: relative;
+	margin: 10px;
+}
+
+.image-wrapper {
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	position: relative;
+}
+
+.feature-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.status-dot {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	border: 2px solid white;
+}
+
+.status-dot.open {
+	background-color: #28a745;
+}
+
+.status-dot.close {
+	background-color: #6c757d;
+}
+
+.mb-title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.mb-address {
+	font-style: italic;
+}
+
+.logo-img {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+	padding: 3px;
+	border-radius: 5px;
+}
+
+.voucher-label {
+	display: inline-block;
+	position: relative;
+	background: #e74c3c;
+	color: #fff;
+	padding: 8px 12px 9px 12px;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 1;
+	margin: 10px;
+}
+
+.voucher-label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 10px solid #e74c3c;
+	transform: translateX(-10px);
+}
+
+.filter-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.filter-tab {
+	background: none;
+	border: none;
+	outline: none;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #333;
+	cursor: pointer;
+	position: relative;
+	transition: color 0.3s;
+}
+
+.filter-tab::after {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background-color: #e74c3c;
+	transition: width 0.3s ease;
+}
+
+.filter-tab:hover,
+.filter-tab.active {
+	color: #e74c3c;
+}
+
+.filter-tab.active::after,
+.filter-tab:hover::after {
+	width: 100%;
+}
