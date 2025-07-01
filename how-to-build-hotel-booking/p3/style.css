@@ -1,0 +1,83 @@
+.regular_price {
+	color: red;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.additional_information {
+	color: #13acc7;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+ul.number_of_adults.max_children_per_room {
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+.infor {
+	border-top: 2px solid #919191;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+.thumb-slider img {
+	height: 85px !important;
+}
+
+.main-slider {
+	width: 100%;
+	/* max-width: 800px; */
+	margin: 0 auto 20px;
+}
+
+.thumb-slider {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+	position: static;
+}
+
+.thumb-slider .swiper-slide {
+	width: auto;
+	opacity: 0.4;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+}
+
+.thumb-slider .swiper-slide-thumb-active {
+	opacity: 1;
+	border: 2px solid #007aff;
+}
+
+.swiper-slide img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: block;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: #007aff;
+}
+
+.swiper-pagination {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.thumb-slider .swiper-slide {
+	width: auto;
+	cursor: pointer;
+	transition: border 0.3s ease;
+	opacity: 1;
+	/* ✅ Không còn mờ nữa */
+}
+
+.thumb-slider .swiper-slide-thumb-active {
+	border: 2px solid #007aff;
+}
