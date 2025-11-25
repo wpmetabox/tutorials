@@ -1,0 +1,463 @@
+{
+    "$schema": "https://schemas.metabox.io/field-group.json",
+    "fields": [
+        {
+            "name": "Choose an option",
+            "id": "choose_an_option",
+            "type": "select",
+            "options": {
+                "all_days_are_the_same": "All days are the same",
+                "difference_between_weekdays_and_weekend": "Difference Between Weekdays and Weekend",
+                "custom": "Custom"
+            },
+            "std": null
+        },
+        {
+            "name": "All days have the same opening hours",
+            "id": "all_days_have_the_same_opening_hours",
+            "type": "group",
+            "fields": [
+                {
+                    "name": "Type of opening hours",
+                    "id": "type_of_opening_hours",
+                    "type": "select",
+                    "options": {
+                        "open_all_day": "Open All day",
+                        "close_all_day": "Close All day",
+                        "by_appointment_only": "By Appointment Only",
+                        "enter_hours": "Enter Hours"
+                    },
+                    "std": null
+                },
+                {
+                    "name": "Choose time slots All days",
+                    "id": "choose_time_slots_all_days",
+                    "type": "group",
+                    "clone": true,
+                    "fields": [
+                        {
+                            "name": "Start time",
+                            "id": "start_time",
+                            "type": "time"
+                        },
+                        {
+                            "name": "End time",
+                            "id": "end_time",
+                            "type": "time"
+                        }
+                    ],
+                    "visible": [
+                        "type_of_opening_hours",
+                        "enter_hours"
+                    ]
+                }
+            ],
+            "visible": [
+                "choose_an_option",
+                "all_days_are_the_same"
+            ]
+        },
+        {
+            "name": "Weekdays",
+            "id": "weekdays",
+            "type": "group",
+            "fields": [
+                {
+                    "name": "Type of opening hours",
+                    "id": "type_of_opening_hours_weekdays",
+                    "type": "select",
+                    "options": {
+                        "open_all_day": "Open All day",
+                        "close_all_day": "Close All day",
+                        "by_appointment_only": "By Appointment Only",
+                        "enter_hours": "Enter Hours"
+                    },
+                    "std": null
+                },
+                {
+                    "name": "Choose time slots Weekdays",
+                    "id": "choose_time_slots_weekdays",
+                    "type": "group",
+                    "fields": [
+                        {
+                            "name": "Start time",
+                            "id": "start_time",
+                            "type": "time"
+                        },
+                        {
+                            "name": "End time",
+                            "id": "end_time",
+                            "type": "time"
+                        }
+                    ],
+                    "visible": [
+                        "type_of_opening_hours_weekdays",
+                        "enter_hours"
+                    ]
+                }
+            ],
+            "visible": [
+                "choose_an_option",
+                "difference_between_weekdays_and_weekend"
+            ]
+        },
+        {
+            "name": "Weekend",
+            "id": "weekend",
+            "type": "group",
+            "fields": [
+                {
+                    "name": "Type of opening hours",
+                    "id": "type_of_opening_hours_weekend",
+                    "type": "select",
+                    "options": {
+                        "open_all_day": "Open All day",
+                        "close_all_day": "Close All day",
+                        "by_appointment_only": "By Appointment Only",
+                        "enter_hours": "Enter Hours"
+                    },
+                    "std": null
+                },
+                {
+                    "name": "Choose time slots Weekend",
+                    "id": "choose_time_slots_weekend",
+                    "type": "group",
+                    "fields": [
+                        {
+                            "name": "Start time",
+                            "id": "start_time",
+                            "type": "time"
+                        },
+                        {
+                            "name": "End time",
+                            "id": "end_time",
+                            "type": "time"
+                        }
+                    ],
+                    "visible": [
+                        "type_of_opening_hours_weekend",
+                        "enter_hours"
+                    ]
+                }
+            ],
+            "visible": [
+                "choose_an_option",
+                "difference_between_weekdays_and_weekend"
+            ]
+        },
+        {
+            "name": "Monday",
+            "id": "monday",
+            "type": "group",
+            "fields": [
+                {
+                    "name": "Type of opening hours",
+                    "id": "type_of_opening_hours_monday",
+                    "type": "select",
+                    "options": {
+                        "open_all_day": "Open All day",
+                        "close_all_day": "Close All day",
+                        "by_appointment_only": "By Appointment Only",
+                        "enter_hours": "Enter Hours"
+                    },
+                    "std": null
+                },
+                {
+                    "name": "Choose time slots Monday",
+                    "id": "choose_time_slots_monday",
+                    "type": "group",
+                    "fields": [
+                        {
+                            "name": "Start time",
+                            "id": "start_time",
+                            "type": "time"
+                        },
+                        {
+                            "name": "End time",
+                            "id": "end_time",
+                            "type": "time"
+                        }
+                    ],
+                    "visible": [
+                        "type_of_opening_hours_monday",
+                        "enter_hours"
+                    ]
+                }
+            ],
+            "visible": [
+                "choose_an_option",
+                "custom"
+            ]
+        },
+        {
+            "name": "Tuesday",
+            "id": "tuesday",
+            "type": "group",
+            "fields": [
+                {
+                    "name": "Type of opening hours",
+                    "id": "type_of_opening_hours_tuesday",
+                    "type": "select",
+                    "options": {
+                        "open_all_day": "Open All day",
+                        "close_all_day": "Close All day",
+                        "by_appointment_only": "By Appointment Only",
+                        "enter_hours": "Enter Hours"
+                    },
+                    "std": null
+                },
+                {
+                    "name": "Choose time slots Tuesday",
+                    "id": "choose_time_slots_tuesday",
+                    "type": "group",
+                    "fields": [
+                        {
+                            "name": "Start time",
+                            "id": "start_time",
+                            "type": "time"
+                        },
+                        {
+                            "name": "End time",
+                            "id": "end_time",
+                            "type": "time"
+                        }
+                    ],
+                    "visible": [
+                        "type_of_opening_hours_tuesday",
+                        "enter_hours"
+                    ]
+                }
+            ],
+            "visible": [
+                "choose_an_option",
+                "custom"
+            ]
+        },
+        {
+            "name": "Wednesday",
+            "id": "wednesday",
+            "type": "group",
+            "fields": [
+                {
+                    "name": "Type of opening hours",
+                    "id": "type_of_opening_hours_wednesday",
+                    "type": "select",
+                    "options": {
+                        "open_all_day": "Open All day",
+                        "close_all_day": "Close All day",
+                        "by_appointment_only": "By Appointment Only",
+                        "enter_hours": "Enter Hours"
+                    },
+                    "std": null
+                },
+                {
+                    "name": "Choose time slots Wednesday",
+                    "id": "choose_time_slots_wednesday",
+                    "type": "group",
+                    "fields": [
+                        {
+                            "name": "Start time",
+                            "id": "start_time",
+                            "type": "time"
+                        },
+                        {
+                            "name": "End time",
+                            "id": "end_time",
+                            "type": "time"
+                        }
+                    ],
+                    "visible": [
+                        "type_of_opening_hours_wednesday",
+                        "enter_hours"
+                    ]
+                }
+            ],
+            "visible": [
+                "choose_an_option",
+                "custom"
+            ]
+        },
+        {
+            "name": "Thursday",
+            "id": "thursday",
+            "type": "group",
+            "fields": [
+                {
+                    "name": "Type of opening hours",
+                    "id": "type_of_opening_hours_thursday",
+                    "type": "select",
+                    "options": {
+                        "open_all_day": "Open All day",
+                        "close_all_day": "Close All day",
+                        "by_appointment_only": "By Appointment Only",
+                        "enter_hours": "Enter Hours"
+                    },
+                    "std": null
+                },
+                {
+                    "name": "Choose time slots Thursday",
+                    "id": "choose_time_slots_thursday",
+                    "type": "group",
+                    "fields": [
+                        {
+                            "name": "Start time",
+                            "id": "start_time",
+                            "type": "time"
+                        },
+                        {
+                            "name": "End time",
+                            "id": "end_time",
+                            "type": "time"
+                        }
+                    ],
+                    "visible": [
+                        "type_of_opening_hours_thursday",
+                        "enter_hours"
+                    ]
+                }
+            ],
+            "visible": [
+                "choose_an_option",
+                "custom"
+            ]
+        },
+        {
+            "name": "Friday",
+            "id": "friday",
+            "type": "group",
+            "fields": [
+                {
+                    "name": "Type of opening hours",
+                    "id": "type_of_opening_hours_friday",
+                    "type": "select",
+                    "options": {
+                        "open_all_day": "Open All day",
+                        "close_all_day": "Close All day",
+                        "by_appointment_only": "By Appointment Only",
+                        "enter_hours": "Enter Hours"
+                    },
+                    "std": null
+                },
+                {
+                    "name": "Choose time slots Friday",
+                    "id": "choose_time_slots_friday",
+                    "type": "group",
+                    "fields": [
+                        {
+                            "name": "Start time",
+                            "id": "start_time",
+                            "type": "time"
+                        },
+                        {
+                            "name": "End time",
+                            "id": "end_time",
+                            "type": "time"
+                        }
+                    ],
+                    "visible": [
+                        "type_of_opening_hours_friday",
+                        "enter_hours"
+                    ]
+                }
+            ],
+            "visible": [
+                "choose_an_option",
+                "custom"
+            ]
+        },
+        {
+            "name": "Saturday",
+            "id": "saturday",
+            "type": "group",
+            "fields": [
+                {
+                    "name": "Type of opening hours",
+                    "id": "type_of_opening_hours_saturday",
+                    "type": "select",
+                    "options": {
+                        "open_all_day": "Open All day",
+                        "close_all_day": "Close All day",
+                        "by_appointment_only": "By Appointment Only",
+                        "enter_hours": "Enter Hours"
+                    },
+                    "std": null
+                },
+                {
+                    "name": "Choose time slots Saturday",
+                    "id": "choose_time_slots_saturday",
+                    "type": "group",
+                    "fields": [
+                        {
+                            "name": "Start time",
+                            "id": "start_time",
+                            "type": "time"
+                        },
+                        {
+                            "name": "End time",
+                            "id": "end_time",
+                            "type": "time"
+                        }
+                    ],
+                    "visible": [
+                        "type_of_opening_hours_saturday",
+                        "enter_hours"
+                    ]
+                }
+            ],
+            "visible": [
+                "choose_an_option",
+                "custom"
+            ]
+        },
+        {
+            "name": "Sunday",
+            "id": "sunday",
+            "type": "group",
+            "fields": [
+                {
+                    "name": "Type of opening hours",
+                    "id": "type_of_opening_hours_sunday",
+                    "type": "select",
+                    "options": {
+                        "open_all_day": "Open All day",
+                        "close_all_day": "Close All day",
+                        "by_appointment_only": "By Appointment Only",
+                        "enter_hours": "Enter Hours"
+                    },
+                    "std": null
+                },
+                {
+                    "name": "Choose time slots Sunday",
+                    "id": "choose_time_slots_sunday",
+                    "type": "group",
+                    "fields": [
+                        {
+                            "name": "Start time",
+                            "id": "start_time",
+                            "type": "time"
+                        },
+                        {
+                            "name": "End time",
+                            "id": "end_time",
+                            "type": "time"
+                        }
+                    ],
+                    "visible": [
+                        "type_of_opening_hours_sunday",
+                        "enter_hours"
+                    ]
+                }
+            ],
+            "visible": [
+                "choose_an_option",
+                "custom"
+            ]
+        }
+    ],
+    "id": "opening-hours",
+    "modified": 1764059261,
+    "post_types": [
+        "restaurant"
+    ],
+    "title": "Opening Hours"
+}
