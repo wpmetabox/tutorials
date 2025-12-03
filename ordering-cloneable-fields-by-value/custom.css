@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+}
+ul.service-list {
+    margin: 50px 30%;
+}
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+    font-size: 18px;
+}
+
+.service-name {
+    position: relative;
+    padding-right: 15px;
+    font-weight: 600;
+}
+
+.separator{
+    border-top-style: solid;
+    border-top-width: 1px;
+    flex: 1;
+}
+
+.service-price {
+    color: #b30000;
+    font-weight: bold;
+    margin-left: 15px;
+    white-space: nowrap;
+}
