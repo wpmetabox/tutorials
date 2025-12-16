@@ -1,0 +1,157 @@
+.product-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px) scale(1.02);
+    border-radius: 12px;
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.product-title a {
+    color: #ff8400
+}
+
+.product-specs {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.product-specs li {
+    margin-bottom: 4px;
+}
+
+/*style compare*/
+.btn-compare {
+    background: #00aa83;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-compare:hover {
+    background: #044638;
+}
+
+#btn-clear-all {
+    margin-left: 15px;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#btn-clear-all:hover {
+    text-decoration: underline;
+}
+
+#compare-table-container h2 {
+    margin: 30px 0 0px;
+}
+
+#compare-bar {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    border-radius: 8px;
+}
+
+.compare-slots {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.slot {
+    flex: 1;
+    border: 1px dashed #aaa;
+    padding: 10px;
+    text-align: center;
+    min-height: 120px;
+    position: relative;
+}
+
+.slot img {
+    max-width: 80px;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.slot .remove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+#btn-show-compare {
+    background: #bb5656;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#btn-show-compare:hover {
+    background: #7c391f;
+}
+
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.compare-table th,
+.compare-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.highlight {
+    background-color: #d4f5d4;
+}
