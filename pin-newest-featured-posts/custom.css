@@ -1,0 +1,279 @@
+/* Container */
+.restaurant-wrapper {
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.featured-top-row {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+
+.featured-top-row.columns-1 {
+    grid-template-columns: 1fr;
+}
+
+.featured-top-row.columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.featured-top-row.columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.featured-top-row.columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.featured-large-card {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+    transition: transform .18s, box-shadow .18s;
+}
+
+.featured-large-card.empty {
+    background: transparent;
+    border: 2px dashed #eee;
+    display: block;
+    min-height: 260px;
+}
+
+.featured-large-card .thumb {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.featured-large-card .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-large-card .info {
+    padding: 14px;
+    flex: 1;
+}
+
+.featured-large-card .badge {
+    display: inline-block;
+    background: #00c1b3;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.card-grid-item .title a,
+.featured-large-card .title a {
+    text-decoration: none;
+}
+
+.featured-large-card .title {
+    margin: 0 0 8px;
+    font-size: 20px;
+    line-height: 1.15;
+}
+
+.featured-large-card .excerpt {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Hover */
+.featured-large-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+.below-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+
+.card-grid-item {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform .15s, box-shadow .15s;
+}
+
+
+.card-grid-item .thumb {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.card-grid-item .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-grid-item .info {
+    padding: 10px;
+}
+
+
+.card-grid-item .title {
+    margin: 0;
+    font-size: 16px;
+    color: #222;
+}
+
+.card-grid-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+.tour-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    font-size: 14px;
+    color: #444;
+}
+
+.tour-meta .duration {
+    font-weight: 500;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.tour-meta .price {
+    font-weight: 700;
+    color: #e35858;
+    font-size: 18px;
+}
+
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+.featured-large-card .badge,
+.card-grid-item .small-badge {
+    animation: blink 1s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.featured-large-card .badge,
+.card-grid-item .small-badge {
+    display: inline-block;
+    animation: shake 0.8s infinite;
+}
+
+
+@keyframes zoom {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.featured-large-card .badge,
+.card-grid-item .small-badge {
+    display: inline-block;
+    animation: zoom 1s infinite;
+}
+
+
+.featured-large-card .badge {
+    display: inline-block;
+    background: #00c1b3;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+
+.featured-large-card .badge,
+.card-grid-item .small-badge {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #e35858;
+    /* đỏ nổi bật thay vì trắng */
+    background: transparent;
+    /* bỏ màu nền */
+    border: 1px solid #e35858;
+    /* viền đỏ nhạt */
+    border-radius: 3px;
+    padding: 2px 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+@keyframes ticker {
+
+    0%,
+    100% {
+        transform: scale(1) translateX(0);
+    }
+
+    50% {
+        transform: scale(1.1) translateX(2px);
+    }
+}
+
+.featured-large-card .badge,
+.card-grid-item .small-badge {
+    animation: ticker 1s infinite;
+}
