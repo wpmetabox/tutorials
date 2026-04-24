@@ -1,0 +1,96 @@
+.project-grid {
+    margin: -15px;
+}
+
+.project-item {
+    width: 33.333%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-thumb {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-body {
+    padding: 16px;
+}
+
+.project-title {
+    font-size: 18px;
+    margin: 0 0 6px;
+}
+
+.project-date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.project-type-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 999px;
+}
+
+/* ================= TYPE COLORS ================= */
+.project-item.type-residential .project-type-badge {
+    background: #e8f0fe;
+    color: #1a73e8;
+}
+
+.project-item.type-commercial .project-type-badge {
+    background: #e6f4ea;
+    color: #137333;
+}
+
+.project-item.type-industrial .project-type-badge {
+    background: #fff4e5;
+    color: #b45309;
+}
+
+.project-item.type-infrastructure .project-type-badge {
+    background: #f3e8ff;
+    color: #7e22ce;
+}
+
+.project-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.filter-btn.is-active {
+    background: #000;
+    color: #fff;
+}
